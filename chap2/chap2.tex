@@ -89,8 +89,8 @@ same body.
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.50\textwidth]{chap1/figs/teleportation}}
-\caption{ The Talking Heads agents are implemented as software entities that can travel over the internet. 
+  \centerline{\includegraphics[width=.50\textwidth]{chap1/figs/teleportation.pdf}}
+\caption{The Talking Heads agents are implemented as software entities that can travel over the internet. 
 To play a game, they get downloaded in a local server that drives the cameras and orchestrates a game. After a game, the software 
 state is uploaded again to travel towards another location.}
 \label{f:teleport}
@@ -111,7 +111,7 @@ Talking Heads experiment.\footnote{
 The agent teleportation infrastructure is in itself a 
 fascinating non-trivial engineering project. Contributions 
 from Angus McIntyre, Alexis Agahi, Sylvere Tajan and
-Frederic Kaplan are gratefully acknowledged (\cite{McIntyre:1999}). 
+Frederic Kaplan are gratefully acknowledged (\citealt{McIntyre:1999}). 
 The fact that agents can teleport proves that we are dealing 
 with a truly distributed multi-agent system. It also 
 introduces physical parallelism in the agent-agent and 
@@ -133,7 +133,7 @@ only exists when the virtual agent is
 loaded in a physical robot body. 
 
 Virtual agents cannot interact and 
-an interaction between two `real' agents
+an interaction between two ``real'' agents
 can only take place when they are both physically present
 in the same location. Thus an agent can travel from
 Paris to Tokyo at the blink of an eye, rather than having
@@ -206,8 +206,8 @@ the brain of the agent currently installed in the robot (\figref{f:agentview})
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.60\textwidth]{chap1/figs/Interface}}
-\caption{ Interface through which the internal states of agents can 
+  \centerline{\includegraphics[width=.60\textwidth]{chap1/figs/Interface.pdf}}
+\caption{Interface through which the internal states of agents can 
 be inspected. Two agents are shown. The top windows show the state of an agent, 
 the middle windows the camera inputs that the agent sees and the bottom windows show 
 their discrimination trees.}
@@ -232,13 +232,13 @@ The computer hardware
 is powerful, but not specialised nor in the supercomputer 
 range. All programs have been written in the standard symbolic 
 programming language of artificial intelligence 
-research, namely LISP.\footnote{
+research, namely \textsc{lisp}.\footnote{
 The construction of the programs underlying the 
 Talking Heads experiment has required advanced
 artificial intelligence programming techniques, 
 such as discussed by \cite{Norvig:1996}. A general
 toolkit for the systematic execution of 
-simulation and physical experiments, called BABEL, has been
+simulation and physical experiments, called \textsc{babel}, has been
 designed and implemented by Angus McIntyre. The 
 toolkit allows the definition and modular composition
 of cognitive architectures, the design of 
@@ -289,7 +289,7 @@ influences future behaviour. A new, virgin agent
 starts without any built-in ontology, lexicon, or grammar. 
 This is one of the crucial points of the whole experiment, 
 because we want to test possible theories on how language
-and meaning can evolve and be acquired {\itshape ab initio}. 
+and meaning can evolve and be acquired ab initio\todo{GSR: no italics in commonly used loan words}. 
 
 Agents are part of populations which determine the probability
 with which they encounter each other. This generates 
@@ -343,8 +343,8 @@ their propagation (see \figref{f:plate8}).
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.80\textwidth]{chap2/figs/interface}}
-\caption{ Internet interface through which users can 
+  \centerline{\includegraphics[width=\textwidth]{chap2/figs/interface.pdf}}
+\caption{Internet interface through which users can 
 access the state of games on remote sites and 
 follow the experiment.}
 \label{f:plate8}
@@ -371,8 +371,8 @@ theories of language and cognition that I will propose in this
 book. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.60\textwidth]{chap1/figs/Whiteboard}}
-\caption{ The physical environment of the Talking Heads  
+  \centerline{\includegraphics[width=.60\textwidth]{chap1/figs/Whiteboard.pdf}}
+\caption{The physical environment of the Talking Heads  
 consists of a white board on which various
 geometric figures can be pasted. The light conditions were not under the control 
 of the experimenters in most locations.}
@@ -430,17 +430,17 @@ If the context contains also a red triangle, he has to be more
 precise and say something like `the red square' to delineate
 the topic from the red triangle as well as
 from the blue square. 
-Of course, the Talking Heads do not say ``the red square'
+Of course, the Talking Heads do not say `the red square'
 but use their own language and concepts which are not 
 necessarily the same as those used in English. For example, 
-they may say ``malewina' to mean [UPPER EXTREME-LEFT LOW-REDNESS]. 
+they may say `malewina' to mean [UPPER EXTREME-LEFT LOW-REDNESS]. 
 
 Based on the verbal hint, the hearer tries to guess what
 topic the speaker has chosen, and communicates his choice 
 to the speaker by pointing to the object. Given that 
 the robots do not have arms, pointing is realised by 
-focusing on an object. One robot can `see' in which direction another one 
-is looking, and thus know where he is `pointing'. 
+focusing on an object. One robot can ``see'' in which direction another one 
+is looking, and thus know where he is ``pointing''. 
 The game succeeds if the topic guessed by the hearer is 
 equal to the topic chosen by the speaker. 
 The game fails if the guess was wrong or 
@@ -596,8 +596,8 @@ an entity in the real world.
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap2/figs/triangle}}
-\caption{\label{triangle} Any verbal interaction
+  \centerline{\includegraphics[width=.65\textwidth]{chap2/figs/triangle.pdf}}
+\caption{\label{triangle}Any verbal interaction
 involves four entities here grouped in the
 {\it semiotic square}. The relation between utterance
 and referent always needs to be established indirectly by 
@@ -611,7 +611,7 @@ grammar (including syntax, morphology and lexicon).\footnote{
 For a general introduction to the contemporary linguistic
 viewpoint on the processes involved, see: \cite{Vanvalin:1997}. 
 In a logical approach to language, as 
-exemplified by Montague grammar (\cite{Montague:1974}),  
+exemplified by Montague grammar (\citealt{Montague:1974}),  
 meanings are represented using a logical formalism, i.e.
 a variant of intensional logic. \is{Montague grammar}
 Natural language expressions are systematically 
@@ -696,8 +696,8 @@ sensory characteristics about each image segment,
 such as the colour, size, movement. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.85\textwidth]{chap2/figs/triangle2}}
-\caption{\label{triangle2a} Left: processes carried
+  \centerline{\includegraphics[width=.85\textwidth]{chap2/figs/triangle2.pdf}}
+\caption{\label{triangle2a}Left: processes carried
 out by the speaker. Right: processes carried out by the hearer.
 There are also feedback processes moving in alternate directions
 until the agents settle on coherent choices for all the items
@@ -757,7 +757,7 @@ knowledge sources in the other direction. He must use
 his lexicon and syntax to reconstruct the meanings expressed
 by the utterance, and then use the 
 ontology again to apply the meaning to the present 
-context to find the referent \tabref{tab:2:findthereferent}. 
+context to find the referent \tabref{tab:2:findthereferent}\todo{maybe: see Table 2.1??}. 
 
 
 \begin{table}[htbp]
@@ -794,7 +794,7 @@ I deliberately left an important aspect of language out.
 In the case of physical agents, the form cannot be transmitted
 directly but needs to be articulated in speech sounds, 
 written signs, or gestures, to create a true utterance. This additional 
-complexity will not be discussed further in this book - even though 
+complexity will not be discussed further in this book -- even though 
 it is a fascinating topic in its own right.\footnote{
 See for a state of the art review: \cite{Clark:1990}. 
 We have already been conducting quite extensive 
@@ -850,8 +850,8 @@ small are ignored.
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.60\textwidth]{chap2/figs/hpos}}
-\caption{ Three examples of segmented images (from top to bottom). Left and right images 
+  \centerline{\includegraphics[width=.60\textwidth]{chap2/figs/hpos.pdf}}
+\caption{Three examples of segmented images (from top to bottom). Left and right images 
 show the perceived and segmented images for two agents respectively. These images are always
 different because they are dependent on the position of the agent. 
 The topic is indicated by a dashed bounding box in the 
@@ -875,7 +875,7 @@ these and other methods. The Talking Heads use several methods
 in parallel and combine their output to get a clearly segmented
 picture.\footnote{
 For general introductions to these areas, 
-see: \cite{Ballard:1982} and \cite{Fischler:1987}}
+see: \cite{Ballard:1982} and \cite{Fischler:1987}.}
 
 The hearer must be able to sense in which direction the speaker is looking. 
 This facility is at the moment implemented by having 
@@ -923,8 +923,8 @@ channels. The number of scenes
 quickly grows when the set of sensory channels increases. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.50\textwidth]{chap2/figs/scene1-1}}
-\caption{\label{scene1-1} The scene contains two 
+  \centerline{\includegraphics[width=.50\textwidth]{chap2/figs/scene1-1.pdf}}
+\caption{\label{scene1-1}The scene contains two 
 objects: a triangular object and a rectangular object
 with the same gray levels. 
 Each one is characterised by values on three sensory 
@@ -934,10 +934,10 @@ channels: HPOS, VPOS, and GRAY.}
 The low-level visual processes outputting
 values on the various sensory channels are already quite
 complicated in themselves. I will discuss them further in 
-Chapter 3. I will then argue that the 
+\chapref{chap:3}. I will then argue that the 
 agent's repertoire of visual processes does not have to be
 static and programmed in advance but evolves and adapts
-through a selectionist process. New processes may `grow'
+through a selectionist process. New processes may ``grow''
 by the random combination of primitive operations and are
 pruned when they fail to yield useful information or information 
 which is irrelevant in the environment in which the agent 
@@ -960,13 +960,13 @@ the HPOS-channel can be cut in two halves leading to a
 distinction between [LEFT] ($0.0 \leq HPOS < 0.5$) and [RIGHT] 
 ($0.5 \leq HPOS \leq 1.0$). The triangular object 
 in \figref{scene1-1} has the value HPOS=0.35 
-and would therefore be categorized as [LEFT]. Similarly, the 
+and would therefore be categorised as [LEFT]. Similarly, the 
 VPOS-channel can be divided in two halves yielding the 
 categories [LOWER] and [UPPER], and likewise the GRAY-channel
 yielding the categories [LIGHT] and [DARK]. 
 Given these categories, 
 the rectangular object in the scene of 
-\figref{scene1-1} would be categorized as [RIGHT UPPER LIGHT].
+\figref{scene1-1} would be categorised as [RIGHT UPPER LIGHT].
 Of course, light, dark, left, lower, etc. are labels 
 that I have given to these categories. The Talking Heads 
 create categories by partitioning sensory channels but do
@@ -974,10 +974,10 @@ not use these labels internally.
 
 It is always possible to refine a distinction by further
 subdividing its region. Thus an agent could further divide the 
-bottom region of the HPOS-channel (categorized as 
+bottom region of the HPOS-channel (categorised as 
 [LEFT]) into two subregions [TOTALLY-LEFT] ($0.0 \le HPOS < 0.25$), 
 and [MID-LEFT] ($0.25 \le HPOS < 0.5$). The triangular object
-can now be categorized as [MID-LEFT], if simply categorising it
+can now be categorised as [MID-LEFT], if simply categorising it
 as [LEFT] is not distinctive enough. Each of these categories can 
 still be further refined. The categorisation networks
 resulting from these consecutive binary subdivisions form
@@ -986,8 +986,8 @@ all assumed that all agents have the same trees; due to
 different developmental histories, divergence is inevitable. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.35\textwidth]{chap2/figs/tree1}}
-\caption{\label{tree1} A discrimination tree displays
+  \centerline{\includegraphics[width=.35\textwidth]{chap2/figs/tree1.pdf}}
+\caption{\label{tree1}A discrimination tree displays
 the divisions of the total range of 
 values on a sensory channel into finer and finer subregions. 
 Categories are assigned to each region at different 
@@ -997,7 +997,7 @@ levels of the tree.}
 There are obviously other ways to 
 move from the continuous domain of sensory channels to 
 the discrete domain of categories.\footnote{
-See: \cite{Taylor:1989}}
+See: \cite{Taylor:1989}.}
 For example, it is not really necessary 
 to have a binary division, we could just as well split 
 each region into three or more subregions. Or we could introduce
@@ -1017,30 +1017,30 @@ categories, I will label them using the
 sensory channel from which a category operates, 
 followed by the upper and lower bound of the region they 
 carve out. Thus [TOTALLY-LEFT]
-is labeled as [HPOS 0.0-0.25], because it carves 
+is labeled as [HPOS 0.0–0.25], because it carves 
 out a region between 0.0 and 0.25 on the HPOS-channel. 
 When it must be emphasised that 
 a category belongs to a particular agent, for example {\bfshape a1}, we
-write [HPOS 0.0-0.25]$_{\mathbf a1}$. The same category in agent {\bfshape a2}
-is labeled as [HPOS 0.0-0.25]$_{\mathbf a2}$. If I want to talk about 
+write [HPOS 0.0–0.25]$_{\mathbf a1}$. The same category in agent {\bfshape a2}
+is labeled as [HPOS 0.0–0.25]$_{\mathbf a2}$. If I want to talk about 
 this category in the abstract, I will not mention any 
-agent and simply write [HPOS 0.0-0.25]. We will also 
+agent and simply write [HPOS 0.0–0.25]. We will also 
 allow conjunctive combinations of categories which will be
-written as a set, as in \{[HPOS 0.0-0.25], [VPOS 0.0-0.25]\}, 
+written as a set, as in \{[HPOS 0.0–0.25], [VPOS 0.0–0.25]\}, 
 which could be paraphrased as totally-left {\itshape and}
 totally-down.  
 
 Where do an agent's discrimination trees, and hence
 categories, come from? This is one of the main 
 puzzles to be addressed in this book and it will 
-occupy most of Chapter 4. Very briefly, 
+occupy most of \chapref{chap:4}. Very briefly, 
 I propose again a selectionist approach, as for
 the formation of low-level visual routines. I hypothesise
 that the nodes and branches of the discrimination trees
 grow more or less randomly in all directions. The use and
 success of categories is monitored and categories which 
 are not sufficiently useful or successful in the environments
-encountered by the agent are pruned. I will argue in Chapter 4
+encountered by the agent are pruned. I will argue in \chapref{chap:4}
 that this mechanism indeed leads to 
 a repertoire of distinctions that is adequate for 
 playing language games, and that 
@@ -1125,20 +1125,20 @@ category (or set of categories) which distinguishes the
 topic from the other objects in the context. Here 
 the context contains only one additional 
 object, namely the rectangle. The category
-[VPOS 0.0--0.5]$_{\mathbf a1}$ (lower) fits the criteria. 
-[VPOS 0.0--0.5] is valid when VPOS$ < 0.5$
+[VPOS 0.0–0.5]$_{\mathbf a1}$ (lower) fits the criteria. 
+[VPOS 0.0–0.5] is valid when VPOS$ < 0.5$
 which is the case for the triangle but not for the rectangle. 
 {\bfshape a1} has an association in his lexicon 
-relating [VPOS 0.0--0.5]$_{\mathbf  a1}$ with the word `lu', 
+relating [VPOS 0.0–0.5]$_{\mathbf  a1}$ with the word `lu', 
 {\bfshape a1} retrieves this word and transmits it to 
 the hearer, which is agent {\bfshape a2}. 
 
 {\bfshape a2} has stored in his lexicon an
-association between `lu' and [VPOS 0.0--0.5]$_{\mathbf  a2}$, and so
-hypothesises that [VPOS 0.0--0.5]$_{\mathbf  a2}$ must be the meaning of `lu'. 
+association between `lu' and [VPOS 0.0–0.5]$_{\mathbf  a2}$, and so
+hypothesises that [VPOS 0.0–0.5]$_{\mathbf  a2}$ must be the meaning of `lu'. 
 When this category is applied to the present scene, in other words,
 when {\bfshape a2} filters out the objects whose value for VPOS do not 
-fall in the region $[0.0--0.5]$, only one 
+fall in the region $[0.0–0.5]$, only one 
 remaining object is obtained, the triangle. Hence {\bfshape a2} concludes that 
 this must be the topic and points to it. 
 
@@ -1149,9 +1149,9 @@ dialogue is reported by the commentator as follows:
 Game 125.
  a1 is the speaker. a2 is the hearer. 
  a1 segments the context into 2 objects
- a1 categorises the topic as [VPOS 0.0--0.5]
+ a1 categorises the topic as [VPOS 0.0–0.5]
  a1 says:  "lu"
- a2 interprets "lu" as [VPOS 0.0--0.5]
+ a2 interprets "lu" as [VPOS 0.0–0.5]
  a2 points to the topic 
  a1 says: "OK" 
 \end{verbatim}
@@ -1170,7 +1170,7 @@ to convey. The speaker then invokes a strategy
 to repair this failure. The simplest strategy is to 
 create a new word for the present meaning. This is how 
 {\bfshape a1} might have created the word `lu', and associated it 
-with [VPOS 0.0--0.5] in his lexicon. Such simple constructive steps cause
+with [VPOS 0.0–0.5] in his lexicon. Such simple constructive steps cause
 new words to enter the lexicon. 
 
 Second, it can be that the hearer does not know the word. The 
@@ -1184,11 +1184,11 @@ that delineates this topic from the other objects in
 the context just as the speaker has done. It is 
 possible (although not necessary as we will see)
 that the hearer {\bfshape a2} arrives at his 
-own version of the same category, namely [VPOS 0.0--0.5]$_{\mathbf  a2}$. The 
+own version of the same category, namely [VPOS 0.0–0.5]$_{\mathbf  a2}$. The 
 hearer now stores in his lexicon a new association between the 
-form heard, `lu', and the guessed meaning [VPOS 0.0--0.5]$_{\mathbf  a2}$. 
+form heard, `lu', and the guessed meaning [VPOS 0.0–0.5]$_{\mathbf  a2}$. 
 Based on this extended lexicon, he will succeed in the same game 
-in the future and he can use `lu' himself to verbalise [VPOS 0.0--0.5]$_{\mathbf  a2}$
+in the future and he can use `lu' himself to verbalise [VPOS 0.0–0.5]$_{\mathbf  a2}$
 when talking to other agents. This is the way new words
 spread in the population.
 
@@ -1198,13 +1198,13 @@ place is reported by the commentator as follows:
 Game 25.
  a1 is the speaker. a2 is the hearer. 
  a1 segments the context into 2 objects
- a1 categorises the topic as [VPOS 0.0--0.5]
+ a1 categorises the topic as [VPOS 0.0–0.5]
  a1 creates a new word: "lu"
  a2 does not know "lu"
  a2 says: "lu?"
  a1 points to the topic 
- a2 categorises the topic as [VPOS 0.0--0.5]
- a2 stores "lu" as [VPOS 0.0--0.5]
+ a2 categorises the topic as [VPOS 0.0–0.5]
+ a2 stores "lu" as [VPOS 0.0–0.5]
 \end{verbatim}
 
 \subsection{Competition between words}
@@ -1216,8 +1216,8 @@ another agent had already used the word `lu'
 for another meaning, so that there are now 
 two alternative meanings for `lu' in the lexicon. `lu' 
 has become ambiguous. Second, it may be the hearer {\bfshape a2} already 
-had a word for [VPOS 0.0--0.5]$_{\mathbf  a2}$, for example `bomida', 
-so that there are now two synonyms for [VPOS 0.0--0.5] in the lexicon. 
+had a word for [VPOS 0.0–0.5]$_{\mathbf  a2}$, for example `bomida', 
+so that there are now two synonyms for [VPOS 0.0–0.5] in the lexicon. 
 Synonymy and ambiguity are very common in 
 natural languages and unavoidable when a group of 
 distributed autonomous agents creates a language without
@@ -1230,7 +1230,7 @@ different words being used for the same meaning.
 Will this process not lead to a proliferation of words and 
 massive, inefficient lexicons, particularly in large
 populations? No. As I will discuss extensively 
-in Chapter 5, a positive feedback 
+in \chapref{chap:5}, a positive feedback 
 loop between use and success
 can be set up causing progressive convergence towards an 
 efficient lexicon. The agents keep track of the use and 
@@ -1247,7 +1247,7 @@ after which a new struggle develops and another word
 becomes the winner. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.80\textwidth]{chap2/figs/competition-1}}
+  \centerline{\includegraphics[width=\textwidth]{chap2/figs/competition-1.pdf}}
 \caption{\label{competition1} 
 The graph shows the competition between different forms for
 expressing one meaning in a population of 20 agents. The graph plots 
@@ -1265,13 +1265,13 @@ the triangular object is not only located at the lower half
 of the scene and the rectangle at the upper half, 
 but it is also to the left, i.e. with $HPOS < 0.5$, whereas
 the rectangle is to the right. It follows that the 
-hearer could just as well have hypothesised that `lu' means [HPOS 0.0--0.5] (left)
-and not [VPOS 0.0--0.5] (lower). 
+hearer could just as well have hypothesised that `lu' means [HPOS 0.0–0.5] (left)
+and not [VPOS 0.0–0.5] (lower). 
 
 Is this bad? It depends on the situations being encountered
 in the future. When the game is played again for the
-same scene with {\bfshape a1} saying `lu' to mean [VPOS 0.0--0.5], and 
-{\bfshape a2} interpreting `lu' as [HPOS 0.0--0.5], the game would succeed! 
+same scene with {\bfshape a1} saying `lu' to mean [VPOS 0.0–0.5], and 
+{\bfshape a2} interpreting `lu' as [HPOS 0.0–0.5], the game would succeed! 
 Communicative success is achieved whenever the 
 hearer recovers the referent chosen by the 
 speaker; it is not required that they 
@@ -1323,24 +1323,24 @@ a community and sufficient constraints from the context.
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.50\textwidth]{chap2/figs/scene1-2}}
-\caption{\label{scene1-2} A second scene which 
+  \centerline{\includegraphics[width=.50\textwidth]{chap2/figs/scene1-2.pdf}}
+\caption{\label{scene1-2}A second scene which 
 can be used to disambiguate `lu'.}
 \end{figure}
 Consider now another scene (\figref{scene1-2}). The speaker
 is again {\bfshape a1} and categorises the bottom triangle as 
-[VPOS 0.0--0.5]$_{\mathbf  a1}$, meaning
+[VPOS 0.0–0.5]$_{\mathbf  a1}$, meaning
 the object at the lower half of the scene. Assuming that the
-hearer {\bfshape a2} has associated `lu' with [HPOS 0.0--0.5]$_{\mathbf  a2}$, he
-would interpret `lu' as [HPOS 0.0--0.5]$_{\mathbf  a2}$ (to the left). But this 
+hearer {\bfshape a2} has associated `lu' with [HPOS 0.0–0.5]$_{\mathbf  a2}$, he
+would interpret `lu' as [HPOS 0.0–0.5]$_{\mathbf  a2}$ (to the left). But this 
 does not yield a single 
 referent and therefore the game fails. 
 This failure is an opportunity for the hearer to repair his 
 hypotheses about the possible meanings of `lu'.
 When he conceptualises the scene himself, 
-he finds that [VPOS 0.0--0.5]$_{\mathbf  a2}$ distinguishes the triangle
+he finds that [VPOS 0.0–0.5]$_{\mathbf  a2}$ distinguishes the triangle
 from the circle. A new association between 
-`lu' and [VPOS 0.0--0.5]$_{\mathbf  a2}$ is stored. The old association
+`lu' and [VPOS 0.0–0.5]$_{\mathbf  a2}$ is stored. The old association
 is not removed but enters in competition with the new
 one, and gradually one meaning will come to dominate
 by the winner-take-all mechanism discussed earlier on. 
@@ -1350,14 +1350,14 @@ The commentator reports this kind of interaction as follows:
 Game 137.
  a1 is the speaker. a2 is the hearer. 
  a1 segments the context into 4 objects
- a1 categorises the topic as [VPOS 0.0--0.5]
+ a1 categorises the topic as [VPOS 0.0–0.5]
  a1 says:  "lu"
- a2 interprets "lu" as [HPOS 0.0--0.5]
+ a2 interprets "lu" as [HPOS 0.0–0.5]
  There is more than one such object
  a2 says: "lu?"
  a1 points to the topic
- a2 categorises the topic as [VPOS 0.0--0.5]
- a2 stores "lu" as [VPOS 0.0--0.5]
+ a2 categorises the topic as [VPOS 0.0–0.5]
+ a2 stores "lu" as [VPOS 0.0–0.5]
 \end{verbatim}
 
 Through such disambiguating situations, meanings of words
@@ -1367,12 +1367,12 @@ dominating meaning of `lu' can still go in
 two directions. For example, {\bfshape a2}
 could have used `lu' with {\bfshape a1} 
 in a situation where its only possible meaning 
-is [HPOS 0.0--0.5] (left). Then {\bfshape a1}, now playing the role
+is [HPOS 0.0–0.5] (left). Then {\bfshape a1}, now playing the role
 of hearer, would have stored the association between
-`lu' and [HPOS 0.0--0.5]. If this happened often 
-enough [HPOS 0.0--0.5] (left) might
+`lu' and [HPOS 0.0–0.5]. If this happened often 
+enough [HPOS 0.0–0.5] (left) might
 have become the dominant meaning of `lu', instead of 
-[VPOS 0.0--0.5] (lower). This shows clearly that the 
+[VPOS 0.0–0.5] (lower). This shows clearly that the 
 evolution of language will never be predictable. At a critical 
 bifurcation, small preferential differences between 
 the agents or the chance occurrence of certain situations
@@ -1404,18 +1404,18 @@ For example, suppose that two Talking Heads have developed the
 concept of [LEFT] and [RIGHT] with respect to their own position 
 in front of the scene. In terms of the sensory 
 channels we have been using, anything to the left of their field  
-of vision ($0.0 \le $HPOS$ < 0.5$) is categorized as
+of vision ($0.0 \le $HPOS$ < 0.5$) is categorised as
 left, i.e. [HPOS 0.0 0.5], and everything right  
-($0.5 < $HPOS$ \le 1.0$) is categorized as right, 
+($0.5 < $HPOS$ \le 1.0$) is categorised as right, 
 i.e. [HPOS 0.0 0.5]. But because the
 agents stand next to each other and have therefore 
 slightly different positions with respect to the 
 scene in front of them, there is an area which will 
-be categorized as right for one head and left for the other (\figref{2:left-right})
+be categorised as right for one head and left for the other (\figref{2:left-right})
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap2/figs/left-right}}
-\caption{\label{2:left-right} Two Talking Heads are shown {\bfshape a1} and 
+  \centerline{\includegraphics[width=.65\textwidth]{chap2/figs/left-right.pdf}}
+\caption{\label{2:left-right}Two Talking Heads are shown {\bfshape a1} and 
 {\bfshape a2} each seeing the scene from a slightly different viewpoint.}
 \end{figure}
 When this occurs in real dialogues, the form-meaning 
@@ -1457,7 +1457,7 @@ The group lexicon will however seldom be exactly uniform because
 new meanings constantly pop up and agents may arrive from 
 other language communities, bringing in new words. 
 I will study this two level dynamic process in much more detail 
-in Chapter 7. It explains many of the mysteries of
+in \chapref{chap:7}. It explains many of the mysteries of
 language, for example why there is ambiguity. 
 
 The {\it semantic theory} required to make the 
@@ -1496,7 +1496,7 @@ Non-monotonicity is unavoidable in the case of grounded
 situated agents with limited rationality.\footnote{
 Examples of these processes are described in: 
 \cite{Bybee:1994}, \cite{Traugott:1991}.
-For attempts to explain these `grammaticalization' 
+For attempts to explain these ``grammaticalisation'' 
 processes in terms of general cognitive operations, see: 
 \cite{Heine:1997}.}
 Agents should always be allowed to 
@@ -1522,7 +1522,7 @@ reshape their language and by which some solutions may become
 conventionalised and spread in the rest of the population, 
 rather than focus on describing the end results of 
 this process. This open-ended adaptive character of 
-language systems is explored extensively in Chapter 7. 
+language systems is explored extensively in \chapref{chap:7}. 
 
 This section probably raised many questions in the 
 mind of the critical reader: Will the agents really 
@@ -1614,7 +1614,7 @@ research topic than used to be in the 19th century.
 See: \cite{McMahon:1994} for a brief introduction into the 
 subject. Language change has many of the characteristics
 of biological change but it takes place in cultural 
-as opposed to biological time. See: \cite{Labov:1994}}
+as opposed to biological time. See: \cite{Labov:1994}.}
 
 Second, my hypothesis is that the need for communicating 
 more and more complex semantic strategies and the 
@@ -1637,19 +1637,19 @@ and existing ones may destabilise and become
 in disuse.\footnote{
 The semantic strategies are similar to the 
 cognitive processes that have been studied extensively 
-in cognitive grammar (\cite{Langacker:1987}). Formal versions
+in cognitive grammar (\citealt{Langacker:1987}). Formal versions
 of some of these processes have been formulated as 
-part of Montague grammar (\cite{Montague:1974}). In 
+part of Montague grammar (\citealt{Montague:1974}). In 
 computational linguistics research, various 
 attempts have been made to formalise conceptualisation
-and meaning application strategies (\cite{Gazdar:1989}).}
+and meaning application strategies (\citealt{Gazdar:1989}).}
 
 Each language user employs his own ideolect which is 
 as well as possible co-ordinated with that of other
 language users but there is never complete similarity 
 and never absolute stability.  
 This explains perhaps why linguists have such a hard
-time to pin down `the' language of a community. As soon 
+time to pin down ``the'' language of a community. As soon 
 as someone speaks, language changes. 
 
 According to this theory, natural language structure is
@@ -1703,10 +1703,10 @@ various aspects of the agent's capacities in much more detail.
 First I will break the global task down into different subtasks, 
 as suggested by the semiotic square. We will start by looking how agents 
 may establish the relation between a real world object and 
-a segmented image (Chapter 3). Then we study how they 
-relate a segmented image to its conceptualisation (Chapter 4). 
+a segmented image (\chapref{chap:3}). Then we study how they 
+relate a segmented image to its conceptualisation (\chapref{chap:4}). 
 Third, we study how a conceptualisation can be related to 
-an utterance (Chapter 5). In Chapter 6 and 7 we couple these
+an utterance (\chapref{chap:5}). In Chapters \ref{chap:6} and \ref{chap:7} we couple these
 various components and study the lexical and ontological 
 dynamic processes that result. 
 

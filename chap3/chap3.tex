@@ -231,9 +231,8 @@ it moves backwards. Then the robot zig-zags to the
 light source until it hits the obstacle again. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.85\textwidth]{chap3/figs/phototaxis}}
-\caption{\label{phototaxis} 
-Internal states of a robot's sensory and actuator channels on 
+  \centerline{\includegraphics[width=\textwidth]{chap3/figs/phototaxis.pdf}}
+\caption{\label{phototaxis}Internal states of a robot's sensory and actuator channels on 
 the y-axis and time in periods of 1/40 seconds on the x-axis.
 The robot pushes against a box holding a light source.}
 \end{figure}
@@ -273,7 +272,7 @@ It is possible for {\itshape us} to see
 structure in the data but this structure is not perceived
 nor used for control by the robot itself. 
 The robot does not segment nor categorise
-reality. It does not `know' that it is moving left or right 
+reality. It does not ``know'' that it is moving left or right 
 and therefore cannot communicate this information to another robot. 
 All processing remains at the analog continuous
 level. However because it remains at this subsymbolic level, it is doubtful
@@ -310,9 +309,9 @@ easier to compute and are already very useful. The bounding box of a segment
 is a rectangle around the contours of a segment (\figref{f:boundbox}).\is{bounding box} 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.50\textwidth]{chap3/figs/sslang}}
+  \centerline{\includegraphics[width=.50\textwidth]{chap3/figs/sslang.pdf}}
 \label{screenshot}
-\caption{ Example of a scene captured by the 
+\caption{Example of a scene captured by the 
 camera in \figref{f:plate7}, containing a puppet, a
 wooden house, and a horse. Segmentation is based on aggregating grayscale
 patches, i.e. areas in the image that are lighter or darker than the 
@@ -400,8 +399,8 @@ segmentation method must be balanced with others to offset unclear
 areas or local ambiguities. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.75\textwidth]{chap3/figs/image1}}
-\caption{ Left view shows an image as captured by a Talking
+  \centerline{\includegraphics[width=.75\textwidth]{chap3/figs/image1.pdf}}
+\caption{Left view shows an image as captured by a Talking
 Heads camera. Middle view shows the result of 
 segmentation based on edge detection. Right view
 shows the integration of segmentation by color
@@ -468,8 +467,8 @@ under the carpet.
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.55\textwidth]{chap3/figs/diff-percept}}
-\caption{ Top (left), image captured by the hearer. 
+  \centerline{\includegraphics[width=.55\textwidth]{chap3/figs/diff-percept.pdf}}
+\caption{Top (left), image captured by the hearer. 
 Bottom (left), image captured by the speaker. Because
 both have a different view on the scene, the 
 images diverge and consequently 
@@ -507,8 +506,8 @@ lexicalised and possible lexicalisations will only be
 acceptable when they can be integrated in a complete sentence. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.55\textwidth]{chap3/figs/sieve}}
-\caption{ The different layers of cognitive processing act 
+  \centerline{\includegraphics[width=.55\textwidth]{chap3/figs/sieve.pdf}}
+\caption{The different layers of cognitive processing act 
 like a sieve. Inputs flow into the layer, where they are processed
 to generate hypotheses of which the best ones are transmitted
 to the next layer. Every layer can operate in both directions, 
@@ -639,7 +638,7 @@ images: \cite{Steels:1998}
 The segmentation used in this book 
 based on output from the Sony EVI-D31 camera was 
 implemented by Danny Van Tieghem. Angus McIntyre integrated
-the interfaces to this camera within the BABEL environment. 
+the interfaces to this camera within the \textsc{babel} environment. 
 }
 
 \item Various spatial relations between segments can be computed: 
@@ -840,8 +839,8 @@ used in \figref{rect1b} to distinguish object 1 from
 the others. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.45\textwidth]{chap3/figs/recscene}}
-\caption{ \label{rect1b} A scene with three objects. The
+  \centerline{\includegraphics[width=.45\textwidth]{chap3/figs/recscene.pdf}}
+\caption{\label{rect1b}A scene with three objects. The
 sensory values on the grayscale channel are the most salient 
 and will therefore be chosen preferentially for categorisation
 and verbalisation.}
@@ -901,7 +900,7 @@ sensor-scaling (with minimum 1,000 and maximum
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\columnwidth]{chap7/figs/plate-10}
+\includegraphics[width=0.8\columnwidth]{chap7/figs/plate-10.pdf}
 \end{center}
 \caption{Three examples of segmented images. The 
 topic is indicated by a dashed bounding box in the 
@@ -952,8 +951,8 @@ speaker and so incoherence would slip into the group's lexical
 system. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap3/figs/scaling}}
-\caption{\label{scaling} Processing converts data on 
+  \centerline{\includegraphics[width=.65\textwidth]{chap3/figs/scaling.pdf}}
+\caption{\label{scaling}Processing converts data on 
 a sensory channel into more usable data for later categorisation processes.}
 \end{figure}
 
@@ -1018,8 +1017,8 @@ scaffolds to see whether partial solutions work, before putting
 it all together. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.50\textwidth]{chap3/figs/square}}
-\caption{\label{square} The general problem of 
+  \centerline{\includegraphics[width=.50\textwidth]{chap3/figs/square.pdf}}
+\caption{\label{square}The general problem of 
 production is broken up into three subproblems: perception, 
 conceptualisation and verbalisation.}
 \end{figure}
@@ -1044,7 +1043,7 @@ a distance, but is not without danger. The processes relating
 perception to language cannot be modular for reasons already mentioned. 
 Each layer receives inputs which are not completely reliable and 
 generates a set of possible suggestions rather than a single
-`correct' solution. Constraints have to flow
+``correct'' solution. Constraints have to flow
 from top to bottom because there is simply not enough reliable 
 information to solve the problem with a straightforward sequential 
 decision process. In addition, every layer is constantly adapting 
@@ -1233,8 +1232,8 @@ characteristics (position, height, width, grayscale)
 are set. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.45\textwidth]{chap3/figs/scene9}}
-\caption{ \label{geom3} An example of the 
+  \centerline{\includegraphics[width=.45\textwidth]{chap3/figs/scene9.pdf}}
+\caption{\label{geom3}An example of the 
 computer-generated scenes from the GEOM world.
 Each shape is labeled for further reference.}
 \end{figure}
@@ -1262,7 +1261,7 @@ are summarised in \tabref{tab:t-geom}. After sensory-scaling we get \tabref{tab:
 \lspbottomrule
 \end{tabular}
 \end{center}
-\caption{\label{tab:t-geom} Sensory data for the scene shown in \figref{geom3}.}
+\caption{\label{tab:t-geom}Sensory data for the scene shown in \figref{geom3}.}
 \end{table}
 
 \begin{table}
@@ -1277,7 +1276,7 @@ are summarised in \tabref{tab:t-geom}. After sensory-scaling we get \tabref{tab:
 \lspbottomrule
 \end{tabular}
 \end{center}
-\caption{\label{tab:t-geomscaled} Sensory data after scaling for the scene shown in \figref{geom3}.}
+\caption{\label{tab:t-geomscaled}Sensory data after scaling for the scene shown in \figref{geom3}.}
 \end{table}
 
 The output of the simulation is exactly the same as the one from real vision 

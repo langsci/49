@@ -864,8 +864,8 @@ distinctions using values of the same sensory channel
 can be organised in a discrimination tree (\figref{trees}). 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/tree}}
-\caption{\label{trees} A discrimination tree contains
+  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/tree.pdf}}
+\caption{\label{trees}A discrimination tree contains
 a set of categorisers which categorise by checking whether
 a sensory value falls in the region of one category or 
 not. The discrimination tree shown operates on
@@ -876,10 +876,10 @@ As mentioned earlier, I will label categories
 by using the sensory channel from which a category operates, 
 followed by the minimum and maximum values of the region
 carved out by the category. For example, 
-[AREA 0.0--0.25] carves out the region [0.0,0.25] of the 
+[AREA 0.0–0.25] carves out the region [0.0,0.25] of the 
 area channel. When it must be emphasised that 
 a category belongs to a particular agent, for 
-example {\bfshape a1}, I will write [AREA 0.0--0.25]$_{\mathbf a1}$. 
+example {\bfshape a1}, I will write [AREA 0.0–0.25]$_{\mathbf a1}$. 
 
 Conjunctive combinations of categories also have
 dedicated categorisers which are linked to 
@@ -888,17 +888,17 @@ the categorisers of their components (see
 often yields a more efficient way to pick out 
 the topic compared to a single, possibly very fine-grained
 distinction. For example, it might be that 
-[AREA 0.0--0.25] {\itshape and} [GRAY 0.5-1.0]
+[AREA 0.0–0.25] {\itshape and} [GRAY 0.5–1.0]
 together are distinctive but none of the two on their
 own is. Other logical combinations are equally of interest
 but I will restrict my attention to conjunctive 
 combinations. Conjunctive combinations of categories 
 will be written between curly brackets (\{,\}) as in 
-\{[AREA 0.0--0.25] [GRAY 0.5-1.0]\}. 
+\{[AREA 0.0–0.25] [GRAY 0.5–1.0]\}. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/disnet}}
-\caption{\label{disnet} More complex categorisers
+  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/disnet.pdf}}
+\caption{\label{disnet}More complex categorisers
 (shown as circles) are formed from the combination
 of primitive categorisers.}
 \end{figure}
@@ -913,7 +913,7 @@ discrimination trees and its growth dynamics
 was presented for the first time in \cite{Steels:1996}. 
 Based on this paper a new implementation of
 single category discrimination was implemented by Angus McIntyre 
-within the BABEL environment. Later on, Joris Van Looveren
+within the \textsc{babel} environment. Later on, Joris Van Looveren
 re-implemented the use of conjunctive combinations.}
 The game is played by a single agent, randomly 
 drawn from a population of agents, and 
@@ -929,8 +929,8 @@ fails. When the game succeeds, the success counter
 of the categorisers involved go up. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/game5}}
-\caption{\footnotesize \label{geom} A computer generated scene 
+  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/game5.pdf}}
+\caption{\label{geom}A computer generated scene 
 from the GEOM world.}
 \end{figure}
 
@@ -948,7 +948,7 @@ shape 3 from the others. On the other hand, if shape 2 is
 chosen as topic, the grayscale will not be enough because
 shape 2 has the same grayscale as shape 1. Maybe a 
 combination of categories can be chosen, like [VPOS 0.0--05]
-(lower), and [HPOS 0.0--0.5] (left). Indeed shape 2
+(lower), and [HPOS 0.0–0.5] (left). Indeed shape 2
 is lower in the scene, as opposed to
 shape 1 and shape 3, and it is more to the left compared 
 to shape 0 and 2.
@@ -978,12 +978,12 @@ A categoriser divides the balls in two bins,
 those that fall in the range of 
 one category and those that fall into the range of the other
 category. In this case, the left bin contains \{$O2$\} 
-(category [GRAY 0.0--0.5]) 
-and the right bin \{$O1$, $O3$\} (category [GRAY 0.5-1.0]). 
+(category [GRAY 0.0–0.5]) 
+and the right bin \{$O1$, $O3$\} (category [GRAY 0.5–1.0]). 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/balls}}
-\caption{\footnotesize \label{balls} Balls containing
+  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/balls.pdf}}
+\caption{\label{balls}Balls containing
 the data value for the different objects
 $O1$, $O2$, $O3$ in the scene. $O1$ is the topic.
 $O1$ has the value 0.6 on the GRAY-channel, $O2$ has
@@ -994,11 +994,11 @@ A distinctive category is found when the ball of the
 topic is the only one left in one of the bins. 
 If the topic is $O1$, then this is not yet the 
 case, because it is together with $O3$ in the 
-bin of [GRAY 0.5-1.0]. However when the next categoriser
+bin of [GRAY 0.5–1.0]. However when the next categoriser
 is exercised, it splits the set \{$O1$, $O3$\} 
-into two subsets: \{$O1$\} for [GRAY 0.5--0.75]
+into two subsets: \{$O1$\} for [GRAY 0.5–0.75]
 and \{$O3$\} for [GRAY-0.75,1.0]. 
-[GRAY 0.5--0.75] is a discriminating category because only 
+[GRAY 0.5–0.75] is a discriminating category because only 
 $O1$ is left in its bin. 
 
 Balls thus trickle down from the top to the bottom of 
@@ -1031,7 +1031,7 @@ take place to rank categories even
 though multiple solutions are offered to subsequent
 verbalisation processes. We see therefore the same
 characteristics as for the perceptual layer, and thus
-the `sieve architecture' also 
+the ``sieve architecture'' also 
 applies for the conceptual layer (\figref{f:sieve}). 
  
 There are many possible criteria for preferring 
@@ -1152,7 +1152,7 @@ The data on these channels for the scene in Figure
 2 (square) & 0.163 & 0.163 \\ 
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:t-game8} Sensory data for the scene in \figref{scene2}.}
+\caption{\label{tab:t-game8}Sensory data for the scene in \figref{scene2}.}
 \end{center}
 \end{table}
 
@@ -1162,8 +1162,8 @@ figure (sensor-scaling) but no context-scaling has
 been performed. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/scene8}}
-\caption{\label{scene2} Top: The scene used in Game 8. 
+  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/scene8.pdf}}
+\caption{\label{scene2}Top: The scene used in Game 8. 
 Shape 0 is the topic. Bottom: The discrimination trees available
 for this game.}
 \end{figure}
@@ -1186,8 +1186,8 @@ can be chosen for further expansion.
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/scene22}}
-\caption{\label{scene3} Top: The scene used in Game 22. 
+  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/scene22.pdf}}
+\caption{\label{scene3}Top: The scene used in Game 22. 
 Bottom: The discrimination trees available to the
 agent.}
 \end{figure}
@@ -1208,7 +1208,7 @@ channels is shown in \tabref{tab:t-game22}.
 1 (rectangle) & 0.789 & 0.563 & 0.287 \\  
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:t-game22} Sensory data for the scene shown in \figref{scene3}.}
+\caption{\label{tab:t-game22}Sensory data for the scene shown in \figref{scene3}.}
 \end{center}
 \end{table}
 
@@ -1223,9 +1223,9 @@ Game 22
  a1 segments the scene in 2 objects:  
    triangle-0, rectangle-1
  a1 chooses triangle-0 as the topic 
- a1 categorises the topic as [HPOS 0.0--0.5] (score 0.57), 
-   [HEIGHT 0.5-1.0] (score 0.09), or 
-   [WIDTH 0.0--0.5] (score 0.0) 
+ a1 categorises the topic as [HPOS 0.0–0.5] (score 0.57), 
+   [HEIGHT 0.5–1.0] (score 0.09), or 
+   [WIDTH 0.0–0.5] (score 0.0) 
  The discrimination game succeeds
 \end{verbatim}
 
@@ -1235,7 +1235,7 @@ Game 22 shows at once why context-scaling
 and saliency is important. When we inspect the scene in 
 \figref{scene3}, we do not quite see so clearly 
 that the triangle is less wide than the square, so why
-is [WIDTH 0.0--0.5] 
+is [WIDTH 0.0–0.5] 
 nevertheless considered? Examination of the data shows
 that the WIDTH values, 0.437 for the triangle
 and 0.563 for the square, are very close 
@@ -1260,7 +1260,7 @@ respect to the triangle is as in \tabref{tab:t-game22-sal}:
  0.622 & 0.125 & 0.286  \\ 
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:t-game22-sal} Sensory data for the scene in Game 22.}
+\caption{\label{tab:t-game22-sal}Sensory data for the scene in Game 22.}
 \end{center}
 \end{table}
 From this table we see immediately that HPOS is the 
@@ -1288,7 +1288,7 @@ for reasons of saliency.
 1 (rectangle) & 1.0 & 1.0 & 0.0 \\  
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:t-game22scaled} Sensory data for the scene shown in \figref{scene3}.}
+\caption{\label{tab:t-game22scaled}Sensory data for the scene shown in \figref{scene3}.}
 \end{center}
 \end{table}
 So the best thing to do (and this is what the Talking Heads 
@@ -1318,13 +1318,13 @@ Game 24
    triangle-0, triangle-1, square-2, rectangle-3 
  a1 chooses triangle-0 as topic
  a1 categorises the topic as 
-   {[HEIGHT 0.0--0.5] [WIDTH 0.5-1.0]}
+   {[HEIGHT 0.0–0.5] [WIDTH 0.5–1.0]}
  The discrimination game succeeds
 \end{verbatim}
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/game24}}
-\caption{\label{scene4} The scene used in Game 24.}
+  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/game24.pdf}}
+\caption{\label{scene4}The scene used in Game 24.}
 \end{figure}
 The relevant data after sensor-scaling for the 
 two sensory channels involved are shown in \tabref{tab:t-game24}. 
@@ -1340,13 +1340,13 @@ two sensory channels involved are shown in \tabref{tab:t-game24}.
 3 (rectangle) & 0.613 & 0.310 \\  
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:t-game24} Sensory data for the scene in \figref{scene4}.}
+\caption{\label{tab:t-game24}Sensory data for the scene in \figref{scene4}.}
 \end{center}
 \end{table}
 
-[HEIGHT 0.0--0.5] is valid for triangle-0 and square-2 but
+[HEIGHT 0.0–0.5] is valid for triangle-0 and square-2 but
 filters out the other segments. 
-[WIDTH 0.5-1.0] is valid for triangle-0 and triangle-1 and 
+[WIDTH 0.5–1.0] is valid for triangle-0 and triangle-1 and 
 filters out the others.  
 The conjunctive combination of these two categories only 
 retains triangle-0 and is therefore the one that is chosen. 
@@ -1378,13 +1378,13 @@ G & 0.32 & 0.34  & 0.02\\
 B & 0.63 & 0.65 & 0.02\\ 
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:t-real} Sensory data from a real world scene with segmentation shown in \ref{f:plate-10}.}
+\caption{\label{tab:t-real}Sensory data from a real world scene with segmentation shown in \ref{f:plate-10}.}
 \end{center}
 \end{table}
 Clearly HPOS is the most salient channel and should be 
 prefered by the agent. When performing context scaling, 
 the two values for HPOS are drawn apart with 1.0 for object-0 and 
-0.0 for object-1 so that the category [HPOS 0.5-1.0] (to the 
+0.0 for object-1 so that the category [HPOS 0.5–1.0] (to the 
 right) easily distinguishes the topic (object-0) from
 object-1. The game is reported as follows: 
 \begin{verbatim}
@@ -1393,7 +1393,7 @@ Game 3
   a2 segments the context into 2 objects: 
        object-0 object-1
   a2 chooses object-0 as the topic 
-  a2 categorises the topic as [HPOS 0.5-1.0]
+  a2 categorises the topic as [HPOS 0.5–1.0]
 \end{verbatim}
 This example illustrates well why the categorisation 
 of the Talking Heads is so robust and why agents 
@@ -1430,12 +1430,12 @@ A new subcategoriser is constructed by taking a
 categoriser node in the tree and dividing its range into 
 two new subranges and thus two new subcategorisers.
 For example, if there is a 
-categoriser [HPOS 0.0--0.5], which triggers when the 
+categoriser [HPOS 0.0–0.5], which triggers when the 
 object is in the left most half of a scene, i.e. with HPOS
 within $[0.0,0.5]$, then two 
 subcategories are created by dividing $[0.0,0.5]$
 into two halves, one for the 
-range $[0.0,0.25]$ ([HPOS 0.0--0.25] or totally left) 
+range $[0.0,0.25]$ ([HPOS 0.0–0.25] or totally left) 
 and one for the range $[0.25,0.5]$ ([HPOS 0.25--0.5] or mid-left). 
 A new categoriser is added to the tree for each of these
 halves. 
@@ -1544,8 +1544,8 @@ such a gigantic abstraction leap and to make it at an amazingly
 rapid speed. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.70\textwidth]{chap4/figs/avsuc}}
-\caption{\label{avsuc} The graph displays the 
+  \centerline{\includegraphics[width=\textwidth]{chap4/figs/avsuc.pdf}}
+\caption{\label{avsuc}The graph displays the 
 average success per 25 Discrimination Games for a
 series of 500 games played by a single agent. Success climbs
 to 100\%. The graph also displays the size of the 
@@ -1575,8 +1575,8 @@ fewer changes, compare for example (c) and (d), as a
 stable core emerges. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.75\textwidth]{chap4/figs/dynatrees}}
-\caption{\label{dyna-trees} Some snapshots of an evolving 
+  \centerline{\includegraphics[width=.75\textwidth]{chap4/figs/dynatrees.pdf}}
+\caption{\label{dyna-trees}Some snapshots of an evolving 
 repertoire in a single agent using growth and pruning. 
 Trees are shown after 500 games (a), 1000 games (b), 1500 games
 (c) and 2000 games (d).} 
@@ -1635,8 +1635,8 @@ the sensory processing on the adequacy of particular sensory
 channels. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/adptwrl1}}
-\caption{\label{adptwrl1} Two snapshots 
+  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/adptwrl1.pdf}}
+\caption{\label{adptwrl1}Two snapshots 
 from a series of 500 discrimination 
 games developing categories to distinguish rectangles of 
 the same average graylevel. Channel 2 (the ratio channel) 
@@ -1652,8 +1652,8 @@ significant data. This is indeed the case as shown
 in \figref{adptwrl2}. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/adptwrl2}}
-\caption{\label{adptwrl2} Two snapshots from 
+  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/adptwrl2.pdf}}
+\caption{\label{adptwrl2}Two snapshots from 
 an additional series of 500 Discrimination Games after
 the environment has become more complex. RATIO
 (channel 2) and GRAY (channel 3) have started to develop.}
@@ -1683,8 +1683,8 @@ is reached. Steady discrimination success is seen with an
 enlarged repertoire.
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/adptwrlglo}}
-\caption{\label{adptwrlglo} Evolution of success and ontology
+  \centerline{\includegraphics[width=\textwidth]{chap4/figs/adptwrlglo.pdf}}
+\caption{\label{adptwrlglo}Evolution of success and ontology
 size in a series of 1000 Discrimination Games played by a single agent.
 In phase 1, only rectangles of the same graylevel are 
 generated by the GEOM world. In phase 2, additional types of 
@@ -1706,8 +1706,8 @@ in the environment where those channels provided
 salient data. 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/discri200}}
-\caption{\label{discri200a} The discrimination trees 
+  \centerline{\includegraphics[width=\textwidth]{chap4/figs/discri200.pdf}}
+\caption{\label{discri200a}The discrimination trees 
 developed by two physically embodied agents 
 {\bfshape a1} (left) and {\bfshape a2} (right). The top of the 
 figure shows the trees after 
