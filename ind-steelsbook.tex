@@ -7,10 +7,11 @@
 			   ,smallfont
 			   ,biblatex
 			   ,draftmode  
-			   ,draft
+			   %,draft
 			  ]{LSP/langsci}                          
 \usepackage{LSP/lsp-styles/lsp-gb4e}		% verhindert Komma bei mehrfachen Fußnoten?
-\usepackage{LSP/lsp-styles/avm}                                                    
+\usepackage{LSP/lsp-styles/avm}  
+\usepackage{todonotes}                                                  
 \usepackage{layout}  
 \usepackage{lipsum}   
 % \usepackage{covington}
@@ -59,11 +60,11 @@ this agent-based information ecosystem.}
 
 \mainmatter 
 
-\part{The 1999 Talking Heads Book}
+\part{The 1999 Talking Heads Book} \label{part:1}
 
 %\thispagestyle{empty}
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=1.0\textwidth]{extra/figs/cover-original-book}}
+  \centerline{\includegraphics[width=1.0\textwidth]{extra/figs/cover-original-book.pdf}}
 \caption{\small\label{left-right} Original cover of the Talking Heads book published in 1999 on the occasion of the 
 Laboratorium exhibition in Antwerp.}
 \label{f:cover}
@@ -74,20 +75,20 @@ Laboratorium exhibition in Antwerp.}
 \include{chap3/chap3}
 \include{chap4/chap4}
 \include{chap5/chap5}
-\include{chap6/chap6}
-\include{chap7/chap7}
+%\include{chap6/chap6}
+%\include{chap7/chap7}
 
-\part{Installations and experiments}
-\include{chap8/chap8}
-\include{chap9/chap9}
+\part{Installations and experiments} \label{part:2}
+%\include{chap8/chap8}
+%\include{chap9/chap9}
 % 
-\part{Beyond the Talking Heads}
+%\part{Beyond the Talking Heads} \label{part:3}
 
-\include{chap10/chap10}
-\include{chap11/chap11}
-\include{chap12/chap12}
+%\include{chap10/chap10}
+%\include{chap11/chap11}
+%\include{chap12/chap12}
 
-% \part{Appendices} 
+% \part{Appendices} \label{part:4}
 
 % \include{extra/papers-language-steels}
 
