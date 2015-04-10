@@ -284,7 +284,8 @@ of the niche space. The factors relevant for a linguistic niche include the sele
 and they can be analysed by identifying a fitness landscape, where each dimension is a selection component. 
 I discuss first examples of this kind of analysis for language systems and then for language strategies. \\
 
-{\bfshape Fitness landscapes of language systems}\\
+\subsection{Fitness landscapes of language systems}
+% {\bfshape Fitness landscapes of language systems}\\
 
 To illustrate this approach let us look at a first example, \is{German article system}
 using a fascinating study conducted by Remi van Trijp of change in the German article system as historically 
@@ -368,7 +369,7 @@ have chosen different variants \citep{VanTrijp:2010}.
 Here is another example of a fitness landscape from the domain of space, developed by 
 Michael Spranger.\footnote{These results are documented at length in: \cite{Spranger:2014}.}
 It focuses on understanding the role of grammar for optimising spatial language. \is{Spatial Language Game}
-The experiment involves QRIO humanoids
+The experiment involves \textsc{qrio} humanoids
 (see \figref{fig:spatial}) and uses a 
 sophisticated vision system developed by Spranger, together with IRL and Fluid 
 Construction Grammar (in the previous chapter). A variety of spatial language strategies 
@@ -377,7 +378,7 @@ were operationalised, in particular:
 
 \begin{figure}
 \centerline{\includegraphics[width=0.8\linewidth]{chap11/figs/spatial.pdf}}
-\caption{ Set-up for the spatial language game experiments. Two robots are looking at a scene 
+\caption{Set-up for the spatial language game experiments. Two robots are looking at a scene 
 with a few blocks, a bigger box with tags indicating front, back or left and right side, and a global landmark in the form 
 of a large tag pasted on the wall. {\itshape Top left and right:} World as seen through the camera of the robot. 
 {\itshape Bottom left and right:} The internal world model as perceived by the left and right robot.}
@@ -410,7 +411,7 @@ of objects and distribution of objects compared to (1).
 
 \begin{figure}
 \centerline{\includegraphics[width=0.5\linewidth]{chap12/figs/why-grammar-german.pdf}}
-\caption{ Investigation how the two language systems (lexical or grammatical) are performing with respect to the 
+\caption{Investigation how the two language systems (lexical or grammatical) are performing with respect to the 
 communicative success dimension and for each of the three ecological conditions. A purely lexical system in itself has 
 already considerable success, but grammar becomes more and more relevant when the situation becomes more complex.
 The bottom images show examples for the three ecological conditions being examined.}
@@ -435,13 +436,14 @@ heavily compromised.
 \begin{figure}
 \centerline{\includegraphics[width=0.5\linewidth]{chap12/figs/why-grammar-german-avg-interpretations.pdf}
 \includegraphics[width=0.5\linewidth]{chap12/figs/why-grammar-conceptualisation-interpretation-equality.pdf}}
-\caption{ Left: performance for semantic ambiguity for the same three ecological conditions. We see that without grammar
+\caption{Left: performance for semantic ambiguity for the same three ecological conditions. We see that without grammar
 the world model needs to be consulted heavily to weed out potential interpretations. And Right: Performance for interpretation sharing.
 Only with grammar are agents able to share the same semantic structure, ensuring a higher degree of communicative success.}
 \label{fig:ambiguity}
 \end{figure}
 
-{\bfshape The fitness landscape of language strategies}\\
+\subsection{The fitness landscape of language strategies}
+% {\bfshape The fitness landscape of language strategies}\\
 
 We now move one level up, and show how a fitness landscape can be identified at the level of strategies as well. Rather than supplying 
 agents with language systems, we initialise them 
@@ -607,7 +609,7 @@ The {\itshape Brightness Prototype Strategy} is similar to the Basic Color Strat
 \caption{{The {\itshape Brightness Colour Strategy} also allows a population of agents (in this case 10)
 to evolve an adequate colour lexicon (left). The evolution of a typical lexicon in a smaller population (5 agents), is shown 
 after 400 (middle) and 1600 (right) games per agent. Each row represents
-the lexicon of one agent.}}
+the lexicon of one agent.}}\todo[inline]{barely readable at 100\%. Do we need to change s.th. here?}
 \end{figure}
 
 We now turn to the main issue here: the
@@ -631,7 +633,7 @@ strategies, again in decreasing order of their scores.
 
 
 \begin{figure}[thb!]
-\centerline{\includegraphics[width=.75\textwidth]{chap12/figs/strategies-one-winner.pdf}}
+\centerline{\includegraphics[width=\textwidth]{chap12/figs/strategies-one-winner.pdf}}
 \caption{{Communicative success stays constant. The Brightness Colour Strategy becomes 
 dominant very early due to random fluctuations. It stays dominant but barely. 
 The strategy coherence (i.e. whether agents agree on the 
@@ -660,7 +662,7 @@ dimension.
 
 
 \begin{figure}[thb!]
-\centerline{\includegraphics[width=.75\textwidth]{chap12/figs/strategies-competition.pdf}}
+\centerline{\includegraphics[width=\textwidth]{chap12/figs/strategies-competition.pdf}}
 \caption{{Initially the brightness strategy is dominant, but then the full-colour 
 strategy gradually takes over and becomes dominant around 400 games/agents. Strategy coherence within the population
 progressively increases.}
@@ -686,7 +688,8 @@ The linguistic side however is still to a large extent in a stage of fundamental
 be several different meta-strategies, used by different language communities. Each of these two aspects is now 
 discussed.\\
 
-{\bfshape A Meta-strategy for Generating new Conceptualisation Strategies}\\
+\subsection{A meta-strategy for generating new conceptualisation strategies}
+% {\bfshape A Meta-strategy for Generating new Conceptualisation Strategies}\\
 
 As explained in the previous chapter, the conceptualisation of grounded meaning takes the form of programs which perform 
 operations over the world model. For example, for the spatial domain, this amounts to
@@ -698,7 +701,7 @@ the value of slots and computation terminates successfully when all slots could 
 
 \begin{figure}
 \centerline{\includegraphics[width=1.0\linewidth]{chap11/figs/near-the-box2.pdf}}
-\caption{ Example of a conceptualisation for the phrase `near to the box'. {\itshape Top:} 
+\caption{Example of a conceptualisation for the phrase `near to the box'. {\itshape Top:} 
 Leftmost: The situation as perceived by the robot. Middle: situation after a geometric transform where the box is 
 made the central perspective. Right: Area around the box which reflects (in terms of darkness of the color) how 
 near objects are to the box. {\itshape Bottom:} IRL constraint network for this conceptualisation.
@@ -706,7 +709,7 @@ near objects are to the box. {\itshape Bottom:} IRL constraint network for this 
 \end{figure}
 
 We will use the domain of spatial language again as a source of examples, based on experiments carried out by 
-Michael Spranger. It uses the QRIO humanoid robots 
+Michael Spranger. It uses the \textsc{qrio} humanoid robots 
 and scenes like the one shown in \figref{fig:spatial}. An example of a constraint network from this domain 
 is shown in \figref{fig:spatial-strategies}. It is the network for the phrase `near the box'. `Near' is a proximal 
 relation which categorises objects in terms of how near they are to a landmark (in this case the box). In a list form the 
@@ -767,9 +770,9 @@ way in which the speaker agent finds possible conceptualisations, namely through
 
 \begin{figure}
 \begin{centering}
-\includegraphics[width=1\columnwidth]{chap12/figs/conceptualisation.pdf}
+\includegraphics[width=1\columnwidth]{chap12/figs/conceptualization.pdf}
 \end{centering}
-\caption{ The meaning of an utterance is found through a search process, starting from an empty network, progressively more 
+\caption{The meaning of an utterance is found through a search process, starting from an empty network, progressively more 
 constraints are added until a solution network is found that, when executed, yields the topic chosen by the speaker.}
 \label{fig:tree}
 \end{figure}
@@ -794,9 +797,9 @@ on what is preferred by the rest of the population, and other criteria such as c
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\columnwidth]{chap12/figs/chunk-alignment-category-invention-success.pdf}
-\includegraphics[width=0.8\columnwidth]{chap12/figs/chunk-alignment-category-invention-alignment.pdf}
-\caption{ This experiment combines strategy invention, alignment, and category development by each strategy. The top figure
+\includegraphics[width=\textwidth]{chap12/figs/chunk-alignment-category-invention-success.pdf}
+\includegraphics[width=\textwidth]{chap12/figs/chunk-alignment-category-invention-alignment.pdf}
+\caption{This experiment combines strategy invention, alignment, and category development by each strategy. The top figure
 shows language games on the x-axis, and communicative success, average 
 number of categories, and interpretation similarity on the y-axis. The bottom figure shows the similarity between 
 strategies and the average number of strategies in the population. One strategy becomes dominant.}
@@ -812,7 +815,8 @@ spatial categories increases. The bottom graph zooms in on the conceptualisation
 a consensus about a dominant strategy after a period in which new strategies 
 are invented and tried out.\\ 
 
-{\bfshape Meta-strategies for generating new lexico-grammatical strategies}\\ 
+\subsection{Meta-strategies for generating new lexico-grammatical strategies}
+% {\bfshape Meta-strategies for generating new lexico-grammatical strategies}\\ 
 
 Are there general meta-strategies that can be used to generate the kind of lexico-grammatical strategies 
 that can in turn generate all the language systems we observe 
@@ -852,11 +856,10 @@ been carried out in particular by \cite{Wellens:2008}. \is{flexible word meaning
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.45\columnwidth]{chap12/figs/attribute-scores-4.pdf}
-\includegraphics[width=0.45\columnwidth]{chap12/figs/dog-meaning.pdf}
+\includegraphics[width=\textwidth]{chap12/figs/attribute-scores-4.pdf}
+\includegraphics[width=\textwidth]{chap12/figs/dog-meaning.pdf}
 \end{center}
-\caption{ Two examples of the meaning of words in terms of a set of component features whose weight can change 
-over time.}
+\caption{Two examples of the meaning of words in terms of a set of component features whose weight can change over time.}
 \label{fig:weightchange}
 \end{figure}
 
@@ -945,7 +948,7 @@ more than once. However, at some point, there are enough agents using the new va
 \begin{figure}
 \centerline{i) \includegraphics[scale=.5]{chap12/figs/erosion-performance-summary.pdf}} % fig14-i-erosion-performance
 \centerline{ii) \includegraphics[scale=.4]{chap12/figs/uinbui.pdf}} % fig14-ii-uinbui
-  \caption{ {Performance of the phonological reduction strategy.} i) Average performance values
+  \caption{{Performance of the phonological reduction strategy.} i) Average performance values
 for 50 game series for a total of 50,000 games (average of 10,000 per agent). We see that the length of the markers progressively 
 diminishes, thus reducing articulatory effort, 
 but variation $V_{g}$ does not increase, implying that the system is stable. The marker inventory size remains constant as well.
