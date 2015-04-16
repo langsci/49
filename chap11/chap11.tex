@@ -195,18 +195,15 @@ objects for the same name) is unavoidable as well. This raises the
 critical question how a shared optimal vocabulary can be reached at
 the level of the population without central control or telepathy,
 which will require mechanisms for damping synonymy and homonymy at the
-individual and population level.\\
+individual and population level.
 
 \subsection{Semiotic networks}\todo{This used to be set in a \textbackslash bfshape and not in a subsection}
-% {\bfshape Semiotic networks}\\
-
 We have already seen from earlier experiments that the solution to these various issues lies in setting up
 the right kind of ``semiotic dynamics''. In the present case, this dynamics should gradually coordinate
 sensory experiences, prototypical views, individuals, 
 and names, both within a single individual and across the
 population. This lead to the notion of a {\itshape semiotic network}, which was a significant conceptual advance 
 in the methodology of conceiving and carrying out language game experiments.
-
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=.95\textwidth]{chap10/figs/prototypes-identifiers-words.pdf}}
@@ -261,13 +258,13 @@ In the case of a successful game, the score $\sigma_{f_i,m_i}$ of the used assoc
 increased and its competitors are decreased according to the following
 equations with the alignment rate $\gamma = 0.2$: 
 \begin{equation}
- \sigma_{m_i,f_i} \leftarrow \sigma_{m_i,f_i} (1-\gamma) + \gamma
+ \sigma_{m_i,f_i} ≤ftarrow \sigma_{m_i,f_i} (1-\gamma) + \gamma
 \end{equation}
 \begin{equation}
- \sigma_{m_j,f_i} \leftarrow \sigma_{m_j,f_i} (1-\gamma) ~~j \neq i
+ \sigma_{m_j,f_i} ≤ftarrow \sigma_{m_j,f_i} (1-\gamma) ~~j \neq i
 \end{equation}
 \begin{equation}
- \sigma_{m_i,f_k} \leftarrow \sigma_{m_i,f_k} (1-\gamma) ~~k \neq i
+ \sigma_{m_i,f_k} ≤ftarrow \sigma_{m_i,f_k} (1-\gamma) ~~k \neq i
 \end{equation}
 A competitor is another individual $m_j$ stored in the hearer's memory 
 for the name $f_i$ or another name $f_k$ for the individual 
@@ -310,7 +307,7 @@ is much larger than the number of distinctive objects
 introduced in the experiment (see \figref{fig:png-results}, left). Apparently, agents are naming prototypical views of
 individual objects instead of the individuals themselves. So we did not adequately address 
 how a robot learns to interrelate different views. To do this, various heuristics need to be added. 
-
+\clearpage
 We have operationalised just one example of such a heuristic. When an object is moving or being moved,
 its appearance may change but the observer tracking the object 
 still knows that he is dealing with the same object and so he can
@@ -361,8 +358,7 @@ Michael Spranger with considerable help from Martin Loetzsch\footnote{Papers des
 \cite{Steels:2008spatial} and \cite{Steels:2008b}.} and 
 then ported in 2010 to the MYON, a robot developed by Manfred Hild and his team at the Humboldt 
 University in Berlin (see \figref{fig:myon-action}) (\cite{Steels:2012b}). 
-A BBC video clip of the experiment can be seen here: \\
-https://www.youtube.com/watch?v=lmoXByLkK14
+A BBC video clip of the experiment can be seen at: \url{https://youtu.be/lmoXByLkK14}.
 The porting exercise showed that once we discover how to do a certain type of language game on one robot 
 we can relatively easily transfer it to another one, after adapting the lowest level sensing and actuation routines. 
 
@@ -411,14 +407,6 @@ when there is no prototype that matches distinctively with the sensory experienc
 slightly adjusted to integrate new instances, so that the prototype progressively and adaptively reflects the body postures observed
 in the world. 
 
-
-\begin{figure}
-\centerline{\includegraphics[width=0.2\linewidth]{chap11/figs/postures.pdf}\includegraphics[width=0.75\linewidth]{chap11/figs/vision_2.pdf}}
-\caption{\label{vision}{\itshape Left:} Example postures of the robot (which is the \textsc{qrio} in this case).
-{\itshape Right:} Visual analysis. From left to right we see the source image, the foreground/background distinction and object segmentation (focusing on the upper torso), and the feature signature of this posture represented as a graph connecting the values (on the y-axis)
-of the seven centralised normalised moments (on the x-axis).}
-\end{figure}
-
 3. The robots need a {\itshape mirror system} that relates perceived actions carried out by others to their own actions. 
 The topic of mirror systems has received a lot of attention the past decade because cells were discovered in the brain 
 that serve this purpose.\footnote{
@@ -427,16 +415,22 @@ An overview of mirror system research and its relevance to the question of the o
 However the fact that such cells are discovered in the brain 
 does not yet tell us how mirror systems are being learned or how they operate. For the action language game, we tried 
 several approaches.
-
+\enlargethispage{1\baselineskip}
 In one of them, the robot stands before the mirror (\figref{robot-mirror}) and observes its own 
 postures, which generates the data for learning the association between body postures and prototypes. 
 The robot selects a posture, and activates the corresponding motor behaviour. This motor behaviour generates a sensory image and 
 hence a sensory experience categorised with a particular prototype. Through standard Hebbian learning (which enforces the 
 connection between nodes that are simultaneously active) the link between the posture prototype and the motor action gets 
 established and progressively enforced. 
+\clearpage
+\begin{figure}[p]
+\centerline{\includegraphics[width=0.2\linewidth]{chap11/figs/postures.pdf}\includegraphics[width=0.75\linewidth]{chap11/figs/vision_2.pdf}}
+\caption{\label{vision}{\itshape Left:} Example postures of the robot (which is the \textsc{qrio} in this case).
+{\itshape Right:} Visual analysis. From left to right we see the source image, the foreground/background distinction and object segmentation (focusing on the upper torso), and the feature signature of this posture represented as a graph connecting the values (on the y-axis)
+of the seven centralised normalised moments (on the x-axis).}
+\end{figure}
 
-
-\begin{figure}
+\begin{figure}[p]
 \centerline{\includegraphics[width=0.6\linewidth]{chap11/figs/robot-mirror.pdf}}
 \caption{\label{robot-mirror}The \textsc{qrio} humanoid robot stands before a mirror and performs various motor behaviours thus observing what visual body-images these behaviours generate.}
 \end{figure}
@@ -624,7 +618,7 @@ find a solution. A numerical example of a set of constraints on natural numbers 
 The constraints expressed here form a network because the same variables x and y (which are the slots of the 
 network) appear in different constraints (the sum constraint and two instances of the <-constraint). 
 Given this network, constraint propagation can compute easily that x = 4, y = 3, and z = 1. 
-
+\enlargethispage{2\baselineskip}
 IRL formalises constraints using prefix notation in the following way. Slots are symbols preceded 
 by question marks. Constraints are defined with a list with the first argument the name of the constraint and 
 the remaining arguments the slots: 
@@ -892,6 +886,7 @@ The meaning specifies the operations to be added to the network, which is in thi
 \begin{verbatim}
 ((filter-by-colour-lenient ?s3 ?s2 ?c))
 \end{verbatim}
+\clearpage
 There are two variables that can be linked to other operations with this meaning: ?s3 and ?s2 both of type object-set. 
 On the syntactic side, the unit is categorised as a constituent named colour-category. 
 
@@ -911,8 +906,7 @@ The constituent is called Colour-Phrase.
 \figref{fig:syntactic-graded}, right shows another example, namely the structure for an instantiation of the 
 graded-membership strategy for the Tarahumara utterance `sita kame'. It is again a Colour-Phrase.
 We see that there are now 4 levels of hierarchy. The ColourMembership-Unit pulls together a colour-category and 
-a membership-category to form a new colour-category which then becomes a ColourPhrase-Unit again.\\
-
+a membership-category to form a new colour-category which then becomes a ColourPhrase-Unit again.
 \subsection{Influence of embodiment}
 % {\bfshape Influence of embodiment}\\
 
@@ -959,7 +953,7 @@ than using the set of basic colour prototypes for English, simply because Englis
 agents still achieve better results compared to the English colour system when they do not need to stick 
 dogmatically to it. Indeed this shows why alignment, which is widely observed
 in human dialogues,\footnote{See: \cite{Garrod:1987} and \cite{Galantucci:2005}.}
-is a good strategy for achieving more successful communication. \\
+is a good strategy for achieving more successful communication.
 
 \section{Conclusion}
 

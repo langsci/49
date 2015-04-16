@@ -26,7 +26,7 @@ challenge and no known universally accepted solution
 exists to this problem.
 
 Categorisation has fascinated philosophers and scientists
-since the beginning of thought, not only because it is one
+since the onset \todo{beginning was replaced with onset here} of thought, not only because it is one
 of the most fundamental capabilities of the human mind, 
 but also because the subject matter immediately raises 
 some intriguing paradoxes and puzzles. First of all, 
@@ -120,7 +120,7 @@ philosophical doctrines and their historical roots.
 The problem of the origins of language and meaning
 was for example already a highly debated topic among philosophers in the 18th 
 century, see for example \cite{Rousseau:1781}.
-\newline
+\newline \enlargethispage{1\baselineskip}
 The debate between rationalism and empiricism
 is still very much alive today and now based
 on much more knowledge about what it means for 
@@ -160,7 +160,7 @@ that these commonalities can be learned
 by progressively abstracting away from the details of specific
 cases, even if there is a poor stimulus. 
 A child sees many examples of red objects and
-progressively grasps the abstract concept [RED] 
+progressively grasps the abstract concept [\textsc{red}] 
 by retaining what is common to all of them. 
 If categories are the result of a general 
 inductive learning procedure, the areas of the brain
@@ -758,7 +758,7 @@ interacting with the environment. %\cite{discriminationtrees} #FIXME
 
 Empiricists start from the idea that categories 
 capture what is common
-between objects. Thus [RED] is supposed to capture 
+between objects. Thus [\textsc{red}] is supposed to capture 
 what is common or similar to all 
 red objects. Hence in theories of 
 (formal) semantics, the meaning of a predicate is 
@@ -767,7 +767,7 @@ belong to the class it delineates.
 But we can also turn things around. We can 
 view a category as a way to capture what is {\itshape different} 
 between objects. For example, the distinction between 
-[LEFT] and [RIGHT] is based on the horizontal position (HPOS)
+[\textsc{left}] and [\textsc{right}] is based on the horizontal position (\textsc{hpos})
 of an object with respect to the viewer. 
 The distinction is imposed on the scene (as long as 
 it is compatible) instead of 
@@ -775,7 +775,7 @@ recognised. This may seem a subtle difference, but it
 has profound consequences, particularly for acquiring
 categories.
 
-Consider the category [LARGE]. What do all large 
+Consider the category [\textsc{large}]. What do all large 
 objects have in common? At first sight very little. 
 Almost any physical object can be called `large' in 
 one context or another. 
@@ -789,9 +789,9 @@ start to zoom in on size.
 This is what makes inductive learning so slow and 
 why it is criticised, rightfully, by rationalists. 
 In fact, searching for commonality hardly makes sense for
-many categories. [LARGE] is only meaningful in
-opposition to [SMALL], [LEFT] only makes sense
-in opposition to [RIGHT]. Often categorisation
+many categories. [\textsc{large}] is only meaningful in
+opposition to [\textsc{small}], [\textsc{left}] only makes sense
+in opposition to [\textsc{right}]. Often categorisation
 is relative to the context (a block which is large when surrounded
 by smaller blocks may be categorised as
 small when surrounded by larger
@@ -799,7 +799,7 @@ blocks) and occasionally it is relative to the objects themselves
 (a large mouse is always categorised as
 much smaller than a small elephant). 
 
-Few people would disagree that [LARGE] and [SMALL] are
+Few people would disagree that [\textsc{large}] and [\textsc{small}] are
 distinctions imposed on reality as opposed to intrinsic
 properties of classes of objects, but what about colour? Is it
 not an example where a category is absolute? We have 
@@ -819,7 +819,7 @@ would be entirely impossible.
 
 Once categories are available, they can be 
 used for much more than making distinctions. For example, 
-if an agent has the distinction between [LARGE] and [SMALL],
+if an agent has the distinction between [\textsc{large}] and [\textsc{small}],
 he can use it to group the objects in a scene into two
 subsets: those that are large and those that are small. 
 So in this case, the categories are used to group 
@@ -837,29 +837,29 @@ It operates on the output of
 a sensory channel and decides whether a category or its opponent
 is valid. A categoriser keeps track of its success 
 by maintaining an internal counter. 
-Consider for example the category [LARGE] which 
-operates on the output of the AREA-channel. This channel 
+Consider for example the category [\textsc{large}] which 
+operates on the output of the \textsc{area}-channel. This channel 
 contains a scaled value 
 between 0.0 and 1.0 for the area of a segment. A distinction 
 can therefore be 
 made simply by dividing the set of possible values in two
 halves: those whose area is between
 0.0 and 0.5 and those whose area is between 0.5 and
-1.0, giving us two categories, [SMALL] and [LARGE]. When 
+1.0, giving us two categories, [\textsc{small}] and [\textsc{large}]. When 
 the agent needs to categorise an object, he checks in which
 region an object's area falls. If it is between 0.0 and 0.5, the
-category is [SMALL], if it is greater than 0.5 the category
-is [LARGE]. 
+category is [\textsc{small}], if it is greater than 0.5 the category
+is [\textsc{large}]. 
 
 It is clearly possible to refine each 
 category $c$ by introducing categorisers that 
 further divide the region of possible values of $c$ into 
-smaller subregions. For example, the category [SMALL] which 
+smaller subregions. For example, the category [\textsc{small}] which 
 is applicable if the area is between 0.0 and 0.5, can be refined 
 by introducing two more specific categorisers: one responding
 to a region between 0.0 and 
-0.25 for [VERY-SMALL] and another one for a region
-between 0.25 and 0.5 for [MEDIUM-SMALL]. The total set of
+0.25 for [\textsc{very}-\textsc{small}] and another one for a region
+between 0.25 and 0.5 for [\textsc{medium}-\textsc{small}]. The total set of
 distinctions using values of the same sensory channel
 can be organised in a discrimination tree (\figref{trees}). 
 
@@ -869,17 +869,17 @@ can be organised in a discrimination tree (\figref{trees}).
 a set of categorisers which categorise by checking whether
 a sensory value falls in the region of one category or 
 not. The discrimination tree shown operates on
-values on the GRAY channel.}
+values on the \textsc{gray} channel.}
 \end{figure}
 
 As mentioned earlier, I will label categories
 by using the sensory channel from which a category operates, 
 followed by the minimum and maximum values of the region
 carved out by the category. For example, 
-[AREA 0.0–0.25] carves out the region [0.0,0.25] of the 
+[\textsc{area} 0.0–0.25] carves out the region [0.0,0.25] of the 
 area channel. When it must be emphasised that 
 a category belongs to a particular agent, for 
-example {\bfshape a1}, I will write [AREA 0.0–0.25]$_{\mathbf a1}$. 
+example {\bfshape a1}, I will write [\textsc{area} 0.0–0.25]$_{\mathbf a1}$. 
 
 Conjunctive combinations of categories also have
 dedicated categorisers which are linked to 
@@ -888,13 +888,13 @@ the categorisers of their components (see
 often yields a more efficient way to pick out 
 the topic compared to a single, possibly very fine-grained
 distinction. For example, it might be that 
-[AREA 0.0–0.25] {\itshape and} [GRAY 0.5–1.0]
+[\textsc{area} 0.0–0.25] {\itshape and} [\textsc{gray} 0.5–1.0]
 together are distinctive but none of the two on their
 own is. Other logical combinations are equally of interest
 but I will restrict my attention to conjunctive 
 combinations. Conjunctive combinations of categories 
 will be written between curly brackets (\{,\}) as in 
-\{[AREA 0.0–0.25] [GRAY 0.5–1.0]\}. 
+\{[\textsc{area} 0.0–0.25] [\textsc{gray} 0.5–1.0]\}. 
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/disnet.pdf}}
@@ -928,27 +928,27 @@ the agent has found distinctive categories, otherwise the game
 fails. When the game succeeds, the success counter
 of the categorisers involved go up. 
 
-\begin{figure}[htbp]
+\begin{figure}[b]
   \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/game5.pdf}}
 \caption{\label{geom}A computer generated scene 
-from the GEOM world.}
+from the \textsc{geom} world.}
 \end{figure}
 
 I will now develop some concrete examples, which imply
 that I make choices for the kinds of sensory channels
 and scenes that the agents use. 
-I will first use scenes from the GEOM world as in 
+I will first use scenes from the \textsc{geom} world as in 
 \figref{geom} and later real world scenes captured
 with a Talking Heads camera. 
 
 Consider the scene in \figref{geom}. Assuming that the agent
 already has a well-developed set of categories, he could use 
-the category [GRAY-0.75,1.0] (very dark) to distinguish 
+the category [\textsc{gray}-0.75,1.0] (very dark) to distinguish 
 shape 3 from the others. On the other hand, if shape 2 is 
 chosen as topic, the grayscale will not be enough because
 shape 2 has the same grayscale as shape 1. Maybe a 
-combination of categories can be chosen, like [VPOS 0.0–05]
-(lower), and [HPOS 0.0–0.5] (left). Indeed shape 2
+combination of categories can be chosen, like [\textsc{vpos} 0.0–05]
+(lower), and [\textsc{hpos} 0.0–0.5] (left). Indeed shape 2
 is lower in the scene, as opposed to
 shape 1 and shape 3, and it is more to the left compared 
 to shape 0 and 2.
@@ -969,37 +969,37 @@ containing the value for that object on that channel. It
 is introduced in the top categoriser of the 
 discrimination tree associated with that channel. 
 For example, suppose that there are three
-objects in the scene: $O1$, $O2$, and $O3$, 
+objects in the scene: \emph{O1}, \emph{O2}, and \emph{O3}, 
 with gray-scale values 0.6, 0.4, and 0.9 respectively. 
 We can therefore imagine three balls labeled with these datavalues
 which are input to the top categoriser of the 
-GRAY discrimination tree (\figref{balls}). 
+\textsc{gray} discrimination tree (\figref{balls}). 
 A categoriser divides the balls in two bins, 
 those that fall in the range of 
 one category and those that fall into the range of the other
-category. In this case, the left bin contains \{$O2$\} 
-(category [GRAY 0.0–0.5]) 
-and the right bin \{$O1$, $O3$\} (category [GRAY 0.5–1.0]). 
+category. In this case, the left bin contains \{\emph{O2}\} 
+(category [\textsc{gray} 0.0–0.5]) 
+and the right bin \{\emph{O1}, \emph{O3}\} (category [\textsc{gray} 0.5–1.0]). 
 
-\begin{figure}[htbp]
+\begin{figure}[b]
   \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/balls.pdf}}
 \caption{\label{balls}Balls containing
 the data value for the different objects
-$O1$, $O2$, $O3$ in the scene. $O1$ is the topic.
-$O1$ has the value 0.6 on the GRAY-channel, $O2$ has
-0.4 and $O3$ 0.9.} 
+\emph{O1}, \emph{O2}, \emph{O3} in the scene. \emph{O1} is the topic.
+\emph{O1} has the value 0.6 on the \textsc{gray}-channel, \emph{O2} has
+0.4 and \emph{O3} 0.9.} 
 \end{figure}
 
 A distinctive category is found when the ball of the 
 topic is the only one left in one of the bins. 
-If the topic is $O1$, then this is not yet the 
-case, because it is together with $O3$ in the 
-bin of [GRAY 0.5–1.0]. However when the next categoriser
-is exercised, it splits the set \{$O1$, $O3$\} 
-into two subsets: \{$O1$\} for [GRAY 0.5–0.75]
-and \{$O3$\} for [GRAY-0.75,1.0]. 
-[GRAY 0.5–0.75] is a discriminating category because only 
-$O1$ is left in its bin. 
+If the topic is \emph{O1}, then this is not yet the 
+case, because it is together with \emph{O3} in the 
+bin of [\textsc{gray} 0.5–1.0]. However when the next categoriser
+is exercised, it splits the set \{\emph{O1}, \emph{O3}\} 
+into two subsets: \{\emph{O1}\} for [\textsc{gray} 0.5–0.75]
+and \{\emph{O3}\} for [\textsc{gray}-0.75,1.0]. 
+[\textsc{gray} 0.5–0.75] is a discriminating category because only 
+\emph{O1} is left in its bin. 
 
 Balls thus trickle down from the top to the bottom of 
 a discrimination tree, like in the Pachinko game or 
@@ -1095,7 +1095,7 @@ See \cite{Varela:1991} and \cite{Taylor:1989}.}
 For example, humans typically label light
 at 482 nanometres as the most typical blue, so that a given object
 reflecting light at or near this point is categorised
-as [BLUE]. Categories based on focal points are 
+as [\textsc{blue}]. Categories based on focal points are 
 interesting and have clear advantages 
 but I will stick nevertheless in the first instance 
 to binary discrimination trees operating on single sensory 
@@ -1105,11 +1105,11 @@ and to analyse better what is going on.
 Still another way to categorise reality is by imposing 
 an order on the segments based on their values for 
 a particular sensory channel. For example, we can 
-order the segments based on the HPOS channel (i.e. 
+order the segments based on the \textsc{hpos} channel (i.e. 
 from left to right) and then introduce relational categories
 like `left of one segment in the series', or `the left-most object'. 
 Similarly we can order the segments based on the 
-HEIGHT channel (i.e. in terms of their size) and then 
+\textsc{height} channel (i.e. in terms of their size) and then 
 have categories that select the smallest (i.e. the 
 first segment in this ordering), or those greater than 
 some other one. 
@@ -1128,7 +1128,7 @@ originate.
 Let us now look at some example 
 games for an agent {\bfshape a1} taken from simulations
 using computer generated
-scenes from the GEOM world and showing the internal
+scenes from the \textsc{geom} world and showing the internal
 structures generated as well as the reports from the commentator. 
 At first I will not take saliency nor 
 context-scaling into account. The first game
@@ -1138,7 +1138,7 @@ no repertoire of distinctions yet. The scene and the
 discrimination trees available so far are shown in Figure 
 \ref{scene2}. The object labeled 0 is the
 topic. Only two channels have top level
-categorisers: HEIGHT and WIDTH. 
+categorisers: \textsc{height} and \textsc{width}. 
 The data on these channels for the scene in Figure
 \ref{scene2} are shown in \tabref{tab:t-game8}. 
 
@@ -1146,7 +1146,7 @@ The data on these channels for the scene in Figure
 \begin{center}
 \begin{tabular}{ l  l  l }
 \lsptoprule
-{\itshape Object} & {\itshape HEIGHT} & {\itshape WIDTH} \\ \midrule
+{\itshape Object} & {\itshape \textsc{height}} & {\itshape \textsc{width}} \\ \midrule
 0 (square) & 0.413 & 0.317  \\ 
 1 (circle) & 0.410 & 0.410 \\ 
 2 (square) & 0.163 & 0.163 \\ 
@@ -1156,7 +1156,7 @@ The data on these channels for the scene in Figure
 \end{center}
 \end{table}
 
-HEIGHT and WIDTH have been scaled with respect to the 
+\textsc{height} and \textsc{width} have been scaled with respect to the 
 minimum and maximum height and width of a 
 figure (sensor-scaling) but no context-scaling has 
 been performed. 
@@ -1184,26 +1184,11 @@ the discrimination network to expand, but any node,
 including a top node of some of the other sensory channels 
 can be chosen for further expansion. 
 
-
-\begin{figure}[htbp]
-  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/scene22.pdf}}
-\caption{\label{scene3}Top: The scene used in Game 22. 
-Bottom: The discrimination trees available to the
-agent.}
-\end{figure}
-The next example shows a game (Game 22) based on the scene 
-in \figref{scene3}. The topic is the triangle, shape 0. 
-The discrimination trees for 
-HEIGHT and WIDTH have already more than one level and 
-a discrimination tree for HPOS has developed.
-The relevant sensor-scaled data for these three sensory
-channels is shown in \tabref{tab:t-game22}. 
-
-\begin{table}
+\begin{table}[t]
 \begin{center}
 \begin{tabular}{ l  l  l  l }
 \lsptoprule
-{\itshape Object} & {\itshape HPOS} & {\itshape WIDTH} & {\itshape HEIGHT} \\ \midrule
+{\itshape Object} & {\itshape \textsc{hpos}} & {\itshape \textsc{width}} & {\itshape \textsc{height}} \\ \midrule
 0 (triangle) & 0.167 & 0.437 & 0.573  \\ 
 1 (rectangle) & 0.789 & 0.563 & 0.287 \\  
 \lspbottomrule
@@ -1211,6 +1196,21 @@ channels is shown in \tabref{tab:t-game22}.
 \caption{\label{tab:t-game22}Sensory data for the scene shown in \figref{scene3}.}
 \end{center}
 \end{table}
+
+\begin{figure}[htbp]
+  \centerline{\includegraphics[width=.40\textwidth]{chap4/figs/scene22.pdf}}
+\caption{\label{scene3}Top: The scene used in Game 22. 
+Bottom: The discrimination trees available to the
+agent.}
+\end{figure}
+\enlargethispage{1\baselineskip}
+The next example shows a game (Game 22) based on the scene 
+in \figref{scene3}. The topic is the triangle, shape 0. 
+The discrimination trees for 
+\textsc{height} and \textsc{width} have already more than one level and 
+a discrimination tree for \textsc{hpos} has developed.
+The relevant sensor-scaled data for these three sensory
+channels is shown in \tabref{tab:t-game22}. 
 
 The scene is very simple so there are several possible
 solutions: The triangle is more to the left, it is less wide 
@@ -1235,13 +1235,13 @@ Game 22 shows at once why context-scaling
 and saliency is important. When we inspect the scene in 
 \figref{scene3}, we do not quite see so clearly 
 that the triangle is less wide than the square, so why
-is [WIDTH 0.0–0.5] 
+is [\textsc{width} 0.0–0.5] 
 nevertheless considered? Examination of the data shows
-that the WIDTH values, 0.437 for the triangle
+that the \textsc{width} values, 0.437 for the triangle
 and 0.563 for the square, are very close 
 to each other, but just by luck fall within 
-the two regions carved out by the WIDTH discrimination
-tree. On the other hand, the values on the HPOS channel 
+the two regions carved out by the \textsc{width} discrimination
+tree. On the other hand, the values on the \textsc{hpos} channel 
 are much further apart and so they are preferred. 
 
 As we have seen in the previous chapter, 
@@ -1256,17 +1256,17 @@ respect to the triangle is as in \tabref{tab:t-game22-sal}:
 \begin{center}
 \begin{tabular}{ l  l  l }
 \lsptoprule
-{\itshape HPOS} & {\itshape WIDTH} & {\itshape HEIGHT} \\ \midrule
+{\itshape \textsc{hpos}} & {\itshape \textsc{width}} & {\itshape \textsc{height}} \\ \midrule
  0.622 & 0.125 & 0.286  \\ 
 \lspbottomrule
 \end{tabular}
 \caption{\label{tab:t-game22-sal}Sensory data for the scene in Game 22.}
 \end{center}
 \end{table}
-From this table we see immediately that HPOS is the 
+From this table we see immediately that \textsc{hpos} is the 
 most salient channel and should be preferred by far, followed
-by HEIGHT and then WIDTH. Thus we can expect the
-agent to choose HPOS based on saliency. When the saliency threshold
+by \textsc{height} and then \textsc{width}. Thus we can expect the
+agent to choose \textsc{hpos} based on saliency. When the saliency threshold
 is set to a reasonably high value, the other channels
 would not even be considered, they would not pass the 
 sieve of the perceptual layer. 
@@ -1283,7 +1283,7 @@ for reasons of saliency.
 \begin{center}
 \begin{tabular}{ l  l  l  l }
 \lsptoprule
-{\itshape Object} & {\itshape HPOS} & {\itshape WIDTH} & {\itshape HEIGHT} \\ \midrule
+{\itshape Object} & {\itshape \textsc{hpos}} & {\itshape \textsc{width}} & {\itshape \textsc{height}} \\ \midrule
 0 (triangle) & 0.0 & 0.0 & 1.0  \\ 
 1 (rectangle) & 1.0 & 1.0 & 0.0 \\  
 \lspbottomrule
@@ -1327,13 +1327,13 @@ Game 24
 \caption{\label{scene4}The scene used in Game 24.}
 \end{figure}
 The relevant data after sensor-scaling for the 
-two sensory channels involved are shown in \tabref{tab:t-game24}. 
+two sensory channels involved is shown in \tabref{tab:t-game24}. 
 
 \begin{table}
 \begin{center}
 \begin{tabular}{ l  l  l  l }
 \lsptoprule
-{\itshape Object} & {\itshape HEIGHT} & {\itshape WIDTH} \\ \midrule
+{\itshape Object} & {\itshape \textsc{height}} & {\itshape \textsc{width}} \\ \midrule
 0 (triangle) & 0.170 & 0.513  \\ 
 1 (triangle) & 0.653 & 0.570 \\  
 2 (square) & 0.213 & 0.213 \\  
@@ -1344,9 +1344,9 @@ two sensory channels involved are shown in \tabref{tab:t-game24}.
 \end{center}
 \end{table}
 
-[HEIGHT 0.0–0.5] is valid for triangle-0 and square-2 but
+[\textsc{height} 0.0–0.5] is valid for triangle-0 and square-2 but
 filters out the other segments. 
-[WIDTH 0.5–1.0] is valid for triangle-0 and triangle-1 and 
+[\textsc{width} 0.5–1.0] is valid for triangle-0 and triangle-1 and 
 filters out the others.  
 The conjunctive combination of these two categories only 
 retains triangle-0 and is therefore the one that is chosen. 
@@ -1368,23 +1368,23 @@ in Table \tabref{tab:t-real}. Object-0 has been selected as the topic.
 \begin{tabular}{ l  l  l  l }
 \lsptoprule
 {\itshape channel}& {\itshape obj-0} & {\itshape obj-1} & Saliency\\ \midrule
-HPOS & 0.27 & 0.16 & 0.11\\ 
-VPOS & 0.20 & 0.20 & 0.0\\ 
-HEIGHT & 0.15 & 0.15 & 0.0\\ 
-WIDTH & 0.10 & 0.11 & 0.01\\ 
-AREA & 0.10 & 0.10 & 0.0\\ 
+\textsc{hpos} & 0.27 & 0.16 & 0.11\\ 
+\textsc{vpos} & 0.20 & 0.20 & 0.0\\ 
+\textsc{height} & 0.15 & 0.15 & 0.0\\ 
+\textsc{width} & 0.10 & 0.11 & 0.01\\ 
+\textsc{area} & 0.10 & 0.10 & 0.0\\ 
 R & 0.23 & 0.25 & 0.02\\ 
 G & 0.32 & 0.34  & 0.02\\ 
 B & 0.63 & 0.65 & 0.02\\ 
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:t-real}Sensory data from a real world scene with segmentation shown in \ref{f:plate-10}.}
+\caption{\label{tab:t-real}Sensory data from a real world scene with segmentation shown in \figref{f:plate-10}.}
 \end{center}
 \end{table}
-Clearly HPOS is the most salient channel and should be 
+Clearly \textsc{hpos} is the most salient channel and should be 
 prefered by the agent. When performing context scaling, 
-the two values for HPOS are drawn apart with 1.0 for object-0 and 
-0.0 for object-1 so that the category [HPOS 0.5–1.0] (to the 
+the two values for \textsc{hpos} are drawn apart with 1.0 for object-0 and 
+0.0 for object-1 so that the category [\textsc{hpos} 0.5–1.0] (to the 
 right) easily distinguishes the topic (object-0) from
 object-1. The game is reported as follows: 
 \begin{verbatim}
@@ -1430,13 +1430,13 @@ A new subcategoriser is constructed by taking a
 categoriser node in the tree and dividing its range into 
 two new subranges and thus two new subcategorisers.
 For example, if there is a 
-categoriser [HPOS 0.0–0.5], which triggers when the 
-object is in the left most half of a scene, i.e. with HPOS
-within $[0.0,0.5]$, then two 
-subcategories are created by dividing $[0.0,0.5]$
+categoriser [\textsc{hpos} 0.0–0.5], which triggers when the 
+object is in the left most half of a scene, i.e. with \textsc{hpos}
+within [0.0,0.5], then two 
+subcategories are created by dividing [0.0,0.5]
 into two halves, one for the 
-range $[0.0,0.25]$ ([HPOS 0.0–0.25] or totally left) 
-and one for the range $[0.25,0.5]$ ([HPOS 0.25–0.5] or mid-left). 
+range [0.0,0.25] ([\textsc{hpos} 0.0–0.25] or totally left) 
+and one for the range [0.25,0.5] ([\textsc{hpos} 0.25–0.5] or mid-left). 
 A new categoriser is added to the tree for each of these
 halves. 
 
@@ -1528,7 +1528,7 @@ how well the agent is doing by tracking
 the average success in the most recent $n$ Discrimination Games. 
 \figref{avsuc} shows the outcome of this measure, for 
 agent {\bfshape a1}, playing 500 Discrimination Games in a
-simulation with scenes from the GEOM world. 
+simulation with scenes from the \textsc{geom} world. 
 Success is averaged per 25 games. We see clearly that {\bfshape a1}
 has become successful in discriminating randomly chosen topics
 from a consecutive series of scenes. Success rapidly climbs and
@@ -1606,24 +1606,24 @@ Discrimination Game is capable of dealing with this because
 new distinctions grow when the failure rate 
 is increasing. Here are the results of a computer 
 simulation based on scenes generated by the 
-GEOM world that test whether this is indeed the case. 
+\textsc{geom} world that test whether this is indeed the case. 
 
 The simulation starts with a new virgin agent 
 playing a series of Discrimination Games involving scenes
 which only contain rectangles of the same graylevel. 
-The agent has only channels for HEIGHT (0), WIDTH (1), 
-RATIO (between the actual area of the shape 
+The agent has only channels for \textsc{height} (0), \textsc{width} (1), 
+\textsc{ratio} (between the actual area of the shape 
 and the area of the bounding box),
-(2), GRAY (3) and AREA (4). We expect
-to see that the discrimination trees on the RATIO (channel 
-2) and GRAY channels (channel 3) do not develop because 
+(2), \textsc{gray} (3) and \textsc{area} (4). We expect
+to see that the discrimination trees on the \textsc{ratio} (channel 
+2) and \textsc{gray} channels (channel 3) do not develop because 
 the values on those channels 
 are the same for all objects ever seen. This is 
 clearly confirmed in \figref{adptwrl1}: The ratio
 between actual area and bounding box area is always 1.0
 in the case of rectangles and they always have the same
 grayscale value. 
-We see clearly that the RATIO (channel 2) and GRAY (channel 3) 
+We see clearly that the \textsc{ratio} (channel 2) and \textsc{gray} (channel 3) 
 do not develop and that the others develop to very 
 fine levels of detail to still successfully discriminate. 
 So discrimination trees only 
@@ -1644,9 +1644,9 @@ and channel 3 (the grayscale channel) do not develop.}
 \end{figure}
 
 Let us now make the environment richer by letting the 
-GEOM world also produce scenes with circles and triangles, 
+\textsc{geom} world also produce scenes with circles and triangles, 
 as well as rectangles. If the discrimination 
-process is adaptive, the RATIO and GRAY channels should
+process is adaptive, the \textsc{ratio} and \textsc{gray} channels should
 start to expand because these channels now contain
 significant data. This is indeed the case as shown 
 in \figref{adptwrl2}. 
@@ -1655,8 +1655,8 @@ in \figref{adptwrl2}.
   \centerline{\includegraphics[width=.65\textwidth]{chap4/figs/adptwrl2.pdf}}
 \caption{\label{adptwrl2}Two snapshots from 
 an additional series of 500 Discrimination Games after
-the environment has become more complex. RATIO
-(channel 2) and GRAY (channel 3) have started to develop.}
+the environment has become more complex. \textsc{ratio}
+(channel 2) and \textsc{gray} (channel 3) have started to develop.}
 \end{figure}
 
 The simulation demonstrates
@@ -1676,7 +1676,7 @@ repertoire gradually develops and that the success rate reaches 100 \%
 after about 500 games. In phase two, when other types of 
 shapes have been introduced,
 the discrimination trees begin to expand again, now exploiting the
-RATIO and GRAY channels to cope with the new types of objects.
+\textsc{ratio} and \textsc{gray} channels to cope with the new types of objects.
 Existing categories will of course still be adequate for 
 many cases. After 500 more games, a new equilibrium
 is reached. Steady discrimination success is seen with an 
@@ -1687,7 +1687,7 @@ enlarged repertoire.
 \caption{\label{adptwrlglo}Evolution of success and ontology
 size in a series of 1000 Discrimination Games played by a single agent.
 In phase 1, only rectangles of the same graylevel are 
-generated by the GEOM world. In phase 2, additional types of 
+generated by the \textsc{geom} world. In phase 2, additional types of 
 shapes are generated by the environment.}
 \end{figure}
 
@@ -1699,8 +1699,8 @@ through their cameras. \figref{discri200a}
 shows two snapshots of developing discrimination trees
 for two agents. The game discussed earlier, based on \figref{f:plate-10} top, 
 has been played with these trees. 
-HPOS is the most salient channel and a distinction can 
-be made easily. Note that the HEIGHT and WIDTH channels have not 
+\textsc{hpos} is the most salient channel and a distinction can 
+be made easily. Note that the \textsc{height} and \textsc{width} channels have not 
 developed yet because no clear cases emerged 
 in the environment where those channels provided 
 salient data. 

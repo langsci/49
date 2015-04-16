@@ -2,7 +2,7 @@
 \label{c:evolution}
 
 The previous chapters have shown that huge advances have been made in the decade after the original Talking Heads experiment. 
-It is now realistic to do experiments with physical humanoid robots, something which was unthinkable 
+It is now realistic to do experiments with physical humanoid robots, which was unthinkable 
 in the late nineties. Whereas categorisation using 
 basic perceptually grounded categories was a big achievement at the end of the nineties, experiments now routinely use 
 complex compositional semantics. Another big boost has come from the development of a grammar formalism
@@ -191,7 +191,8 @@ the hearer informs the speaker that he or she is being understood.
 Communicative success rests on a number of features of a language which thus act as key 
 selection criteria: 
 
-{\bfshape Expressive adequacy}: The language systems available to the speaker and the hearer must have 
+\begin{itemize}
+\item {\itshape Expressive adequacy}: The language systems available to the speaker and the hearer must have 
 the necessary expressive adequacy to reach communicative success. 
 The available conceptual systems must include the needed conceptual distinctions 
 and the available linguistic systems must be able to express these distinctions. Expressive adequacy depends 
@@ -200,7 +201,7 @@ if only black-and-white pictures are available, a strategy based on hue is entir
 if one of the dialog partners is color blind, a hue-based strategy would not work for colored pictures. 
 \is{expressive adequacy}
 
-{\bfshape Cognitive effort}: In order to cope with the incredible speed of normal language production and comprehension, 
+\item {\itshape Cognitive effort}: In order to cope with the incredible speed of normal language production and comprehension, 
 reducing cognitive effort is of primordial importance. Cognitive effort is expended at all levels
 of language: How much time and memory 
 needs to be spent in coming up with adequate conceptualisations? How complex is the process of constructing
@@ -214,7 +215,7 @@ Optimisations of cognitive effort are often in conflict for speaker and hearer. 
 speaker might mean more effort for the hearer and vice versa. 
 \is{cognitive effort}
 
-{\bfshape Learnability}: Speakers must occasionally expand their language systems to express novel meanings or 
+\item {\itshape Learnability}: Speakers must occasionally expand their language systems to express novel meanings or 
 better capture the attention of hearers with a ``fresh'' way of saying something. But these innovations will 
 lead nowhere if they cannot be acquired by hearers. They will lead to communicative failure and 
 the innovation will not propagate in the population and therefore it has no chance to survive in the shared language.
@@ -222,13 +223,14 @@ Learnability depends on whether speaker and hearer share the same language strat
 is available, and how far the speaker has stretched established conventions to achieve his communicative goal. 
 \is{learnability}
 
-{\bfshape Social conformity}: Speakers and hearers can greatly optimise their language production and 
+\item {\itshape Social conformity}: Speakers and hearers can greatly optimise their language production and 
 comprehension by making their language systems as similar as possible. Moreover, details of language use, such 
 as pronunciation, signal to which group a speaker belongs, and speakers often seek social conformity with the 
 language use of their peers in order to belong to the group. Or they mimic the language systems 
 of the most prestigious group in order to show they belong to that. The opposite happens as well. Speakers 
 may try to mark themselves as linguistically different from a group to which they do not want to belong. 
 \is{social conformity}
+\end{itemize}
 
 Language users certainly cannot consciously construct their language to satisfy 
 these selectionist criteria, even if they would want to. They can have no 
@@ -365,7 +367,7 @@ which has three different possible regional variants: `le\'ismo', `la\'ismo' and
 Van Trijp showed how each of these variants could equally arise with the same referential strategy and how it is 
 a matter of historical contingency which one becomes dominant. Indeed we see that different regions of Spain
 have chosen different variants \citep{VanTrijp:2010}. 
-
+\clearpage
 Here is another example of a fitness landscape from the domain of space, developed by 
 Michael Spranger.\footnote{These results are documented at length in: \cite{Spranger:2014}.}
 It focuses on understanding the role of grammar for optimising spatial language. \is{Spatial Language Game}
@@ -491,7 +493,7 @@ performing the best across contexts, which may explain why it has become preferr
 \end{figure} 
 
 Bleys initialised the three populations with the three different strategies and let them first learn an interpretation of 
-the Spanish focal colors (with prototypes in the brightness-only, hue-only, and full-colour spaces). Then he measured 
+the Spanish focal colors (with prototypes in brightness\-only, hue-only, and full-colour spaces). Then he measured 
 performance for communicative success for the varying ecological conditions. 
 Not unexpectedly, he found that depending on the percentage of the importance of hue differences in the context, a different strategy 
 is more optimal (see \figref{fig:bar}). Not surprisingly, a hue-only strategy fails completely when the samples in each  
@@ -632,7 +634,7 @@ strategies, again in decreasing order of their scores.
 \end{itemize}
 
 
-\begin{figure}[thb!]
+\begin{figure}[hp]
 \centerline{\includegraphics[width=\textwidth]{chap12/figs/strategies-one-winner.pdf}}
 \caption{{Communicative success stays constant. The Brightness Colour Strategy becomes 
 dominant very early due to random fluctuations. It stays dominant but barely. 
@@ -661,7 +663,7 @@ close in hue but distinct in brightness or when there is a word which has most o
 dimension. 
 
 
-\begin{figure}[thb!]
+\begin{figure}[hp]
 \centerline{\includegraphics[width=\textwidth]{chap12/figs/strategies-competition.pdf}}
 \caption{{Initially the brightness strategy is dominant, but then the full-colour 
 strategy gradually takes over and becomes dominant around 400 games/agents. Strategy coherence within the population
@@ -717,7 +719,7 @@ network looks like this:
 \begin{verbatim}
 1. (get-context ?ctx-1) 
 2. (construct-region-proximal 
-      ?region ?ctx-1 ?landmark ?cat) 
+    ?region ?ctx-1 ?landmark ?cat) 
 3. (bind proximal-category ?cat NEAR) 
 4. (apply-selection ?landmark ?landmarks ?selector-2)
 5. (apply-class ?landmarks ?ctx ?landmark-class) 
@@ -815,7 +817,7 @@ spatial categories increases. The bottom graph zooms in on the conceptualisation
 a consensus about a dominant strategy after a period in which new strategies 
 are invented and tried out.\\ 
 
-\subsection{Meta-strategies for generating new lexico-grammatical strategies}
+\subsection{Meta-strategies for generating new lexico-gram\-matical strategies}
 % {\bfshape Meta-strategies for generating new lexico-grammatical strategies}\\ 
 
 Are there general meta-strategies that can be used to generate the kind of lexico-grammatical strategies 
@@ -823,7 +825,7 @@ that can in turn generate all the language systems we observe
 in today's languages? This is a very profound question, related to the ongoing debate in linguistics on the existence of 
 a universal language acquisition device. A lot of ink has been spilled but we need to do profound computational modeling 
 of meta-strategies and thorough experiments to find out. 
-
+\clearpage
 Generally speaking, a lexico-grammatical strategy has two components: {\itshape diagnostics} which monitor how 
 language processing is going and {\itshape repairs} which add new 
 constructions to the agent's inventory. 
@@ -903,8 +905,7 @@ systems, which follow the latter strategy \cite{Beuls:2013}. The challenge was t
 what kind of language strategies an agreement system could arise and to identify the basic building blocks with which 
 evolutionary experiments could be set up. \is{grammatical agreement}
 
-Historical linguists have researched many concrete examples of how agreement systems arise.
-\footnote{See for example: \cite{Lehmann:1988}, \cite{Luraghi:2011}.}
+Historical linguists have researched many concrete examples of how agreement systems arise.\footnote{See for example: \cite{Lehmann:1988}, \cite{Luraghi:2011}.}
 There are invariably the following phases: 
 \begin{enumerate}
 \item Agreement markers derive from reusing existing words, such as pronouns or classifiers. 

@@ -150,7 +150,7 @@ Let us assume that agents
 can construct and recognise arbitrary consonant-vowel combinations, 
 like `coba' or `wabidu', for forming words, and that they 
 have a repertoire of possible meanings in the form of 
-categories, for example [LEFT], [DARK], [LARGE], etc. 
+categories, for example [\textsc{left}], [\textsc{dark}], [\textsc{large}], etc. 
 The contents of the associative memory of a single agent can
 be displayed in a table as follows: 
 
@@ -160,8 +160,8 @@ be displayed in a table as follows:
 \lsptoprule
 {\itshape meaning} & {\itshape form} \\ 
 \midrule{}
-{}[DARK] & coba \\ 
-{}[LARGE] & wabidu \\ 
+{}[\textsc{dark}] & coba \\ 
+{}[\textsc{large}] & wabidu \\ 
 ... & ... \\ 
 \lspbottomrule
 \end{tabular}
@@ -201,15 +201,15 @@ association is illustrated in \tabref{tab:mem2}.
 \begin{tabular}{c c c c  c  c  c } \lsptoprule 
 & coba & zapo & bila & pama & wabidu & limiri \\ 
 \midrule {}		
-{}[DARK] & 0.3 & 0.2 & 0.1 & 0.8 & - & - \\ 
-{}[LARGE] & - & - & - & 0.5 & 0.3 & 0.6 \\ 
+{}[\textsc{dark}] & 0.3 & 0.2 & 0.1 & 0.8 & - & - \\ 
+{}[\textsc{large}] & - & - & - & 0.5 & 0.3 & 0.6 \\ 
 \lspbottomrule
 \end{tabular}
 \caption{\label{tab:mem2}Example lexicon with multiple associations.}
 \end{center}
 \end{table}
 From this table we see that the agent prefers to use the 
-word `pama' for [DARK] and `limiri' for [LARGE]. 
+word `pama' for [\textsc{dark}] and `limiri' for [\textsc{large}]. 
 
 \subsection{Updating the score}
 
@@ -253,10 +253,10 @@ The operations of speaker and hearer are summarised in
 use both the score table above (in reality they of 
 course always have different score tables). 
 The speaker collects all possible
-forms for a given meaning [DARK], chooses the one with the
+forms for a given meaning [\textsc{dark}], chooses the one with the
 highest score (`pama'), and transmits that form. 
 The hearer collects all possible meanings for 
-the transmitted form ([DARK], [LARGE]) and again chooses the one with
+the transmitted form ([\textsc{dark}], [\textsc{large}]) and again chooses the one with
 the highest score. If the hearer's meaning is equal to that
 of the speaker's, the game succeeds. The score of 
 two used associations increases and the others
@@ -325,8 +325,7 @@ To become more familiar with the Naming Game, I will now
 go through a few examples of its application, assuming 
 a group of five agents: ${\cal A}$ = $\{${\bfshape a1},{\bfshape a2},
 {\bfshape a3}, {\bfshape a4}, {\bfshape a5}$\}$ and five possible shared meanings: 
-\newline 
-${\cal M}$ = $\{[DARK],[LARGE],[LIGHT],[SMALL],[RED]\}$. 
+${\cal M}$ = $\{[\textsc{dark}],[\textsc{large}],[\textsc{light}],[\textsc{small}],[\textsc{red}]\}$. 
 \newline
 Here is a trace of a first game as reported by 
 the commentator, when the agents do not have any lexicon at
@@ -346,9 +345,9 @@ most games fail if the word creation rate has been set to a low rate.
 
 In the next game shown below, the speaker is 
 {\bfshape a4}, the hearer {\bfshape a5} and the topic
-{}[SMALL]. Now the speaker is successful in creating a word, namely 
+{}[\textsc{small}]. Now the speaker is successful in creating a word, namely 
 `di'. The hearer receives the word, does not know it,
-but stores it in association with [SMALL]. The game still fails. 
+but stores it in association with [\textsc{small}]. The game still fails. 
 \begin{verbatim}
 Game 29
    a4 is the speaker. a5 is the hearer. 
@@ -360,7 +359,7 @@ Game 29
    a5 stores di as [SMALL]
 \end{verbatim}
 In game 32, something similar happens. This time {\bfshape a5} creates
-a new word `pida' for [LARGE]. {\bfshape a3} does not know 
+a new word `pida' for [\textsc{large}]. {\bfshape a3} does not know 
 the word but stores it. 
 \begin{verbatim}
 Game 32
@@ -374,8 +373,8 @@ Game 32
    a3 stores pida as [LARGE]
 \end{verbatim}
 A first success occurs in game 43, when {\bfshape a5} uses again 
-`pida' for [LARGE]. {\bfshape a3} hears `pida', has associated it 
-in his lexicon with [LARGE], and so the game succeeds. 
+`pida' for [\textsc{large}]. {\bfshape a3} hears `pida', has associated it 
+in his lexicon with [\textsc{large}], and so the game succeeds. 
 \begin{verbatim}
 Game 43
    a5 is the speaker. a3 is the hearer. 
@@ -406,10 +405,10 @@ agent, {\bfshape a5}, after 100 games is shown in \ref{tab:t-mem3}.
 \begin{tabular}{l  l  l }
 \lsptoprule 
 {\itshape Meaning} & {\itshape Word} & {\itshape Score} \\ \midrule
-{}[LARGE]& pida& 0.20\\ 
+{}[\textsc{large}]& pida& 0.20\\ 
   & fobu& 0.1\\ 
-{}[LIGHT]& gi& 0.0\\ 
-{}[SMALL]& di & 0.10\\ 
+{}[\textsc{light}]& gi& 0.0\\ 
+{}[\textsc{small}]& di & 0.10\\ 
 \lspbottomrule
 \end{tabular}
 \caption{\label{tab:t-mem3}Associative memory of a single agent after 100 games.}
@@ -417,9 +416,9 @@ agent, {\bfshape a5}, after 100 games is shown in \ref{tab:t-mem3}.
 \end{table}
 Both the words `di' and `pida' are present but with 
 weak scores. There are two synonyms for 
-{}[LARGE]: `pida' and `fobu', but `pida' is 
+{}[\textsc{large}]: `pida' and `fobu', but `pida' is 
 preferred. There is a word `gi' who is available 
-for [LIGHT] but does not have a positive score,
+for [\textsc{light}] but does not have a positive score,
 because successive trials failed to yield a successful game. 
 
 A table such as the one above only represents the lexicon
@@ -442,19 +441,19 @@ is shown in \tabref{tab:t-mem4}.
 \begin{tabular}{l  l  l }
 \lsptoprule 
 {\itshape Meaning}& {\itshape Word} & {\itshape Frequency} \\ \midrule 
-{}[LARGE]& pida& 0.40\\ 
-{}[LIGHT]& gi & 0.60\\ 
-{}[SMALL]& di & 0.40\\ 
+{}[\textsc{large}]& pida& 0.40\\ 
+{}[\textsc{light}]& gi & 0.60\\ 
+{}[\textsc{small}]& di & 0.40\\ 
 \lspbottomrule
 \end{tabular}
 \caption{\label{tab:t-mem4}Population lexicon after 50 games}
 \end{center}
 \end{table}
 This reflects a situation where 40 \%
-of the agents prefers to name [LARGE] with
+of the agents prefers to name [\textsc{large}] with
 `pida'. 60 \% of the agents
-use `gi' for [LIGHT], and 40 \% `di' for [SMALL]. 
-The other meanings ([DARK] and [RED]) do not have names yet. 
+use `gi' for [\textsc{light}], and 40 \% `di' for [\textsc{small}]. 
+The other meanings ([\textsc{dark}] and [\textsc{red}]) do not have names yet. 
 
 Note that the group lexicon is not known by the agents
 and is not stored anywhere in the 
@@ -499,9 +498,9 @@ The group lexicon is shown in \tabref{tab:t-mem5}.
 \begin{center}
 \begin{tabular}{l  l  c  l  l  c } \midrule 
 {\itshape meaning} & {\itshape form} & {\itshape frequency} & {\itshape meaning} & {\itshape form} & {\itshape frequency}\\  
-{}[DARK]& go & 1.00 & [LARGE]& pida & 1.00 \\  
-{}[LIGHT]& gi & 1.00 & [SMALL]& di & 1.00 \\  
-{}[RED]& ga & 1.00 & - & - & -  \\  
+{}[\textsc{dark}]& go & 1.00 & [\textsc{large}]& pida & 1.00 \\  
+{}[\textsc{light}]& gi & 1.00 & [\textsc{small}]& di & 1.00 \\  
+{}[\textsc{red}]& ga & 1.00 & - & - & -  \\  
 \lspbottomrule
 \end{tabular}
 \caption{\label{tab:t-mem5}Consensus in group lexicon, reached after 250 games.}
@@ -599,16 +598,16 @@ previous simulation (with 20 agents), shown in \tabref{tab:t-mem3000}.
 \begin{tabular}{l  l  l  l  l  l }
 \lsptoprule 
 {\itshape meaning} & {\itshape form} & {\itshape frequency} & {\itshape meaning} & {\itshape form} & {\itshape frequency} \\ \midrule
-{}[DARK]& dato & 1.00 & [LARGE]& biti & 0.80 \\  
-{}[LIGHT]& pitu & 0.60 & [SMALL]& dopu & 1.00 \\  
-{}[RED]& gabi & 1.00 & [GREEN]& gu & 0.85 \\  
-{}[SQUARE]& koti & 0.50 & [RECTANGLE]& totu & 0.65 \\  
-{}[LEFT]& toga & 0.90 & [BLUE]& ku & 0.80 \\  
-{}[YELLOW]& gubo & 0.55 & [CHARMING]& ge & 1.00 \\  
-{}[TRIANGLE]& bu & 0.85 & [SQUARE]& ba & 0.60 \\  
-{}[FAST]& beke & 1.00 & [SLOW]& tu & 0.95 \\  
-{}[CIRCLE]& ke & 0.75 & [RIGHT]& gaba & 0.95 \\  
-{}[UP]& butu & 1.00 & [DOWN]& ki & 0.95 \\  
+{}[\textsc{dark}]& dato & 1.00 & [\textsc{large}]& biti & 0.80 \\  
+{}[\textsc{light}]& pitu & 0.60 & [\textsc{small}]& dopu & 1.00 \\  
+{}[\textsc{red}]& gabi & 1.00 & [\textsc{green}]& gu & 0.85 \\  
+{}[\textsc{square}]& koti & 0.50 & [\textsc{rectangle}]& totu & 0.65 \\  
+{}[\textsc{left}]& toga & 0.90 & [\textsc{blue}]& ku & 0.80 \\  
+{}[\textsc{yellow}]& gubo & 0.55 & [\textsc{charming}]& ge & 1.00 \\  
+{}[\textsc{triangle}]& bu & 0.85 & [\textsc{square}]& ba & 0.60 \\  
+{}[\textsc{fast}]& beke & 1.00 & [\textsc{slow}]& tu & 0.95 \\  
+{}[\textsc{circle}]& ke & 0.75 & [\textsc{right}]& gaba & 0.95 \\  
+{}[\textsc{up}]& butu & 1.00 & [\textsc{down}]& ki & 0.95 \\  
 \lspbottomrule
 \end{tabular}
 \caption{\label{tab:t-mem3000}Group lexicon after 3000 games.}
@@ -1327,7 +1326,7 @@ The following vocabularies illustrate this point clearly.
 The first vocabulary is taken from an agent from the
 leftmost cluster in \figref{figure-agent-distribution}. 
 All the words associated with a particular meaning are 
-shown together with their score. 
+shown together with their score. \todo{What do the \{ and \} mean?}
 \begin{verbatim}
 {}[M0]: kube[0.88] gutida[0.00] moko[0.00]
 {}[M1]: nugini[0.97] gi[0.83] majiba[0.00]

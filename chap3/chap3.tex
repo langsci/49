@@ -40,6 +40,7 @@ imagined. The quality and reliability of their
 output depends on the scene being processed, and is in any 
 case strongly context-dependent. 
 
+\enlargethispage{1\baselineskip}
 So we find that the world does not present itself neatly segmented, 
 processed, and categorised. There is an enormous 
 gap between the symbolic world of objects and categories
@@ -77,7 +78,7 @@ language communication can be studied.
 
 Sensors and actuators are the interfaces between the physical
 world and the internal world.\is{sensors}\is{actuators} 
-They are dedicated hard-wired components and grow in biological 
+They are dedicated hard-wired components which grow in biological 
 systems strongly influenced by genetics and environmental inputs.\footnote{Possible 
 biological implementations of the various 
 sensors and sensory processes discussed in this chapter 
@@ -560,47 +561,47 @@ specific channels which only experts in specific
 domains possess. 
 
 \subsection{Example channels}
-
+\enlargethispage{1\baselineskip}
 The segment characteristics which will be 
 used later in various experiments are defined below. 
 Their values are all derived by straightforward computations from 
 the raw image maps captured by the cameras. 
 \begin{itemize} 
-\item AREA: The surface area of a segment
+\item \textsc{area}: The surface area of a segment
 is calculated by simply counting the number of pixels that are part 
 of the segment. 
-\item HPOS, VPOS: The x and y values of the 
+\item \textsc{hpos}, \textsc{vpos}: The x and y values of the 
 central-position of a segment. The central position 
 is calculated by taking the mid-point of the sides 
 of the bounding box. 
-\item HEIGHT: The height of the bounding box. 
-\item WIDTH: The width of the bounding box. 
-\item BB-AREA: The area of the bounding box,
+\item \textsc{height}: The height of the bounding box. 
+\item \textsc{width}: The width of the bounding box. 
+\item \textsc{bb-area}: The area of the bounding box,
 calculated by multiplying height by width. 
-\item GRAY: The average gray-scale value of the pixels
+\item \textsc{gray}: The average gray-scale value of the pixels
 in a segment. 
 \item R, G, B: The average R (redness), G
 (greenness), and B (blueness) values in a
 segment. To obtain more human-like colour channels, they are
 transformed in terms of YB (yellow-blue), RG (red-green), 
-BW (black-white), SAT (saturation) and BRIGHTNESS channels. 
-\item EDGE-COUNT: The number of edges in
+BW (black-white), SAT (saturation) and \textsc{brightness} channels. 
+\item \textsc{edge-count}: The number of edges in
 a segment, for example 3 in the case of 
 a triangle. 
-\item ANGLE-COUNT: The number of angles, determined on the 
+\item \textsc{angle-count}: The number of angles, determined on the 
 basis of the junctions. 
-\item RATIO: The ratio between the area of the segment 
+\item \textsc{ratio}: The ratio between the area of the segment 
 and the area of its bounding box, which gives an idea how close 
 a figure is to a rectangular shape. 
 \end{itemize}
 
 Each of these segment characteristics or combinations of
 characteristics enables certain types of
-categorisations. For example, the GRAY channel makes 
+categorisations. For example, the \textsc{gray} channel makes 
 it possible to distinguish between 
-light and dark, HEIGHT between short and tall, HPOS between 
-left and right, VPOS between top and bottom, 
-AREA between big and small, etc. In the next chapter, we will study 
+light and dark, \textsc{height} between short and tall, \textsc{hpos} between 
+left and right, \textsc{vpos} between top and bottom, 
+\textsc{area} between big and small, etc. In the next chapter, we will study 
 how such categorisations may 
 form on the basis of their respective channels. 
 
@@ -618,13 +619,14 @@ from perception, are discussed in \cite{Fauconnier:1994}.} One of the
 best known examples is the colour space formed by the
 yellow-blue, red-green, black-white, saturation, and brightness channels. 
 
+\clearpage
 Here are some other examples: 
 \begin{enumerate}
 \item A set of sensory channels that are sensitive 
 to characteristics of moving segments can easily be 
 imagined. They include the speed
 of movement, the direction of movement (along the 
-horizontal position (HPOS) and vertical position (VPOS) 
+horizontal position (\textsc{hpos}) and vertical position (\textsc{vpos}) 
 dimensions), or the change in area (getting bigger if the object 
 approaches or smaller if it moves away). This is the foundation
 for categories about spatial change: moving left versus moving right,
@@ -648,7 +650,7 @@ This leads to another batch of categories which are
 the basis for spatial distinctions like inside versus outside. 
 
 \item More properties of the shape of segments can be computed.
-I have already introduced the RATIO channel, which is the area of the 
+I have already introduced the \textsc{ratio} channel, which is the area of the 
 segment divided by the area of the bounding box, giving an 
 indication how rectangular a segment is. This can be generalised
 by using an ellips around a shape so that we can calculate
@@ -753,16 +755,16 @@ the absolute minima and maxima of the values
 on a sensory channel. This can be used to do 
 {\itshape sensor-oriented scaling}. For example, 
 the image map captured by the camera
-contains 320 $\times$ 240 pixels, which means 
-that the horizontal position (HPOS) has a value between
-0 and 320 and the vertical position (VPOS) has a value 
+contains 320 × 240 pixels, which means 
+that the horizontal position (\textsc{hpos}) has a value between
+0 and 320 and the vertical position (\textsc{vpos}) has a value 
 between 0 and 240. Both values can be scaled to fall between 
 0.0 and 1.0 so that they become uniform with respect to 
 other sensory channels. Given a value $x$ and a 
 $min$ and $max$ value, then the scaled value is 
 $x' = {(x - min)}/{(max - min)}$. 
-Thus the sensed value of HPOS=200 becomes
-HPOS=0.62 after scaling . 
+Thus the sensed value of \textsc{hpos}=200 becomes
+\textsc{hpos}=0.62 after scaling . 
 
 In the experiments discussed later, 
 sensor-scaling is always performed so that all sensory data
@@ -771,10 +773,10 @@ to be compared with
 each other. In addition, context-oriented scaling is performed.
 {\itshape Context-oriented scaling} uses the minima and maxima of the 
 values that effectively appear in the context.
-For example, if the values for the HEIGHT of segments 
+For example, if the values for the \textsc{height} of segments 
 observed in the scene is between 500 and 700, 
 then these can be the minimum and maximum of the 
-HEIGHT scale, so that 500 maps onto 0.0 and 700 to 1.0. 
+\textsc{height} scale, so that 500 maps onto 0.0 and 700 to 1.0. 
 Context-oriented scaling acts like a lens
 magnifying the perceived values so that distinctions
 stand out more clearly. This scaling could 
@@ -838,7 +840,7 @@ in referring to an object. Therefore, it is unlikely that area would be
 used in \figref{rect1b} to distinguish object 1 from 
 the others. 
 
-\begin{figure}[htbp]
+\begin{figure}[h]
   \centerline{\includegraphics[width=.45\textwidth]{chap3/figs/recscene.pdf}}
 \caption{\label{rect1b}A scene with three objects. The
 sensory values on the grayscale channel are the most salient 
@@ -853,17 +855,25 @@ other segments in the context.
 Thus the different perceived values (after sensor-scaling)
 for the segments in \figref{rect1b} are shown in 
 \tabref{tab:rect1b}. The last line shows the saliency, assuming that 
-the topic is segment 1.  Clearly the GRAY-channel is the most salient
-one in this case, followed by the WIDTH-channel. Other 
-sensory channels such as HPOS, VPOS or HEIGHT (which have almost the same 
+the topic is segment 1.  Clearly the \textsc{gray}-channel is the most salient
+one in this case, followed by the \textsc{width}-channel. Other 
+sensory channels such as \textsc{hpos}, \textsc{vpos} or \textsc{height} (which have almost the same 
 values for object 0 and 1) are not salient at all. 
 
+Determining saliency has to be done before context scaling, because
+context-scaling stretches the values to their extremes and so 
+saliency information is lost. 
+\tabref{tab:rect1b-area} shows for the scene shown in
+\figref{rect1b} the \textsc{area} channel with its
+raw data, the value after 
+sensor-scaling (with minimum 1,000 and maximum 
+10,000), and the value after context-scaling. 
 
-\begin{table}
+\begin{table}[b]
 \begin{center}
 \begin{tabular}{  l   l   l   l   l   l   l  }
 \lsptoprule
-{\itshape obj} & HPOS & VPOS & HEIGHT & WIDTH & GRAY & AREA \\ \midrule
+{\itshape obj} & \textsc{hpos} & \textsc{vpos} & \textsc{height} & \textsc{width} & \textsc{gray} & \textsc{area} \\ \midrule
 0 & 0.66 & 0.95 & 0.01 & 0.71 & 0.19 & 0.27\\ 
 1 & 0.69 & 0.83 & 0.07 & 0.33 & 0.97 & 0.21\\ 
 2 & 0.99 & 0.87 & 0.54 & 0.72 & 0.22 & 0.57\\ 
@@ -875,16 +885,7 @@ sal & 0.03 & 0.05 & 0.07 & 0.39 & 0.75 & 0.06 \\
 \end{center}
 \end{table}
 
-Determining saliency has to be done before context scaling, because
-context-scaling stretches the values to their extremes and so 
-saliency information is lost. 
-\tabref{tab:rect1b-area} shows for the scene shown in
-\figref{rect1b} the AREA channel with its
-raw data, the value after 
-sensor-scaling (with minimum 1,000 and maximum 
-10,000), and the value after context-scaling. 
-
-\begin{table}
+\begin{table}[t]
 \begin{center}
 \begin{tabular}{  l   c   c   c  } \lsptoprule
 {\itshape Object} & {\itshape Raw data} & {\itshape Sensor-scaled} &  {\itshape Context-scaled} \\ \midrule
@@ -898,7 +899,7 @@ sensor-scaling (with minimum 1,000 and maximum
 \end{center}
 \end{table}
 
-\begin{figure}
+\begin{figure}[hbtp]
 \begin{center}
 \includegraphics[width=0.8\columnwidth]{chap7/figs/plate-10.pdf}
 \end{center}
@@ -918,15 +919,15 @@ too small. The different sensory values (after sensor-scaling)
 for the segments in the speaker's image are shown in \tabref{tab:t-plate10}. 
 
 
-\begin{table}
+\begin{table}[t]
 \begin{center}
 \begin{tabular}{  l   l   l   c  } \lsptoprule
 {\itshape channel}& {\itshape obj-0} & {\itshape obj-1} & {\itshape saliency}\\ \midrule
-HPOS & 0.27 & 0.16 & 0.11\\ 
-VPOS & 0.20 & 0.20 & 0.0\\ 
-HEIGHT & 0.15 & 0.15 & 0.0\\ 
-WIDTH & 0.10 & 0.11 & 0.01\\ 
-AREA & 0.10 & 0.10 & 0.0\\ 
+\textsc{hpos} & 0.27 & 0.16 & 0.11\\ 
+\textsc{vpos} & 0.20 & 0.20 & 0.0\\ 
+\textsc{height} & 0.15 & 0.15 & 0.0\\ 
+\textsc{width} & 0.10 & 0.11 & 0.01\\ 
+\textsc{area} & 0.10 & 0.10 & 0.0\\ 
 R & 0.23 & 0.25 & 0.02\\ 
 G & 0.32 & 0.34 & 0.02\\ 
 B & 0.63 & 0.65 & 0.02\\ 
@@ -937,7 +938,7 @@ B & 0.63 & 0.65 & 0.02\\
 \end{center}
 \end{table}
 
-The table shows clearly that HPOS is the most salient channel. 
+The table shows clearly that \textsc{hpos} is the most salient channel. 
 The horizontal position also strikes us immediately 
 as being the most salient when looking at  \figref{f:plate-10}. 
 For many of the other channels, the differences are
@@ -950,7 +951,7 @@ hearer to guess what meaning might have been used by the
 speaker and so incoherence would slip into the group's lexical
 system. 
 
-\begin{figure}[htbp]
+\begin{figure}[t]
   \centerline{\includegraphics[width=.65\textwidth]{chap3/figs/scaling.pdf}}
 \caption{\label{scaling}Processing converts data on 
 a sensory channel into more usable data for later categorisation processes.}
@@ -982,7 +983,7 @@ So how can the agents ever get a repertoire of abstract categories and
 associated words when the real world shows such a perplexing 
 variation? Very different scenes (for example the ones contained
 in \figref{f:plate-10}) can intuitively be distinguished with the same 
-categories (namely [LEFT] versus [RIGHT]). But how can such 
+categories (namely [\textsc{left}] versus [\textsc{right}]). But how can such 
 inductive leaps be made? Scaling and sensor transformation 
 introduce some perceptual constancy, and saliency helps to 
 restrict the attention to those
@@ -1202,9 +1203,9 @@ transmit utterances directly although a speech sound
 is generated so that human listeners can hear which
 utterance is produced as part of a game. 
 
-\section{The GEOM world}
+\section{The \textsc{geom} world}
 
-\is{GEOM world}One way to perform controlled experiments 
+\is{\textsc{geom} world}One way to perform controlled experiments 
 quickly and on a large scale consists of artificially 
 generating the perceptual input to the agents. 
 This has the additional advantage that we can 
@@ -1213,9 +1214,9 @@ simplify the situations the agents have to work in
 and let them start initially with a shared perception. A 
 simulation world that we have used extensively 
 for many simulations reported later 
-is the GEOM world. 
+is the \textsc{geom} world. 
 
-The GEOM world generates geometric shapes similar 
+The \textsc{geom} world generates geometric shapes similar 
 to the physical figures we paste on the white board. 
 Possible geometric shapes are circles, triangles, 
 squares, rectangles, etc. 
@@ -1231,10 +1232,10 @@ chosen, and random values for the main
 characteristics (position, height, width, grayscale)
 are set. 
 
-\begin{figure}[htbp]
+\begin{figure}[t]
   \centerline{\includegraphics[width=.45\textwidth]{chap3/figs/scene9.pdf}}
 \caption{\label{geom3}An example of the 
-computer-generated scenes from the GEOM world.
+computer-generated scenes from the \textsc{geom} world.
 Each shape is labeled for further reference.}
 \end{figure}
 
@@ -1249,11 +1250,11 @@ For the scene in \figref{geom}, which contains three
 squares and a rectangle, the values of the channels
 are summarised in \tabref{tab:t-geom}. After sensory-scaling we get \tabref{tab:t-geomscaled}. 
 
-\begin{table}
+\begin{table}[b]
 \begin{center}
 \begin{tabular}{  l   l   l   l   l   l   l   l  }
 \lsptoprule
- & {\itshape HPOS} & {\itshape VPOS} & {\itshape HEIGHT} & {\itshape WIDTH} & {\itshape GRAY} & {\itshape RATIO}  & {\itshape AREA} \\ \midrule
+ & {\itshape \textsc{hpos}} & {\itshape \textsc{vpos}} & {\itshape \textsc{height}} & {\itshape \textsc{width}} & {\itshape \textsc{gray}} & {\itshape \textsc{ratio}}  & {\itshape \textsc{area}} \\ \midrule
 0 & 116 & 166 & 293 & 293 & 0.777 & 1.0 & 85849 \\ 
 1 & 692 & 317 & 148 & 224 & 0.449 & 1.0 & 33152 \\ 
 2 & 192 & 64 & 137 & 137 & 0.408 & 1.0 & 18769 \\ 
@@ -1268,7 +1269,7 @@ are summarised in \tabref{tab:t-geom}. After sensory-scaling we get \tabref{tab:
 \begin{center}
 \begin{tabular}{  l   l   l   l   l   l   l   l  }
 \lsptoprule
-& {\itshape HPOS} & {\itshape VPOS} & {\itshape HEIGHT} & {\itshape WIDTH} & {\itshape GRAY} & {\itshape RATIO}  & {\itshape AREA} \\ \midrule
+& {\itshape \textsc{hpos}} & {\itshape \textsc{vpos}} & {\itshape \textsc{height}} & {\itshape \textsc{width}} & {\itshape \textsc{gray}} & {\itshape \textsc{ratio}}  & {\itshape \textsc{area}} \\ \midrule
 0 & 0.09 & 0.13 &  0.64 &  0.64 &  0.78 &  1.0 & 0.95 \\ 
 1 & 0.55 & 0.25 & 0.16 & 0.41 & 0.45 & 1.0 & 0.37 \\ 
 2 & 0.15 & 0.05 & 0.12 & 0.12 & 0.41 & 1.0 & 0.21 \\ 

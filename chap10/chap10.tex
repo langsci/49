@@ -232,6 +232,7 @@ the robot acting as speaker describes to the hearer an observed movement, possib
 perspective of the hearer. For example, the speaker might say `the ball rolls from my left to your right'.}
 \end{figure}
 
+\enlargethispage{1\baselineskip}
 The Perspective Reversal Experiment worked as follows. A population of \textsc{aibo} robots roam around
 freely in an unconstrained in-door environment. As soon as one sees the
 ball, it comes to a stop and searches for another robot nearby, which also
@@ -253,7 +254,7 @@ robots have been endowed with mechanisms to segment the flow of data
 into distinct events and they have a short term memory in which they
 can store a number of past events.
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centerline{\includegraphics[width=.90\textwidth]{chap10/figs/persp-rev-perception.pdf}}
 \caption{\label{fig:persp-rev-perception}Chain from visual image (left) to an analog world model (middle) and a discrete event description
 that is the topic of the language game (right). 
@@ -282,7 +283,7 @@ communicative success with a stable inventory.
 \end{itemize}
 
 
-\begin{figure}[t]
+\begin{figure}[p]
 \centerline{
 \includegraphics[width=0.75\textwidth]{chap10/figs/stages.pdf}}
 \caption{\label{fig:stages}Three strategies are compared. In Stage I (left) agents categorise the event from their 
@@ -411,7 +412,7 @@ here:
 127 ++> Speaker: head-40 Topic: 2 Context: 6 5 4 3 1 0
 Categorial Perception:
   ([VISIB v-4111] [VER v-431])
-  ([VER v-4311] [AREA v-4061])
+  ([VER v-4311] [\textsc{area} v-4061])
 Lexicon lookup: (Association-259 Association-234)
 Syntactic structure:
   (syn-cat-77
@@ -457,7 +458,7 @@ It required the construction of a more sophisticated vision system (accomplished
 design and implementation of a more sophisticated grammar formalism (accomplished by Luc Steels and Nicolas Neubauer), 
 although this was still only one step on the way towards later developments in Fluid Construction Grammar. 
 
-Based on these components, I implemented an initial experiment with only two agents.\footnote{These experiments were first reported at the Harvard Evolution of Language conference in 2002 with a paper by Luc Steels
+Based on these components, I implemented an initial experiment with two agents.\footnote{These experiments were first reported at the Harvard Evolution of Language conference in 2002 with a paper by Luc Steels
 entitled ``Computer Simulations of the origins of Case grammar''. The paper was later deemed 
 ``too incomprehensible for the Evolution of Language community'' to be acceptable for the conference 
 proceedings edited by Maggie Tallerman.}
@@ -520,13 +521,21 @@ we look briefly at other advances that were needed: What world was made availabl
 language games? How did the vision system work? And what grammatical formalism was devised to handle case grammar? 
 
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centerline{\includegraphics[width=.60\textwidth]{chap10/figs/PERACT-setup.pdf}}
 \caption{\label{fig:PERACT-setup}The installation for the case grammar experiments used a more sophisticated vision system and objects that 
 could be moved around. We see the two Talking Heads cameras in 
 the background. They are oriented towards objects on the table or situations in the 
 environment. The monitors show the camera images and the states of image processing, just as for the original 
 Talking Heads experiment. 
+}
+\end{figure}
+
+\begin{figure}[p]
+  \centerline{\includegraphics[width=.80\textwidth]{chap10/figs/PERACT-images.pdf}}
+\caption{\label{fig:PERACT-images}Top: Some of the images recorded during the action of picking up a cylinder. 
+Middle: Results of segmentation algorithms. 
+Bottom: The spatio-temporal continuity of objects is tracked. 
 }
 \end{figure}
 
@@ -543,7 +552,7 @@ a lay public, the agents engaging in a language game were also visually animated
 \figref{fig:adam-eve} top).\footnote{The animations were developed by Veronique Caraux in Paris.}
 
 
-\begin{figure}[htbp]
+\begin{figure}[h]
   \centerline{\includegraphics[width=.40\textwidth]{chap10/figs/adam-eve.pdf}}
 \centerline{\includegraphics[width=.70\textwidth]{chap10/figs/jack-give.pdf}}
 \centerline{\includegraphics[width=.80\textwidth]{chap10/figs/push-jill.pdf}}
@@ -552,8 +561,8 @@ of the case experiment.
 Middle: Example of a puppet scene, where Jill gives a block to Jack. It shows the source image (left) and a (partial) 
 result of image processing (right). Bottom: Another example of a puppet scene where Jill pushes the block.}
 \end{figure}
-
-{\bfshape  Scaling up the vision system} 
+\clearpage
+\subsubsection{Scaling up the vision system}
 The vision system of the Talking Heads only dealt with static scenes. This had to be scaled up to
 deal with dynamical scenes and event recognition. It was the focal work of 
 Jean-Christophe Baillie at the Sony Computer Science Laboratory in Paris, who built a vision system 
@@ -565,7 +574,7 @@ The vision system was decomposed into three subsystems with information flowing 
 (from image to world model) and top-down way (from world model and predictions to image): the subsystems achieved 
 object identification, event identification, and derivation of qualitative descriptors. 
 
-{\bfshape  Object Identification} The first subsystem attempts to detect and track visual units at different hierarchical levels. 
+\subsubsection{Object Identification} The first subsystem attempts to detect and track visual units at different hierarchical levels. 
 It detects and 'latches onto' regions in the image that are generated by objects of 
 interest in the environment. This results in deictic pointers or ``anchors'' that establish and monitor indexical references 
 between internal symbols and external objects. Tracking not only takes place for a single object, but for 
@@ -574,15 +583,7 @@ an open-ended set of objects at different hierarchical levels, as long as they a
 The detection and tracking of units at different hierarchical levels starts in a bottom-up manner from the images captured by the camera, and goes through various processing steps: figure/ground separation based on color perception, creation of a cellular occupancy grid, spatial region growing to identify spatial regions, and construction of spatio-temporal continuities based on 
 color histograms of the objects (\figref{fig:PERACT-images}). 
 
-\begin{figure}[htbp]
-  \centerline{\includegraphics[width=.80\textwidth]{chap10/figs/PERACT-images.pdf}}
-\caption{\label{fig:PERACT-images}Top: Some of the images recorded during the action of picking up a cylinder. 
-Middle: Results of segmentation algorithms. 
-Bottom: The spatio-temporal continuity of objects is tracked. 
-}
-\end{figure}
-
-{\bfshape  Event Identification} 
+\subsubsection{Event Identification} 
 The second subsystem detects and tracks events, again at different hierarchical levels. The task is similar
 to that of detecting objects but the grouping is based on changes in properties of objects rather than 
 on invariances. Event detection is organised in three steps: 
@@ -620,7 +621,7 @@ label (e.g. {\verb Appear}), and information of the status (like ongoing or fini
  ...
 \end{verbatim}
 
-{\bfshape  Qualitative Descriptors} 
+\subsubsection{Qualitative Descriptors} 
 The third subsystem consists of feature detectors that attempt to find qualitative descriptions for units at different levels 
 of the object or event hierarchy. The result of all these processes is a set of streams, reporting objects and their 
 properties dynamically in response to a changing world as well as the roles these different objects play in the events. 
@@ -646,7 +647,7 @@ this visual memory with time stamps when the states occurred.
 (STRIPED obj-1) <15:48:42>
 (BIG obj-1) <15:48:42>
 (PYRAMID obj-1) <15:48:42>
-(YELLOW obj-1) <15:48:42>
+(\textsc{yellow} obj-1) <15:48:42>
 (OBJECT obj-1) <15:48:42>
  ...
 \end{verbatim}
@@ -655,8 +656,7 @@ Since this pioneering vision work, subsequent language game experiments on robot
 similarly sophisticated vision systems and currently such systems are standard components on commercially available
 robots. 
 
-{\bfshape  Scaling up the language system}\\
-
+\subsubsection{Scaling up the language system}
 Not only the vision system, but also the language system had to be scaled up significantly to do these experiments. 
 Together with Nicolas Neubauer, I built upon the formalism I had developed for the early syntax experiments, 
 designing and implementing a next generation system, called \textsc{cogar}, \is{\textsc{cogar} (cognitive grammar architecture)} which stands for 
@@ -724,6 +724,7 @@ to the process of unification as used in PROLOG or other logic programming langu
 
 Here is an example of a lexical rule that defines the meaning of the word for an event `move-away-from'. The referent is 
 the object that is referred to by the word, in this case it is the event itself. 
+\clearpage
 \begin{verbatim}
 ((?unit 
    (meaning
@@ -796,9 +797,9 @@ And the rules that click eveything together now operate over semantic roles as s
   (?marker-unit (form (== po))) 
  (<< ?marker-unit ?unit))
 \end{verbatim}
-Recall that all rules must be reversible and that the conditional part must match and the concluding part must unify.\\
+Recall that all rules must be reversible and that the conditional part must match and the concluding part must unify.
 
-{\bfshape  Analogy as the driver of generalisation}\\
+\subsubsection{Analogy as the driver of generalisation}
 
 There is of course a lot more to say about how all this works computationally and about how these rules are built during 
 learning. The reader is referred to the references given earlier. 
@@ -894,15 +895,6 @@ much earlier after 200 games, which proves the point that the use of analogy not
 a more compact grammar with more expressive power, but also in a grammar that is faster to emerge and 
 easier to learn.  
 
-\begin{figure}[htbp]
-  \centerline{\includegraphics[width=\textwidth]{chap10/figs/comparison.pdf}}
-\caption{\label{fig:comparison}Comparison between two different strategies: The top-graph shows the growth in the average number of 
-markers for the event-specific marker strategy. 
-The bottom two graphs show the average size of the set of markers when analogy is used. As usual, the y-axis shows 
-the number of games played. Overall, fewer markers are needed, making the case marking system more efficient 
-and thus explaining why we get abstract semantic roles.}
-\end{figure}
-
 This first case experiment was only the beginning of more thorough and systematic research by Remi van Trijp who 
 scaled up the experiment to multi-agent simulations and made several additional discoveries, such as the necessity 
 to use multi-level alignment \citep{Steels:07d}. \is{multi-level alignment}
@@ -923,4 +915,14 @@ became obvious. There is clearly not a single simple mechanism that can explain 
 to do concrete case studies to advance the state of the art step by step, both for the explanation of concrete language 
 phenomena such as perspective reversal or case grammar, and for finding the general theory that underlies the 
 emergence and evolution of language. 
+
+
+\begin{figure}[h]
+  \centerline{\includegraphics[width=\textwidth]{chap10/figs/comparison.pdf}}
+\caption{\label{fig:comparison}Comparison between two different strategies: The top-graph shows the growth in the average number of 
+markers for the event-specific marker strategy. 
+The bottom two graphs show the average size of the set of markers when analogy is used. As usual, the y-axis shows 
+the number of games played. Overall, fewer markers are needed, making the case marking system more efficient 
+and thus explaining why we get abstract semantic roles.}
+\end{figure}
 
