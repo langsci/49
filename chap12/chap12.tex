@@ -720,6 +720,7 @@ and scenes like the one shown in \figref{fig:spatial}. An example of a constrain
 is shown in \figref{fig:spatial-strategies}. It is the network for the phrase `near the box'. `Near' is a proximal 
 relation which categorises objects in terms of how near they are to a landmark (in this case the box). In a list form the 
 network looks like this: 
+\begin{small}
 \begin{verbatim}
 1. (get-context ?ctx-1) 
 2. (construct-region-proximal 
@@ -731,6 +732,7 @@ network looks like this:
 7. (get-context ?ctx) 
 8. (bind object-class ?landmark-class BOX)
 \end{verbatim}
+\end{small}
 The order of these operations does not matter as values propagate and constraints become active until no further progress
 can be made. Operations in 4, 5, 6, 7 and 8 provide the referent of `the box'. The following contributions 
 can be made by each of the cognitive operations: The predicate BOX gets bound to ?landmark-class in operation 8. Object-class is 
@@ -756,6 +758,7 @@ of proximal relations, not only `near the box', but also `far from the box', `cl
 `near the table', `very far from the wall', etc. 
 The open variables are ?cat, ?selector-2, and ?landmark-class, which have to be supplied by lexical items or 
 phrases. The network is then as follows, with operations at 3, 6 and 8 removed: 
+\begin{small}
 \begin{verbatim}
 1. (get-context ?ctx-1) 
 2. (construct-region-proximal ?region ?ctx-1 ?landmark ?cat) 
@@ -763,6 +766,7 @@ phrases. The network is then as follows, with operations at 3, 6 and 8 removed:
 5. (apply-class ?landmarks ?ctx ?landmark-class) 
 7. (get-context ?ctx) 
 \end{verbatim}
+\end{small}
 The network has to be completed with bindings for the open variables, but all the other variables can be 
 computed through the network itself. 
 Network-chunks are expressed through a grammatical construction, which expresses which chunk is involved 
@@ -782,7 +786,7 @@ way in which the speaker agent finds possible conceptualisations, namely through
 constraints are added until a solution network is found that, when executed, yields the topic chosen by the speaker.}
 \label{fig:tree}
 \end{figure}
-
+\enlargethispage{1\baselineskip}
 As explained in the previous chapter, the speaker starts from a particular communicative goal (the topic) within a 
 specific context. Each step in the search process adds progressively more nodes and at each step, the network is tried out to 
 see whether it is able to compute anything in the present context and whether it brings the 
@@ -889,7 +893,7 @@ past participle auxiliary (`been'), and the present participle main verb (`comin
 There are also strategies that focus 
 on minimising the cognitive effort of the listener by signalling how words in the sentence need to be semantically grouped together. 
 This happens generally in two ways: 
-\begin{itemize}
+\enlargethispage{1\baselineskip}\begin{itemize}
 \item Language-dependent markers for various syntactico-semantic features, such as number, gender, case, are introduced 
 and the different words which need to be grouped are all marked for the same features. An example of this kind of 
 grammatical agreement is `la belle fille' (French: the beautiful girl) where the article `la' and 
