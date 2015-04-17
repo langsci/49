@@ -356,7 +356,7 @@ using the \textsc{aibo} reported in the previous chapter.
 It was first designed and carried out with the \textsc{qrio} robot in 2007/2008 by Luc Steels and
 Michael Spranger with considerable help from Martin Loetzsch\footnote{Papers describing this experiment more fully are: 
 \cite{Steels:2008spatial} and \cite{Steels:2008b}.} and 
-then ported in 2010 to the MYON, a robot developed by Manfred Hild and his team at the Humboldt 
+then ported in 2010 to the \textsc{myon}, a robot developed by Manfred Hild and his team at the Humboldt 
 University in Berlin (see \figref{fig:myon-action}) (\cite{Steels:2012b}). 
 A BBC video clip of the experiment can be seen at: \url{https://youtu.be/lmoXByLkK14}.
 The porting exercise showed that once we discover how to do a certain type of language game on one robot 
@@ -675,10 +675,10 @@ What is the nature of the constraints that we will need for the semantics of nat
 Take a phrase like `the ball behind the block'. It invokes the following constraints, also called 
 semantic operations: 
 \begin{itemize}
-\item `the ball' evokes a constraint to use a prototype [BALL] to find a referent in the current scene.
-\item The same holds for `the block' which uses another prototype [BLOCK]. 
-\item The preposition `behind' implies another constraint, namely to use the spatial relation [BEHIND] to filter a 
-set of objects (namely those found by using the [BALL] prototype) and retain only those that satisfy the behind-relation 
+\item `the ball' evokes a constraint to use a prototype [\textsc{ball}] to find a referent in the current scene.
+\item The same holds for `the block' which uses another prototype [\textsc{block}]. 
+\item The preposition `behind' implies another constraint, namely to use the spatial relation [\textsc{behind}] to filter a 
+set of objects (namely those found by using the [\textsc{ball}] prototype) and retain only those that satisfy the behind-relation 
 to an object in another set. 
 \end{itemize} 
 
@@ -849,11 +849,11 @@ the Basic Colour strategy in \figref{fig:basic-strat}).
 
 1. There are first {\itshape lexical constructions} that associate a word with the introduction of a semantic entity  
 such as a colour category or a qualifier for indicating graded membership. So the meaning for the word `yellow' 
-introduces a BIND-operation, as in: 
+introduces a \textsc{bind}-operation, as in: 
 \begin{verbatim}
 ((bind colour-category ?c [yellow]))
 \end{verbatim}
-When the word `yellow' is encountered, a unit for this word is created with this BIND-operation as meaning and the 
+When the word `yellow' is encountered, a unit for this word is created with this \textsc{bind}-operation as meaning and the 
 word-string itself as the form. It is the unit called Yellow-unit in \figref{fig:syntactic-graded}. 
 The construction also introduces a lexical category (part of speech) for the word (in this case the lexical category 
 is colour-category) and specifies which variables in the meaning can be linked with other variables in other
