@@ -83,7 +83,7 @@ is shown in \figref{fig:grounded}. We see two \textsc{qrio} robots and an enviro
 sizes and shapes. At any time a new object can be added or the position of an object can be changed. So the world is 
 entirely open and robots do not know how many individuals there are. 
 Importantly, the robots had to recognise an object as an individual, independently of its position. If 
-a specific object disappeared from the world and was put back later, the same name would still have to be used. \\ 
+a specific object disappeared from the world and was put back later, the same name would still have to be used.
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=.80\textwidth]{chap11/figs/grounded-naming-game.pdf}}
@@ -205,7 +205,7 @@ and names, both within a single individual and across the
 population. This lead to the notion of a {\itshape semiotic network}, which was a significant conceptual advance 
 in the methodology of conceiving and carrying out language game experiments.
 
-\begin{figure}[htbp]
+\begin{figure}[b]
   \centerline{\includegraphics[width=.95\textwidth]{chap10/figs/prototypes-identifiers-words.pdf}}
 \caption{\label{fig:prototypes-identifiers-words}In the Proper Naming Game experiment the memory of the agents is conceived in terms of a semiotic network that 
 spans the full semiotic cycle from sensory experience and conceptualisation to naming.}
@@ -290,7 +290,7 @@ mean value and variance.
 
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=.95\textwidth]{chap11/figs/png-results.pdf}}
+  \centerline{\includegraphics[width=\textwidth]{chap11/figs/png-results.pdf}}
 \caption{\label{fig:png-results} 
 {\itshape Left:} Results for Proper Naming games in a population of 10 agents that have to name 15 individual objects. 
 We see that a vocabulary establishes
@@ -575,7 +575,7 @@ and provides the contents to execute the strategy. For example, in the phrase `v
 `very' and a basic colour adjective `green' suggests a ``graded membership strategy'' where not only a basic colour prototype
 (`green') is introduced but also how close the sample is to this prototype (`very'). I will now introduce first how 
 the conceptual aspect of a language strategy is defined using a procedural semantics system called IRL and then how the 
-linguistic aspect is defined, using Fluid Construction Grammar. \\ 
+linguistic aspect is defined, using Fluid Construction Grammar. 
 
 \subsection{Compositional Procedural Semantics with IRL}
 % {\bfshape Compositional Procedural Semantics with IRL}\\
@@ -666,7 +666,7 @@ all constraints have been applied. Natural languages clearly do not supply contr
 the interpreter is smart enough to interpret constraints based on data flow. The other properties of constraint 
 programming are also important. The constraint network planner can be used for conceptualising what to say and 
 the constraint network matcher is highly useful in parsing an incomplete language fragment or in learning the 
-meaning of a new grammatical construction. \\
+meaning of a new grammatical construction.
 
 \subsection{Building Blocks for Natural Language Semantics}
 % {\bfshape Building Blocks for Natural Language Semantics }\\
@@ -733,14 +733,13 @@ existing primitive operations, linking them in, and checking whether the computa
 The slots of a constraint are typed to limit what semantic operations will be tried next. Networks that perform useful 
 functions are ``chunked'' into higher order units that then can be used as units in their own right, thus scaling up 
 complexity. These chunked networks become associated with stereotyped grammatical expression, so that there is a very 
-fast retrieval and semantic execution. \\
-
+fast retrieval and semantic execution.
 \subsection{Strategies for colour}
 % {\bfshape Strategies for Colour} \\
 
 Let us now look at concrete examples from the colour domain as worked out by Joris Bleys, studying the following 
 strategies: \is{colour strategies}
-
+\enlargethispage{1\baselineskip}
 1. The first strategy is the {\bfshape Basic Colour Strategy} which implements a prototype-based approach to 
 the basic colour categories. This approach is similar to the one used in the Proper Naming Game, except that 
 only the three colour-dimensions are profiled (the opponent channels red-green, yellow-blue and the brightness channel). 
@@ -792,7 +791,7 @@ a context and a referent ?t that needs to be identified.
 \caption{\label{fig:graded}Constraint network implementing the Graded Membership Strategy. It builds further on the network for Basic Colour
 Categorisation but adds a constraint to handle graded membership. }
 \end{figure}
-
+\enlargethispage{1\baselineskip}
 The network is entirely general for all expressions that use graded membership and gets instantiated for a particular 
 case by specifying the semantic entities involved using the bind operation. For example, Tarahumara has the word 
 `sita' for a particular colour prototype and `kame' for one type of graded membership: 
@@ -829,7 +828,7 @@ performed. The network for this strategy is shown in \figref{fig:modi}.
 
 Many other strategies for colour can be imagined and some of them are found in human languages (although not necessarily in English). 
 These strategies always involve operations over the colour space (such as rescaling, dimensionality reduction, etc.) alongside 
-additional operations (such as getting the context, picking out a referent, computing the intersection of two sets, etc.). \\
+additional operations (such as getting the context, picking out a referent, computing the intersection of two sets, etc.).
 
 \subsection{Translation to grammar}
 % {\bfshape Translation to Grammar} \\
@@ -886,7 +885,6 @@ The meaning specifies the operations to be added to the network, which is in thi
 \begin{verbatim}
 ((filter-by-colour-lenient ?s3 ?s2 ?c))
 \end{verbatim}
-\clearpage
 There are two variables that can be linked to other operations with this meaning: ?s3 and ?s2 both of type object-set. 
 On the syntactic side, the unit is categorised as a constituent named colour-category. 
 
@@ -939,7 +937,7 @@ they encounter.
 \end{enumerate}
 
 \begin{figure}[htbp]
-  \centerline{\includegraphics[width=\textwidth]{chap11/figs/grounding-comparison.pdf}}
+  \centerline{\includegraphics[width=.9\textwidth]{chap11/figs/grounding-comparison.pdf}}
 \caption{Comparison of three different environmental set-ups (left, right, and middle columns)
 and four different learning conditions. Communicative success is shown on the y-axis.}
 \label{fig:grounding-comparison} 
