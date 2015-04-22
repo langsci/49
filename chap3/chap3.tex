@@ -194,7 +194,7 @@ in a real-world environment in real time.
 
 For example, suppose you want a robot of the sort seen 
 in \figref{f:plate3} to move towards a light source. As originally 
-suggested by the cybernetician \cite{Braitenberg:1984}. 
+suggested by the cybernetician \cite{Braitenberg:1984}, 
 we can do this by mounting two simple light sensors 
 to the left and right of the body and by implementing a 
 direct dynamical coupling between the output of the light
@@ -523,7 +523,7 @@ that the brain is best thought of as a massively parallel,
 densely connected processing system, in which multiple 
 partial solution structures float up or down, gathering strength 
 or weakening with new information entering the system. 
-This contrasts with the view that 
+This contrasts with the view that \enlargethispage{1\baselineskip}
 information is processed in a serial step-by-step fashion
 through tightly compartmentalised modules.\footnote{
 See \cite{Fodor:1983}. This book discusses a modular, sequential 
@@ -580,11 +580,11 @@ of the bounding box.
 calculated by multiplying height by width. 
 \item \textsc{gray}: The average gray-scale value of the pixels
 in a segment. 
-\item R, G, B: The average R (redness), G
-(greenness), and B (blueness) values in a
+\item \textsc{r}, \textsc{g}, \textsc{b}: The average \textsc{r} (redness), \textsc{g}
+(greenness), and \textsc{b} (blueness) values in a
 segment. To obtain more human-like colour channels, they are
-transformed in terms of YB (yellow-blue), RG (red-green), 
-BW (black-white), SAT (saturation) and \textsc{brightness} channels. 
+transformed in terms of \textsc{yb} (yellow-blue), \textsc{rg} (red-green), 
+\textsc{bw} (black-white), \textsc{sat} (saturation) and \textsc{brightness} channels. 
 \item \textsc{edge-count}: The number of edges in
 a segment, for example 3 in the case of 
 a triangle. 
@@ -632,7 +632,7 @@ approaches or smaller if it moves away). This is the foundation
 for categories about spatial change: moving left versus moving right,
 approaching versus retracting, speeding up versus slowing down.\footnote{Experiments
 using segmentation based on movement
-using the dedicated hardware shown in \ref{f:plate6} were carried out by Tony Belpaeme. 
+using the dedicated hardware shown in \figref{f:plate6} were carried out by Tony Belpaeme. 
 More details can be found in: \cite{Belpaeme:1998} These channels have been used in
 language experiments where the agents were 
 perceiving and communicating about moving 
@@ -666,7 +666,7 @@ example by transforming the sensor and actuator
 data into state-space representations and 
 analysing them in terms of attractors.\footnote{
 Several examples of this type of approach are 
-found in \cite{Port:1995}}
+found in \cite{Port:1995}.}
 
 The ontological and lexical apparatus of the Talking Heads is 
 generic with respect to the nature of the sensory channels
@@ -928,9 +928,9 @@ for the segments in the speaker's image are shown in \tabref{tab:t-plate10}.
 \textsc{height} & 0.15 & 0.15 & 0.0\\ 
 \textsc{width} & 0.10 & 0.11 & 0.01\\ 
 \textsc{area} & 0.10 & 0.10 & 0.0\\ 
-R & 0.23 & 0.25 & 0.02\\ 
-G & 0.32 & 0.34 & 0.02\\ 
-B & 0.63 & 0.65 & 0.02\\ 
+\textsc{R} & 0.23 & 0.25 & 0.02\\ 
+\textsc{G} & 0.32 & 0.34 & 0.02\\ 
+\textsc{B} & 0.63 & 0.65 & 0.02\\ 
 \lspbottomrule
 \end{tabular}
 \caption{Perceived values for each segment in \figref{f:plate-10}
@@ -1028,13 +1028,13 @@ I will extensively make use of this methodology.
 This chapter has focused on perception, the next chapter focuses
 exclusively on
 conceptualisation, assuming that there is good segmentation and a 
-decent set of sensory channels. Chapter 5 turns to the 
+decent set of sensory channels. \chapref{chap:5} turns to the 
 problem of lexicalisation, assuming that 
 the agents have a shared repertoire of meanings and agree on 
-what meaning to use in a particular game. Chapter 6 then puts the solutions 
+what meaning to use in a particular game. \chapref{chap:6} then puts the solutions 
 for conceptualisation and lexicalisation together by coupling their
 inputs and outputs and establishing the appropriate feedback connections. 
-Chapter 7 then couples this system to the perceptual processes discussed
+\chapref{chap:7} then couples this system to the perceptual processes discussed
 in this chapter, so that we get back to our 
 original goal: understand how perceptually grounded language communication 
 is possible. 
@@ -1250,7 +1250,7 @@ For the scene in \figref{geom}, which contains three
 squares and a rectangle, the values of the channels
 are summarised in \tabref{tab:t-geom}. After sensory-scaling we get \tabref{tab:t-geomscaled}. 
 
-\begin{table}[b]
+\begin{table}[h]
 \begin{center}
 \begin{tabular}{  l   l   l   l   l   l   l   l  }
 \lsptoprule
@@ -1265,7 +1265,7 @@ are summarised in \tabref{tab:t-geom}. After sensory-scaling we get \tabref{tab:
 \caption{\label{tab:t-geom}Sensory data for the scene shown in \figref{geom3}.}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
 \begin{center}
 \begin{tabular}{  l   l   l   l   l   l   l   l  }
 \lsptoprule
@@ -1286,7 +1286,7 @@ and physical experimentation.
 
 \subsection{Simulation versus experimentation}
 
-Working with simulations has obvious advantages for 
+Working \todo{3.5.1 cannot remain the only subsection of 3.5} with simulations has obvious advantages for 
 speeding up development and systematic testing, 
 but it does not replace experimentation with 
 physical robots. It is true that 

@@ -746,6 +746,7 @@ Then the operation apply-class is applied to all the objects in ?ctx (the contex
 get bound to ?landmarks using the ?landmark-class (\textsc{box}). This set is assumed to be a singleton and so 
 in operation 4 the unique element in the set of ?landmarks can be selected 
 and bound to ?landmark. 
+
 \enlargethispage{1\baselineskip}
 The remaining three operations apply the proximal relation. In operation 3 ?cat is bound to the proximal-category \textsc{near}. 
 In operation 1, ?ctx-1 gets bound to 
@@ -760,7 +761,6 @@ The chunk has a set of open variables with which the network can be linked to ot
 For example, the network shown in \figref{fig:spatial-strategies} can be made more abstract to handle many instances 
 of proximal relations, not only `near the box', but also `far from the box', `close to the box', `near the boxes', 
 `near the table', `very far from the wall', etc. 
-\enlargethispage{1em}
 The open variables are ?cat, ?selector-2, and ?landmark-class, which have to be supplied by lexical items or 
 phrases. The network is then as follows, with operations at 3, 6 and 8 removed: 
 \begin{small}

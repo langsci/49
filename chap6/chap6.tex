@@ -1,7 +1,7 @@
 %\documentclass{../_combined/fcg-book}
 \chapter{The Guessing Game} \label{chap:6}
 
-The problem how a physically embodied situated agent
+The \todo{The intro is too long} problem how a physically embodied situated agent
 might refer to objects using language is extraordinarily 
 difficult. If we then further want to find out how 
 a group of such agents might autonomously bootstrap
@@ -10,14 +10,14 @@ That is why I proposed earlier on to start by dividing
 this task into its three main subtasks along the lines
 of the semiotic square (\figref{square6}).
 The previous chapters each focused on one of these tasks. 
-Chapter~5 has introduced 
+\chapref{chap:5} has introduced 
 perceptual mechanisms to process the raw image, segment
 the scene, derive characteristics about each 
 segment, and give feedback by pointing to the referent. 
-Chapter~4 studied categorisation mechanisms
+\chapref{chap:4} studied categorisation mechanisms
 needed for conceptualising a scene and thus for 
 generating the possible meanings of a verbal
-communication. Chapter 5 looked at how agents can 
+communication. \chapref{chap:5} looked at how agents can 
 lexicalise meanings and build up a sufficiently shared
 lexicon to engage in verbal interactions. 
 
@@ -29,7 +29,7 @@ proceed in two steps. First I will but the lexical
 layer and the conceptualisation layer together in 
 this chapter, and then I will ground the whole system 
 by coupling the conceptualisation layer to the 
-perceptual layer in Chapter 7. 
+perceptual layer in \chapref{chap:7}. 
 
 Another technique I proposed earlier on 
 for handling the enormous challenges addressed in 
@@ -71,7 +71,7 @@ ontologies and lexicons.
 
 \section{Defining the Guessing Game}
 
-The guessing game was already introduced in Chapter 2. Here is a first example game, game 500.\is{Guessing Game}
+The guessing game was already introduced in \chapref{chap:2}. Here is a first example game, game 500.\is{Guessing Game}
 {\bfshape  a2} plays the role of speaker and {\bfshape  a1} the role of hearer. The game is about the scene in
 \figref{rect1}. The topic is the rectangle labeled 1. The grayscale channel is the most 
 salient channel. The different sensory values (after sensor-scaling)
@@ -279,7 +279,7 @@ other distinctions would be more successful.
 \end{center}
 \end{table}
 
-We see that words for the basic distinctions have further established
+We see that words for \todo{`the' deleted here to fit the line} basic distinctions have further established
 themselves. Words for `short' (\emph{suwaxugo}) and `tall' (\emph{kusone}), or `light' (\emph{fesasado}) and `dark' (\emph{pokuneso}) now have scores of 1.0. Words for more refined categories, like `very short' (\emph{tawube}) or `very narrow' (\emph{kutaki}), are beginning to establish themselves.  
 
 Two steps in the evolution of the discrimination trees
@@ -377,7 +377,7 @@ scene to find the referent (\figref{sieve2b}). Because
 layers have this dual mode of operations, it is perfectly 
 possible that the hearer has already guessed words and 
 thus strong expectations based on the scene and his 
-own conceptualisation of it, although this has not been
+own conceptualisation of it, although this has not been \enlargethispage{1\baselineskip}
 implemented in the Talking Heads yet. 
 
 
@@ -635,7 +635,7 @@ three for [\textsc{vpos} 0.5–1.0]: `wavone', `zaxawe', and
 example `numefuli' for [\textsc{gray} 0.5–1.0] (dark). 
 
 
-\begin{table}
+\begin{table}[h]
 \begin{center}
 \begin{tabular}{ l  l  l  l  l  l  l  }
 \lsptoprule
@@ -740,7 +740,6 @@ the next game in the series involving the meaning
 {}[\textsc{gray} 0.5–1.0]. {\bfshape  a4} chooses `faluleru' because this 
 word has the highest score. It is immediately picked up by 
 {\bfshape  a1}: 
-\clearpage
 \begin{verbatim}
 Game 101
   a4 is the speaker. a1 is the hearer. 
@@ -985,7 +984,7 @@ in game 9}
 Here is an example where ambiguity slips in 
 the lexicon. The game involves two 
 objects: a rectangle and a square (\figref{game9}). 
-The data for game 9, after sensor-scaling, are
+The data for game 9, after sensor-scaling, are \enlargethispage{1\baselineskip}
 shown in \tabref{tab:different}.  
 
 
@@ -1013,6 +1012,16 @@ hint from the speaker, and identifies the category
 meaning is stored and it is different from the one used by 
 speaker. The current constellation of meanings
 is summarised in \figref{triangle4}. 
+
+\begin{figure}[h]
+	\centerline{\includegraphics[width=.45\textwidth]{chap6/figs/triangle4.pdf}}
+	\caption{\label{triangle4}Semiotic triangles
+		underlying game 9. For the same referent and the same word, 
+		there are two different meanings. Dashed lines indicate
+		the relations used by the speaker {\bfshape  a2}. Straight lines
+		indicate those used by the hearer {\bfshape  a1}.}
+\end{figure}
+
 \begin{verbatim}
 Game 9
   a1 is the speaker. a2 is the hearer. 
@@ -1032,21 +1041,14 @@ Game 9
 \end{verbatim}
 
 
-\begin{figure}[htbp]
-  \centerline{\includegraphics[width=.45\textwidth]{chap6/figs/triangle4.pdf}}
-\caption{\label{triangle4}Semiotic triangles
-underlying game 9. For the same referent and the same word, 
-there are two different meanings. Dashed lines indicate
-the relations used by the speaker {\bfshape  a2}. Straight lines
-indicate those used by the hearer {\bfshape  a1}.}
-\end{figure}
+
 
 A subsequent game (game 11) illustrates that despite 
 semantic incoherence, a game can still succeed. The agents 
 do not know that each of them means something else by 
 `puxazi' and if the meanings are compatible, they 
 have no reason to change their internal lexicon:
-\clearpage
+
 \begin{verbatim}
 Game 11
   a2 is the speaker. a1 is the hearer. 
@@ -1094,7 +1096,7 @@ shown in \tabref{tab:game14}.
 \caption{\label{tab:game14}Sensory data for game 14 after scaling.}
 \end{center}
 \end{table}
-\clearpage
+
 {\bfshape  a1} conceptualises the scene using 
 {}[\textsc{vpos} 0.5–1.0], which he has lexicalised as `puxazi'. 
 For {\bfshape  a2}, `puxazi' means [\textsc{gray} 0.0–0.5] (light), but this 
@@ -1158,7 +1160,7 @@ by the hearer pushes down alternative meanings for the
 same word, thus damping ambiguity. 
 
 
-\begin{figure}[htbp]
+\begin{figure}[t]
   \centerline{\includegraphics[width=.60\textwidth]{chap6/figs/triangle5.pdf}}
 \caption{\label{triangle5}Semiotic triangles used 
 in game 25. The score of the relation between [\textsc{gray} 0.0–0.5] and 
@@ -1181,7 +1183,7 @@ meaning. Two meanings for `puxazi'
 are competing in {\bfshape  a1}: [\textsc{gray} 0.0–0.5] (light)
 and [\textsc{vpos} 0.0–0.5] (down). [\textsc{vpos} 0.0–0.5] gets damped and 
 the score of [\textsc{gray} 0.0–0.5] goes up, thus helping to 
-further disambiguate `puxazi'. 
+further disambiguate `puxazi'. \clearpage
 \begin{verbatim}
 Game 25
   a2 is the speaker. a1 is the hearer. 
@@ -1226,7 +1228,7 @@ specific one if they have equal lexical scores.
 
 \subsection{Lexical and ontological development} 
 
-Despite the additional complication of mutually 
+Despite \todo{removed `the' here to fit the line} additional complication of mutually 
 compatible meanings for unknown words, the two agents
 nevertheless manage to 
 build up a shared communication system, as can be seen 
@@ -1265,7 +1267,7 @@ than 0.0 for at least one agent) is as in \tabref{tab:after30}.
 
 
 
-\begin{table} 
+\begin{table}[b]
 \begin{center}
 \begin{tabular}{ l  l  l  l  l }
 \lsptoprule
@@ -1282,7 +1284,7 @@ than 0.0 for at least one agent) is as in \tabref{tab:after30}.
 \end{center}
 \end{table}
 
-Note that there are two meanings for `puxazi': 
+Note that there are two meanings for `puxazi': \enlargethispage{1\baselineskip}
 {}[\textsc{gray} 0.0–0.5] (light) and [\textsc{height} 0.5–1.0] (tall). 
 
 The lexicon after 200 games is shown in \tabref{tab:after200}. 
