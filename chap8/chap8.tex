@@ -9,7 +9,7 @@ It is well known that technologies can only become a reality after
 experiments have been carried out in open-ended real world conditions. Nobody would want to fly an airplane that 
 has only been tested in computer simulations. 
 
-We did the same for the Talking heads experiments and this was a huge step. Many more people had to get
+We did the same for the Talking Heads experiments and this was a huge step. Many more people had to get
 get involved: for making the code more robust, setting up the teleportation infrastructure, and installing and 
 maintaining the physical installations in different countries.  
 The mechanisms about language evolution discussed in \partref{part:1} of this book did not significantly change. On the contrary, 
@@ -32,7 +32,7 @@ It was one of the first exhibitions that put so much emphasis on art as a resear
 activity and on profound interactions between art and science.
 Participants included both scientists and science historians such as Peter Galison, Bruno Latour, Israel Rosenfield
 and Isabelle Stengers, as well as architects such as Rem Koolhaas and artists with an affinity for research 
-such as Peter Fischli and David Weiss, Gabriel Orozco, Carsten H\"oller, Panamarenko, Lawrence Weiner a.o. 
+such as Peter Fischli and David Weiss, Gabriel Orozco, Carsten H\"oller, Panamarenko, Lawrence Weiner and others. 
 The exhibition was visited by 8000 people. 
 
 The introduction to the catalog edited by curators Hans Ulrich Obrist
@@ -106,7 +106,7 @@ two cameras mounted on tripods, the computers driving them, the screen with geom
 what went on. The activities of the agents were audible through a narration. 
 \clearpage
 \item A {\itshape reading room} contained background philosophical and scientific 
-papers and excerpts from books about language, meaning and their origins. These readings included: 
+papers and excerpts from books about language, meaning and their origins. These readings included: \todo{The readings are referred to, but they do not follow after the colon}
 \item A {\itshape user interface room} contained a workstation where visitors to the exhibition could create their own 
 agents, direct them to play games on certain sites, and teach new words to their agents. 
 \end{enumerate}
@@ -124,7 +124,7 @@ image that the agent picked up, (on top of that) a screen displaying the process
 and to the right the loudspeaker broadcasting the speech output of the agent.}
 \end{figure}
 
-A typical example of the kind of images that the camera's picked up are shown in \figref{fig:images}. 
+A typical example of the kind of images that the cameras picked up are shown in \figref{fig:images}. 
 To play a game, the agent had to find a sufficiently delineated group of objects and each object had \todo{I have framed Figure 8.2 because it contains multiple images}
 to exceed a minimal size. Initially quite complex configurations were put on the white board but this made it very difficult for agents to find a coherent group and to develop good concepts for referring to the topic. The right 
 image in \figref{fig:images} provides clear examples of up, down, left and right, different colors, and 
@@ -133,25 +133,25 @@ also opportunities to use multiple words (such as `red bottom').
 \begin{figure}[htbp]
  \centerline{\includegraphics[width=.40\textwidth]{chap8/figures/image-1.jpg}
 \includegraphics[width=.40\textwidth]{chap8/figures/image-2.pdf}}
-\caption{\label{fig:images}Examples of images picked up by the camera's. The chosen topic was signalled by drawing a bounding box around it. 
+\caption{\label{fig:images}Examples of images picked up by the cameras. The chosen topic was signalled by drawing a bounding box around it. 
 During experimentation, it was found that configurations such as in the right image lead to more stable performance.} 
 \end{figure}
 
 A typical example of an interaction is shown in \figref{fig:interaction}. 
-The speaker (called "rubber", an agent created and named by a user) has selected the blue object at the bottom left 
+The speaker (called ``rubber", an agent created and named by a user) has selected the blue object at the bottom left 
 of the screen. We see the discrimination trees of the agent at that point and the data for each of the objects 
 recognised. The coordinates of the respective objects (scaled within the coordinate system of 
 the captured image) are (0.0,1.0) for the blue object, (1.0, 0.96) for the red one, and (0.42, 0.0) for the green one. 
-The values are displayed as HP (horizontal position), VP (vertical position), H (height), W (width), A (area), 
-R (red), G (green), Y (yellow), B (blue), L (lightness). 
+The values are displayed as \textsc{hp} (horizontal position), \textsc{vp} (vertical position), \textsc{h} (height), \textsc{w} (width), \textsc{a} (area), 
+\textsc{r} (red), \textsc{g} (green), \textsc{y} (yellow), \textsc{b} (blue), \textsc{l} (lightness). 
 The blue object is chosen as the topic and the value on the blue channel has the most discriminative power, although 
-there are other possibilities. There are three competing words for naming blue: Xagadude, Nibidesu, and Tetipi. 
-None of them have a score higher than 0 and so a random choice of Xagadude is made. 
+there are other possibilities. There are three competing words for naming blue: `Xagadude', `Nibidesu', and `Tetipi'. 
+None of them have a score higher than 0 and so a random choice of `Xagadude' is made. 
 
-The hearer (called "me") perceives an image which is slightly different from 
+The hearer (called ``me") perceives an image which is slightly different from 
 the one seen by the speaker. Also the discrimination trees built up so far by this agent are different from the ones used
 by the speaker. The hearer does not know the word, so the game fails. After the speaker has then pointed to the 
-topic, the hearer conceptualises and guesses that the meaning of this word is 'blue' because that is also for him the most 
+topic, the hearer conceptualises and guesses that the meaning of this word is `blue' because that is also for him the most 
 discriminating feature of the topic (which has coordinates 0.0, 1.0) compared to the other objects in the context. 
 
 
@@ -169,9 +169,9 @@ the experiment as it was progressing, a hall of fame for the agents that were th
 an overview of the lexicon 
 that had formed so far. The website allowed inspection of what was happening at each site (\figref{fig:thwebsite}): 
 Users could check which agents were waiting there to play a game, and what the current 
-game was about. It displayed also statistics about the 
+game was about. It also displayed statistics about the 
 communicative success and agent activity at each site. The site is no longer operational due to 
-changes to the underlying software but some remnants can be visited here: https://ai.vub.ac.be/talking-heads/
+changes to the underlying software but some remnants can be visited here: \url{https://ai.vub.ac.be/talking-heads/}
 
 \begin{figure}[htb]
   \centerline{\includegraphics[width=.85\textwidth]{chap8/figures/th-website.pdf}}
@@ -338,7 +338,7 @@ doesn't work, we just have to be patient and wait for the changes to propagate.
 You could also consider entering the address of 'headnet' as dotted IP 
 (193.105.194.10) in the network configuration dialog.
 
-	A
+	A \enlargethispage{1\baselineskip}
 \end{mail}
 \begin{mail}
 From: Angus McIntyre <angus@csl.sony.fr>\\
@@ -384,7 +384,7 @@ The server seems to be acquiring consistency.
 
 I'm off home now. If you need me to come back and kick 
 the server, call me on:
-	+33-1-42-78-73-88
+	+33-1-42-78-73-88 \todo{If this was a private number, we would not show it here.}
 Bye,
 	A
 \end{mail}
@@ -488,8 +488,8 @@ but with luck they shouldn't be too serious.
 By the way, there's a bug in the 'headnet' software with respect to 
 routes; there's a finite limit on the field length for the 'route' 
 field. If you make a route that's too long, it gets truncated, so 
-you can have an agent whose route goes:
-	... paris 10 bruss
+you can have an agent whose route goes:\\
+	... paris 10 bruss\clearpage
 The agent will complete its games on 'paris' and then go into 
 stasis waiting for a server called 'bruss' to pick it up. A patch 
 for this would probably be nice to have at some point.
@@ -645,12 +645,11 @@ was not working at all...) corrected in: segment-tools.lsp and th-world.lsp
 3. Masking. Eliminating zero channels should be done on the source not on
 value (= value after scaling, so it is often zero). corrected in: 
 prototype.lsp (in the functions folder)
-
+\clearpage
 After theses patches, sites can be running again.
 
 Fred and Luc.
 \end{mail}
-\clearpage
 \begin{mail}
 --============\_-1278188520==\_d============\\
 Date: Tue, 29 Jun 1999 23:25:45 +0200 (MET DST)\\
@@ -728,7 +727,7 @@ Joris.
 \end{mail}
 
 
-By mid July, both the basic infrastructure, the teleportation mechanisms and the semiotic dynamics were running 
+By mid July,\todo{removed `both' here} the basic infrastructure, the teleportation mechanisms and the semiotic dynamics were running 
 smoothly and so the experiment could operate without constant care. 
 
 \section{Results of the experiment}
@@ -762,7 +761,7 @@ concept `left', i.e. a horizontal position
 between 0.0 and 0.25 (after scaling). The word ``wogglesplat" becomes dominant
 although there is a very strong competition in the beginning. 
 We see that users try to give other words to the same meaning, such as "gauche" or "links" (both words expressing left 
-in French and German or Dutch respectively). We also see that other words such as "red" or "yellow" get associated with this 
+in French and German or Dutch respectively). We also see that other words such as "red" or "yellow" get associated with this \enlargethispage{1\baselineskip}
 meaning, because the hearer may guess the wrong meaning in learning the word for left. 
 
 \begin{figure}[htbp]
@@ -772,7 +771,7 @@ horizontal position is less than 0.25 (scaled).
 New words come up all the time but there is a clear winner-take-all effect with "wogglesplat" winning. 
 }
 \end{figure}
-\enlargethispage{1\baselineskip}
+
 \figref{fig:droite} shows another example of the semiotic dynamics in the experiment, this time looking at all the 
 meanings for a particular word, namely `droite' (meaning `to the right' in French). This word clearly has been introduced
 by a human user and the dominating meaning progressively becomes a region (between 0.75 and 1.0) on the horizontal position, 
@@ -828,16 +827,16 @@ The experiment received wide coverage in
 the media thanks to its public exposure as part of a major exhibition. The Süddeutsche Zeitung called it 
 ``Angels with Internet wings''. All this lead to invitations to show the experiment
 also in other venues, as discussed in the next chapter. 
-Regretably, the challenge just to keep the experiment in the air with the available human resources
+Regrettably, the challenge just to keep the experiment in the air with the available human resources
 and the pressure for going on with new experiments prevented us from doing more adequate data gathering 
 and analysis. Nevertheless some analyses appeared, particularly as carried out by Frederic Kaplan (\citealt{Kaplan:2001}). 
 
-The field of complex systems science was at that time still in its infance and 
+The field of complex systems science was at that time still in its infancy and 
 adequate tools for analysing language as a complex adaptive system were in the early stages of development. 
-Nevertheles, various publications were 
+Nevertheles, various publications were \todo{Here the rest of the sentence seems to have disappeared.}
 
 The experiment ended with the following ``tongue-in-cheek'' post by Angus McIntyre on the Forum:
-
+\clearpage
 \begin{mail}
 {\bfshape 1999-10-14 15:08:29 Angus McIntyre}\\
 {\itshape Bad news and good news}\\
