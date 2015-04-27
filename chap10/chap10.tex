@@ -314,7 +314,7 @@ testing out each step before moving to the next one, and this progressive comple
 
 The earliest attempts to investigate the emergence of syntax date back to 1997, in other words even before 
 the first Talking Heads experiment started. The first report 
-appeared as a paper in the Artificial Intelligence journal in 1998 \citep{Steels:1998}. 
+appeared as a paper in the Artificial Intelligence journal as \citet{Steels:1998}. 
 It was described by the journal editors (Dan Bobrow and 
 Mike Brady) as ``obviously in an early stage, but very provocative and suggestive.'' The paper was based on my keynote 
 lecture at \textsc{ijcai} 1997 in Nagoya and used a precursor of the pan-tilt cameras built by Tony Belpaeme. 
@@ -341,8 +341,6 @@ Schema-541
   USE: 10 
   SUCCESS: 3
 \end{verbatim}
-\end{quote}
-
 Of course, instead of noun, noun-group, subject, etc. computer-generated symbols are used such 
 as syn-cat-77, syn-slot-50, etc. The constraints on the schema are represented in terms of
 a constraint system. Each constraint
@@ -380,6 +378,8 @@ Schema-542
   USE: 10
   SUCCESS: 3
 \end{verbatim}
+
+
 Inference rules such as the following define the selection restrictions:
 \begin{verbatim}
   rule 102: ([VISIB v-4111) => ([MEMBER sem-cat-761)
@@ -399,7 +399,9 @@ Association-271
              (syn-slot-50 sem-slot-50))
   USE: 10
   SUCCESS: 3"
-\end{verbatim}\citep{Steels:1998}
+\end{verbatim}
+% \citep{Steels:1998}
+\end{quote}
 
 \begin{figure}[t]
 \centerline{
@@ -554,7 +556,7 @@ a lay public, the agents engaging in a language game were also visually animated
 \figref{fig:adam-eve} top).\footnote{The animations were developed by Veronique Caraux in Paris.}
 
 
-\begin{figure}[h]
+\begin{figure}[t]
   \centerline{\includegraphics[width=.40\textwidth]{chap10/figs/adam-eve.pdf}}
 \centerline{\includegraphics[width=.70\textwidth]{chap10/figs/jack-give.pdf}}
 \centerline{\includegraphics[width=.80\textwidth]{chap10/figs/push-jill.pdf}}
@@ -920,7 +922,7 @@ emergence and evolution of language.
 
 
 \begin{figure}[h]
-  \centerline{\includegraphics[width=\textwidth]{chap10/figs/comparison.pdf}}
+  \centerline{\includegraphics[width=.9\textwidth]{chap10/figs/comparison.pdf}}
 \caption{\label{fig:comparison}Comparison between two different strategies: The top-graph shows the growth in the average number of 
 markers for the event-specific marker strategy. 
 The bottom two graphs show the average size of the set of markers when analogy is used. As usual, the y-axis shows 

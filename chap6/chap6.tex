@@ -635,7 +635,7 @@ three for [\textsc{vpos} 0.5–1.0]: `wavone', `zaxawe', and
 example `numefuli' for [\textsc{gray} 0.5–1.0] (dark). 
 
 
-\begin{table}[h]
+\begin{table}[p]
 \begin{center}
 \begin{tabular}{ l  l  l  l  l  l  l  }
 \lsptoprule
@@ -664,6 +664,13 @@ example `numefuli' for [\textsc{gray} 0.5–1.0] (dark).
 \caption{\label{tab:lex2000}Lexicon of five agents after 2000 games.}
 \end{center}
 \end{table}
+
+\begin{figure}[p]
+  \centerline{\includegraphics[width=.50\textwidth]{chap6/figs/triangle6.pdf}}
+\caption{\label{triangle6}In the case of synonymy, 
+there are multiple words for the same meaning and hence the 
+same referent.}
+\end{figure}
 
 \clearpage 
 The positive feedback loop between use and success
@@ -700,13 +707,7 @@ Agent {\bfshape  a4} is now already in a dilemma because he has created
 `notabefe' and picked up `faluleru' from {\bfshape  a7}. 
 
 
-\begin{figure}[htbp]
-  \centerline{\includegraphics[width=.50\textwidth]{chap6/figs/triangle6.pdf}}
-\caption{\label{triangle6}In the case of synonymy, 
-there are multiple words for the same meaning and hence the 
-same referent.}
-\end{figure}
-
+  
 With a lower word creation rate ($w_{c}$), 
 fewer new words would be created. The initial bootstrapping
 of the lexicon would then take a bit longer but the 
@@ -763,6 +764,7 @@ and {\bfshape  a7}. When we continue to inspect the
 simulation we see that `notabefe' takes a bit of 
 a revenge. The next games with the 
 meaning [\textsc{gray} 0.5–1.0] all involve the word `notabefe': 
+
 \begin{verbatim}
 Game 111
  Speaker a5 uses `notabefe' for [GRAY 0.5–1.0]
@@ -1048,6 +1050,7 @@ semantic incoherence, a game can still succeed. The agents
 do not know that each of them means something else by 
 `puxazi' and if the meanings are compatible, they 
 have no reason to change their internal lexicon:
+\newpage 
 
 \begin{verbatim}
 Game 11
@@ -1097,6 +1100,7 @@ shown in \tabref{tab:game14}.
 \end{center}
 \end{table}
 
+\clearpage 
 {\bfshape  a1} conceptualises the scene using 
 {}[\textsc{vpos} 0.5–1.0], which he has lexicalised as `puxazi'. 
 For {\bfshape  a2}, `puxazi' means [\textsc{gray} 0.0–0.5] (light), but this 
@@ -1183,7 +1187,8 @@ meaning. Two meanings for `puxazi'
 are competing in {\bfshape  a1}: [\textsc{gray} 0.0–0.5] (light)
 and [\textsc{vpos} 0.0–0.5] (down). [\textsc{vpos} 0.0–0.5] gets damped and 
 the score of [\textsc{gray} 0.0–0.5] goes up, thus helping to 
-further disambiguate `puxazi'. \clearpage
+further disambiguate `puxazi'. 
+
 \begin{verbatim}
 Game 25
   a2 is the speaker. a1 is the hearer. 
@@ -1417,7 +1422,7 @@ the \textsc{height} meaning. This can be seen from the scores of
 the different meanings.
 
 
-\begin{figure}[b]
+\begin{figure}[t]
   \centerline{\includegraphics[width=.60\textwidth]{chap6/figs/triangle7.pdf}}
 \caption{\label{triangle7}Two different words have the 
 same two meanings and have difficulty disambiguating because
