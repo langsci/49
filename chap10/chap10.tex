@@ -158,7 +158,7 @@ observational learning. In social situated learning, \is{social situated learnin
 the learner maximally uses information from the context, the 
 interaction, and the existing state of his language system, to make the best possible guess about the meaning of 
 unknown utterances. He gets help from the speaker which is acting as a tutor and gives useful feedback to constrain 
-the uncertainty as much as possible. An utterance is seens as purposeful and the hearer assumes that the speaker conceptualises
+the uncertainty as much as possible. An utterance is seen as purposeful and the hearer assumes that the speaker conceptualises
 and expresses what is relevant to achieve communicative success. In observational learning, the learner is 
 passively observing interactions of others and stores them as data. When there is a sufficiently big 
 corpus he can employ cross-situational learning to grasp the meaning of each word by scanning 
@@ -276,7 +276,7 @@ lexicon starts to decrease. However there is ambiguity because the hearer cannot
 the speaker has conceptualised the 
 scene from his own viewpoint or performed a perspective reversal, leading to a large number of failed communications 
 (more than 50 \%). 
-\item In stage \textsc{iii}, a more elaborate stratergy is used. The speaker now expresses whether he has performed perspective 
+\item In stage \textsc{iii}, a more elaborate strategy is used. The speaker now expresses whether he has performed perspective 
 reversal (as in `{\itshape to your} left' vs. simply `left'). Only with this strategy are agents able to reach high 
 communicative success with a stable inventory. 
 \end{itemize}
@@ -493,12 +493,12 @@ were chosen to make the experiment easier to follow. Agents form
 multi-word utterances using straightforward lexicon lookup, producing utterances
 like `move-towards red jill' (Jill moves towards the red object) or `push 
 jack jill green' (Jack pushes the green block to Jill). There is no syntax at all. Agents can nevertheless already 
-achieve communicative success when they use the real world as a way to figure out the particant roles, even though the 
+achieve communicative success when they use the real world as a way to figure out the participant roles, even though the 
 utterance does not provide any information. For example, to detect whether Jack pushes the green block to Jill or Jill 
 pushes the green block to Jack. 
 
 \item {\bfshape  Specific marker strategy}. The second strategy introduces markers in the form of particles added to words referring 
-to objects, in order to specify what agument the object fills in the predicate describing the 
+to objects, in order to specify what argument the object fills in the predicate describing the 
 event. For example, there could be two markers: `pi' 
 and `pa' specifying that the referent plays the role respectively of giver and gift in a give event, as in
 `pi jill pa block give'. The markers are entirely specific for each event in the sense that there is no generalisation 
@@ -738,7 +738,7 @@ the object that is referred to by the word, in this case it is the event itself.
 Next, here is an example of a rule for the marker `po'. On the semantic side it ensures that the referent of one unit 
 whose referent is ?source is equal to the object filling the argument move-away-from-2 in a move-away-from event. 
 On the syntactic side, it triggers when there is a word that has the grammatical category `takes-marker-1' and 
-is preceded by the marker `po'. (<< stands for `preceeds') 
+is preceded by the marker `po'. (<< stands for `precedes') 
 \begin{verbatim}
 ((?predicate 
    (meaning
@@ -786,7 +786,7 @@ move-away-from-2 argument.
           (move-away-from-2 ?evnt ?source)))) 
     (expanded-meaning (== (role-1 ?evnt ?source))))
 \end{verbatim}
-And the rules that click eveything together now operate over semantic roles as shown in the following example: 
+And the rules that click everything together now operate over semantic roles as shown in the following example: 
 \begin{verbatim}
  ((?predicate
    (expanded-meaning (== (role-1 ?event ?source))))
