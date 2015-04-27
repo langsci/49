@@ -1,12 +1,12 @@
 \documentclass[ number=1
 			   ,series=cmle
-			   ,url=http://langsci-press.org/ 
+			   ,url=http://langsci-press.org/catalog/book/49 
 			   ,isbn=978-3-944675-42-8
 			   ,output=short   % long|short|inprep              
 			   %,blackandwhite
 			   ,smallfont
 			   ,biblatex
-			   ,draftmode  
+% 			   ,draftmode  
 			   %,draft
 			  ]{LSP/langsci}                          
 \usepackage{LSP/lsp-styles/lsp-gb4e}		% verhindert Komma bei mehrfachen Fußnoten?
@@ -28,7 +28,9 @@
 
 \usepackage{localcommands}
 \usepackage{localhyphenation}
- 
+
+\proofreader{Martin Hilpert, Felix Kopecky, Peter Petré, Daniela Schröder}
+\typesetter{Felix Kopecky, Sebastian Nordhoff}
 \title{The Talking Heads Experiment}
 \subtitle{Origins of words and meanings}
 \BackTitle{The Talking Heads Experiment}% - \\ Origins of Words and Meanings}
@@ -96,11 +98,11 @@ Laboratorium exhibition in Antwerp.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
 
-\part{Appendices} \label{part:4}
+% \part{Appendices} \label{part:4}
 \include{extra/papers-language-steels}
 
-\phantomsection%this allows hyperlink in ToC to work
-\addcontentsline{toc}{chapter}{List of references}
+% \phantomsection%this allows hyperlink in ToC to work
+% \addcontentsline{toc}{chapter}{List of references}
 \printbibliography %change to the name of your bib file
 \clearpage
    
@@ -110,10 +112,10 @@ Laboratorium exhibition in Antwerp.}
 \ohead{Name index} 
 \printindex 
   
-\phantomsection%this allows hyperlink in ToC to work
-\addcontentsline{toc}{section}{Language index}
-\ohead{Language index} 
-\printindex[lan] 
+% \phantomsection%this allows hyperlink in ToC to work
+% \addcontentsline{toc}{section}{Language index}
+% \ohead{Language index} 
+% \printindex[lan] 
   
 \phantomsection%this allows hyperlink in ToC to work
 \addcontentsline{toc}{section}{Subject index}
