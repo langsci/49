@@ -28,8 +28,8 @@ the nodes, and how the weights between nodes are adjusted.
 more complex grammatical expressions. It was already introduced in the previous chapter. 
 A language strategy is a particular way to deal syntactically and semantically 
 with one domain of meaning. It includes ways for conceptualising, expressing, acquiring and expanding a specific domain. 
-For example, the colour domain requires not only strategies for basic colour terms (like `blue'), but also for 
-graded membership expressions (`very blue'), composite colours, (`greenish blue'), analogical colours (`sky blue'), a.o. 
+For example, the colour domain requires not only strategies for basic colour terms (like \smplenquote{blue}), but also for 
+graded membership expressions (\smplenquote{very blue}), composite colours, (\smplenquote{greenish blue}), analogical colours (\smplenquote{sky blue}), a.o. 
 The Talking Heads experiments used a single strategy that was entirely hard-coded: discrimination trees for categorisation 
 and words without syntax to express distinctive categories. Research efforts moved towards the study of other strategies, and 
 to the question how such strategies may arise (discussed in the next chapter). 
@@ -199,10 +199,10 @@ individual and population level.
 
 \subsection{Semiotic networks}
 We have already seen from earlier experiments that the solution to these various issues lies in setting up
-the right kind of ``semiotic dynamics''. In the present case, this dynamics should gradually coordinate
+the right kind of \dblenquote{semiotic dynamics}. In the present case, this dynamics should gradually coordinate
 sensory experiences, prototypical views, individuals, 
 and names, both within a single individual and across the
-population. This lead to the notion of a {\itshape semiotic network}, which was a significant conceptual advance 
+population. This led to the notion of a {\itshape semiotic network}, which was a significant conceptual advance 
 in the methodology of conceiving and carrying out language game experiments.
 
 \begin{figure}[b]
@@ -373,7 +373,7 @@ requests an action. {\itshape Middle:} the hearer interprets this as moving up b
 \end{figure}
 
 The basic goal of the experiment is to simulate the emergence of a repertoire of actions and action terms, such as 
-`move up your left arm', or `stretch out both arms'. As often, a seemingly straightforward semantic domain generates 
+\smplenquote{move up your left arm}, or \smplenquote{stretch out both arms}. As often, a seemingly straightforward semantic domain generates 
 a set of fundamental subproblems that need to be solved and integrated so that the solutions work together: 
 
 1. The robots need a {\itshape repertoire of actions}. So they need a sensori-motor system that allows them to carry out 
@@ -388,7 +388,7 @@ and he can then play the movement back.
 2. The robots need to be able to recognise actions carried out by others. This can be accomplished again 
 with a prototype-based approach, as in the Proper Naming Game described in the previous subsection. Each individual action 
 is always slightly different from another instance of the same action and so totally accurate matching would not work. 
-For example, two instances of the same `moving up both hands' gesture will always look slightly different because of the 
+For example, two instances of the same \smplenquote{moving up both hands} gesture will always look slightly different because of the 
 position of the hands and arms and the exact starting body posture of the robots or the perspective from which 
 the gesture is perceived. 
 
@@ -519,8 +519,8 @@ of light changes and is different for speaker and hearer (see \tabref{f:scene-ex
 play a role in earlier experiments but 
 it certainly plays an important role in the stabilisation and choice of colour prototypes. 
 \item To focus on colour descriptions beyond basic colour terms, i.e. descriptions like 
-`slightly blue', `blue-green', `bluish green', `very bright', `shiny yellow', `dark red', `sky blue', 
-`very dark bluish red', etc. Indeed, it turns out that 
+\smplenquote{slightly blue}, \smplenquote{blue-green}, \smplenquote{bluish green}, \smplenquote{very bright}, \smplenquote{shiny yellow}, \smplenquote{dark red}, \smplenquote{sky blue}, 
+\smplenquote{very dark bluish red}, etc. Indeed, it turns out that 
 basic colour terms are used only in about 10 to 15 \% of the occurrences of colour descriptions. The rest are 
 more complex expressions. Complex colour descriptions require scaling up the semantics and introducing grammar, they 
 also require the introduction of language strategies as a layer of abstraction 
@@ -572,9 +572,9 @@ L stands for lightness and a* and b* are the two opponent channel dimensions (ye
 
 A language strategy has two components: (i) a particular way of conceptualising reality (and learning the categories involved
 in this conceptualisation) and (ii) a particular grammatical pattern that suggests to the listener what strategy is intended 
-and provides the contents to execute the strategy. For example, in the phrase `very green', the combination of an adverb 
-`very' and a basic colour adjective `green' suggests a ``graded membership strategy'' where not only a basic colour prototype
-(`green') is introduced but also how close the sample is to this prototype (`very'). I will now introduce first how 
+and provides the contents to execute the strategy. For example, in the phrase \smplenquote{very green}, the combination of an adverb 
+\smplenquote{very} and a basic colour adjective \smplenquote{green} suggests a \dblenquote{graded membership strategy} where not only a basic colour prototype
+(\smplenquote{green}) is introduced but also how close the sample is to this prototype (\smplenquote{very}). I will now introduce first how 
 the conceptual aspect of a language strategy is defined using a procedural semantics system called IRL and then how the 
 linguistic aspect is defined, using Fluid Construction Grammar. 
 
@@ -663,7 +663,7 @@ that is similar to another one.
 Constraint networks are an obvious choice for grounded (natural) language processing. \is{constraint network}
 For example, to interpret the sentence `the ball behind
 the block', it is possible that there are many blocks, many balls, but only one ball that is behind a block. So the 
-unique referent of `the ball', `the block' and of the total noun phrase only become clear when 
+unique referent of \smplenquote{the ball}, \smplenquote{the block} and of the total noun phrase only become clear when 
 all constraints have been applied. Natural languages clearly do not supply control information but assume that 
 the interpreter is smart enough to interpret constraints based on data flow. The other properties of constraint 
 programming are also important. The constraint network planner can be used for conceptualising what to say and 
@@ -674,12 +674,12 @@ meaning of a new grammatical construction.
 % {\bfshape Building Blocks for Natural Language Semantics }\\
 
 What is the nature of the constraints that we will need for the semantics of natural language? 
-Take a phrase like `the ball behind the block'. It invokes the following constraints, also called 
+Take a phrase like \smplenquote{the ball behind the block}. It invokes the following constraints, also called 
 semantic operations: 
 \begin{itemize}
-\item `the ball' evokes a constraint to use a prototype [\textsc{ball}] to find a referent in the current scene.
-\item The same holds for `the block' which uses another prototype [\textsc{block}]. 
-\item The preposition `behind' implies another constraint, namely to use the spatial relation [\textsc{behind}] to filter a 
+\item \smplenquote{the ball} evokes a constraint to use a prototype [\textsc{ball}] to find a referent in the current scene.
+\item The same holds for \smplenquote{the block} which uses another prototype [\textsc{block}]. 
+\item The preposition \smplenquote{behind} implies another constraint, namely to use the spatial relation [\textsc{behind}] to filter a 
 set of objects (namely those found by using the [\textsc{ball}] prototype) and retain only those that satisfy the behind-relation 
 to an object in another set. 
 \end{itemize} 
@@ -711,7 +711,7 @@ to either apply a filler for ?prototype-1 and
 ?context and then compute ?object-set-1, or provide ?object-set-1 and ?context and obtain a filler for ?prototype-1. 
 The 'normal' use is the first one, but the second use is just as important in planning what to
 say (as speaker) or in guessing a possible prototype while learning the meaning of some unknown word. 
-Moreover the ``identify-set-using-prototype'' operation can be made smart enough that it can actually come up with
+Moreover the \dblenquote{identify-set-using-prototype} operation can be made smart enough that it can actually come up with
 a new prototype, when there isn't one yet that does the job. Hence learning can be 
 integrated directly into the constraint network itself. 
 
@@ -733,7 +733,7 @@ The constraint network planner works on an evolutionary basis, similar to geneti
 (for example identifying a particular object in the environment), it will generate possible networks by recruiting 
 existing primitive operations, linking them in, and checking whether the computation makes progress towards reaching the goal. 
 The slots of a constraint are typed to limit what semantic operations will be tried next. Networks that perform useful 
-functions are ``chunked'' into higher order units that then can be used as units in their own right, thus scaling up 
+functions are \dblenquote{chunked} into higher order units that then can be used as units in their own right, thus scaling up 
 complexity. These chunked networks become associated with stereotyped grammatical expression, so that there is a very 
 fast retrieval and semantic execution.
 \subsection{Strategies for colour}
@@ -753,7 +753,7 @@ The strategy is similar to the one shown earlier.
 (filter-by-colour-lenient ?s3 ?s2 ?cc)
 (select-most-activated ?t ?s3)
 \end{verbatim}
-When the speaker says `green', this network is used together with a specific binding of ?cc to the prototype for 
+When the speaker says \smplenquote{green}, this network is used together with a specific binding of ?cc to the prototype for 
 green (denoted as [green]). 
 \begin{verbatim}
 (bind colour-category ?cc [green])
@@ -767,8 +767,8 @@ similarity to the prototype computed, and the one with the highest similarity is
 \end{figure}
 
 2. The second strategy is the {\bfshape Graded Membership Strategy} which categorises the topic first using 
-a basic colour but then qualifies how well its colour fits with the prototype. For example, we can say `greenish' or
-`very green'. Some languages (such as Tarahumara spoken in Northern Mexico) obligatory mark graded membership using 
+a basic colour but then qualifies how well its colour fits with the prototype. For example, we can say \smplenquote{greenish} or
+\smplenquote{very green}. Some languages (such as Tarahumara spoken in Northern Mexico) obligatory mark graded membership using 
 suffixes. The core of the constraint network is defined as follows. A graphical representation of the network is shown
 in \figref{fig:graded}. 
 \begin{verbatim}
@@ -797,15 +797,15 @@ Categorisation but adds a constraint to handle graded membership. }
 \enlargethispage{1\baselineskip}
 The network is entirely general for all expressions that use graded membership and gets instantiated for a particular 
 case by specifying the semantic entities involved using the bind operation. For example, Tarahumara has the word 
-`sita' for a particular colour prototype and `kame' for one type of graded membership: 
+\smplenquote{sita} for a particular colour prototype and \smplenquote{kame} for one type of graded membership: 
 \begin{verbatim}
 (bind colour-category ?cc [sita])
 (bind membership-category ?mc [kame]) 
 \end{verbatim}
 
 3. The third strategy is the {\bfshape Category Combination Strategy} which compounds a category into two new ones, in 
-expressions like `greenish blue' or `red orange'. This compounding is not a simple intersection. The set of objects  
-that are `greenish blue' is not found by taking all the ones that are green and all the ones that are blue and then 
+expressions like \smplenquote{greenish blue} or \smplenquote{red orange}. This compounding is not a simple intersection. The set of objects  
+that are \smplenquote{greenish blue} is not found by taking all the ones that are green and all the ones that are blue and then 
 the intersection of the two. Rather, it appears that the discretisation of the colour landscape is scaled with respect 
 to the colour which appears as head of the phrase and then categorisation is done. This is achieved with the IRL network 
 shown in \figref{fig:combi}. 
@@ -813,20 +813,20 @@ shown in \figref{fig:combi}.
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=1.0\textwidth]{chap11/figs/combi.pdf}}
-\caption{\label{fig:combi}Constraint network implementing the Colour Combination strategy leading to expressions like `greenish blue'. 
+\caption{\label{fig:combi}Constraint network implementing the Colour Combination strategy leading to expressions like \smplenquote{greenish blue}. 
 The filter-by-colour operation now has an extra argument, namely category-sets,  
 and there is a draw-category-set-to-category operation that rescales the basic colour category set.}
 \end{figure}
 
 4. The next strategy is the {\bfshape Basic Modification Strategy} which modifies a colour along the brightness dimension, as in 
-`light green', `dull yellow', etc. It is implemented by projecting the modifying dimension onto the basic colour space 
+\smplenquote{light green}, \smplenquote{dull yellow}, etc. It is implemented by projecting the modifying dimension onto the basic colour space 
 whereby the colour being modified lies on the projecting vector and a new discretisation of the colour space can be 
 performed. The network for this strategy is shown in \figref{fig:modi}. 
 %http://www.workwithcolour.com/red-orange-colour-hue-range-01.htm
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=1.0\textwidth]{chap11/figs/modi.pdf}}
-\caption{\label{fig:modi}Constraint network for the basic modification strategy, for expressions like `light green'.}
+\caption{\label{fig:modi}Constraint network for the basic modification strategy, for expressions like \smplenquote{light green}.}
 \end{figure}
 
 Many other strategies for colour can be imagined and some of them are found in human languages (although not necessarily in English). 
@@ -851,12 +851,12 @@ and expanded by three types of constructions (see for example \figref{fig:syntac
 the Basic Colour strategy in \figref{fig:basic-strat}). 
 
 1. There are first {\itshape lexical constructions} that associate a word with the introduction of a semantic entity  
-such as a colour category or a qualifier for indicating graded membership. So the meaning for the word `yellow' 
+such as a colour category or a qualifier for indicating graded membership. So the meaning for the word \smplenquote{yellow} 
 introduces a \textsc{bind}-operation, as in: 
 \begin{verbatim}
 ((bind colour-category ?c [yellow]))
 \end{verbatim}
-When the word `yellow' is encountered, a unit for this word is created with this \textsc{bind}-operation as meaning and the 
+When the word \smplenquote{yellow} is encountered, a unit for this word is created with this \textsc{bind}-operation as meaning and the 
 word-string itself as the form. It is the unit called Yellow-unit in \figref{fig:syntactic-graded}. 
 The construction also introduces a lexical category (part of speech) for the word (in this case the lexical category 
 is colour-category) and specifies which variables in the meaning can be linked with other variables in other
@@ -876,9 +876,9 @@ shows the name of the unit, and some of the key features of the syntactic and se
 will play a role. It is necessary to have this layer above lexical categories because the same word/category can have many 
 different functions. The choice is determined by the lexical category, and the syntactic and semantic context as 
 defined in functional and phrasal constructions. For example, an adjective can appear both in an adjectival 
-function (as in `the red block') and as a predicate (as in `the block is red') but it can also be coerced 
-into a nominal function (as in `red is a beautiful colour'). The same word can also belong to more than one 
-lexical category, for example, `walk' can be a verb (`He walks home') as well as a noun (`I take a walk'). \is{functional 
+function (as in \smplenquote{the red block}) and as a predicate (as in \smplenquote{the block is red}) but it can also be coerced 
+into a nominal function (as in \smplenquote{red is a beautiful colour}). The same word can also belong to more than one 
+lexical category, for example, \smplenquote{walk} can be a verb (\smplenquote{He walks home}) as well as a noun (\smplenquote{I take a walk}). \is{functional 
 constructions}
 
 Functional constructions create a unit on top of the word. For example, in the Basic Colour Strategy, 
@@ -905,7 +905,7 @@ be linked further, namely ?t, which is the topic of the whole utterance.
 The constituent is called Colour-Phrase. 
 
 \figref{fig:syntactic-graded}, right shows another example, namely the structure for an instantiation of the 
-graded-membership strategy for the Tarahumara utterance `sita kame'. It is again a Colour-Phrase.
+graded-membership strategy for the Tarahumara utterance \smplenquote{sita kame}. It is again a Colour-Phrase.
 We see that there are now 4 levels of hierarchy. The ColourMembership-Unit pulls together a colour-category and 
 a membership-category to form a new colour-category which then becomes a ColourPhrase-Unit again.
 \subsection{Influence of embodiment}
@@ -950,7 +950,7 @@ Interestingly, the best results in terms of communicative success
 are obtained when the agents are allowed to evolve their own colour language, 
 partly because there was no limit on the number of prototypes they could introduce. This was better 
 than using the set of basic colour prototypes for English, simply because English would turn to more complex expressions
-(such as `bluish green') when the basic colour catgories are not effective. Moreover, 
+(such as \smplenquote{bluish green}) when the basic colour catgories are not effective. Moreover, 
 agents still achieve better results compared to the English colour system when they do not need to stick 
 dogmatically to it. Indeed this shows why alignment, which is widely observed
 in human dialogues,\footnote{See: \cite{Garrod:1987} and \cite{Galantucci:2005}.}

@@ -31,14 +31,14 @@
 
 \proofreader{Martin Hilpert, Felix Kopecky, Peter Petré, Daniela Schröder}
 \typesetter{Felix Kopecky, Sebastian Nordhoff}
-\title{The Talking Heads Experiment}
+\title{The Talking Heads experiment}
 \subtitle{Origins of words and meanings}
-\BackTitle{The Talking Heads Experiment}% - \\ Origins of Words and Meanings}
+\BackTitle{The Talking Heads experiment}% - \\ Origins of Words and Meanings}
 \author{Luc Steels}
 %\Affiliation{ Catalan Institute for Advanced Studies (ICREA) \\ %- Instituci\accute{o} Catalana de Recerca i Estudis Avan\cats\\
 %Institut de Biologia Evolutiva (Universitat Pompeu Fabra and CSIC) Barcelona}
 \dedication{For my daughter Lenie}
-\BackBody{The Talking Heads Experiment, conducted in the years 1999--2001, was the first large-scale experiment 
+\BackBody{The Talking Heads experiment, conducted in the years 1999--2001, was the first large-scale experiment 
 in which open populations of situated embodied agents created for the first time ever a new shared vocabulary
 by playing language games about real world scenes in front of them. The agents could teleport to different 
 physical sites in the world through the Internet. Sites, in Antwerp, Brussels, Paris, Tokyo, London, Cambridge
@@ -73,7 +73,7 @@ this agent-based information ecosystem.}
 Laboratorium exhibition in Antwerp.}
 % \label{f:cover}
 \end{figure}
-%
+% %
 \include{chap1/chap1}
 \include{chap2/chap2}
 \include{chap3/chap3}
@@ -100,10 +100,22 @@ Laboratorium exhibition in Antwerp.}
 \backmatter
 
 % \part{Appendices} \label{part:4}
-\include{extra/papers-language-steels}
+% \include{extra/papers-language-steels}
+% \input{extra/steelspapers.bbl}  
 
 \phantomsection%this allows hyperlink in ToC to work
-% \addcontentsline{toc}{chapter}{List of references}
+\addchap{Relevant papers by Luc Steels}
+\phantomsection
+
+\renewcommand{\bibitem}[2][]{\item}
+\newcommand{\natexlab}[1]{}
+\newcommand{\doi}[1]{#1}
+\newcommand{\urlprefix}[1]{#1}
+\begin{enumerate}
+\input{extra/steelspapers.bbl}
+\end{enumerate}
+
+\phantomsection
 \printbibliography %change to the name of your bib file
 \clearpage
 
