@@ -5,8 +5,8 @@
 
 The Talking Heads experiments were obviously not an end point, but only the beginning. They confirmed the results that 
 had been obtained with earlier theoretical models and computer simulations but did not push these models 
-towards greater complexity. But subsequent work did expand the envelope of our understanding and modeling way  
-beyond these boundaries, thanks to the work of many researchers who have since joined the research program. 
+towards greater complexity. But subsequent work did expand the envelope of our understanding and modelling way  
+beyond these boundaries, thanks to the work of many researchers who have since joined the research programme. 
 The expansion has happened along several dimensions: increased sophistication of the robots, a deeper theoretical 
 understanding of semiotic dynamics, growth in the complexity of semantics and grammar, and new breakthroughs by 
 studying the emergence and evolution of language strategies. An exhaustive survey of these exciting profound developments 
@@ -29,8 +29,8 @@ of pan-tilt cameras, as in the Talking Heads experiment, was an attempt to
 have an experimental set-up at relatively low cost that was reliable and
 used vision as the source of information about the world. Of course this came
 at the price of less mobility and no true physical interaction with the real world. Nevertheless, many further fruitful experiments were 
-done using the same set-up, particularly to explore in much greater depth the domain of color lexicons\footnote{Colour became a focal point of research because there is an extensive literature in cognitive science that has 
-been gathering empirical data about color and its evolution and because it is relatively straightforward to do 
+done using the same set-up, particularly to explore in much greater depth the domain of colour lexicons\footnote{Colour became a focal point of research because there is an extensive literature in cognitive science that has 
+been gathering empirical data about colour and its evolution and because it is relatively straightforward to do 
 colour naming games. One of the main papers on our colour naming research is 
 \cite{Steels:2005}.} and multi-word naming games.\footnote{Multi-word games were the focus of the Ph.D research by 
 Joris Van Looveren, with a thesis defended in 2004.}
@@ -245,7 +245,7 @@ own perception of the scene.
 The robots start without any prior lexicon or ontology and have to come up with their own 
 purely based on the feedback in the game and without any human intervention. 
 They have been programmed to achieve autonomous locomotion and vision-based obstacle avoidance,
-and maintain a real-time analog model of their immediate surroundings based on visual input. Using
+and maintain a real-time analogue model of their immediate surroundings based on visual input. Using
 this vision-based world model, the robots are able to detect and track
 other robots as well as orange balls using standard image processing
 algorithms (see \figref{fig:persp-rev-perception}). Furthermore, the
@@ -255,7 +255,7 @@ can store a number of past events.
 
 \begin{figure}[p]
   \centerline{\includegraphics[width=.90\textwidth]{chap10/figs/persp-rev-perception.pdf}}
-\caption{\label{fig:persp-rev-perception}Chain from visual image (left) to an analog world model (middle) and a discrete event description
+\caption{\label{fig:persp-rev-perception}Chain from visual image (left) to an analogue world model (middle) and a discrete event description
 that is the topic of the language game (right). 
 The top row shows this chain for robot A and the bottom row the chain for robot B, both looking at the same ball.}
 \end{figure}
@@ -367,6 +367,7 @@ of semantic functions. The categories used to constrain what can fill a slot cor
 in linguistic terms to selection restrictions like animate, human, edible, future, etc. The
 schema has also an associated category for the whole so that hierarchical combination is
 possible. An example of a semantic schema is:
+\clearpage
 \begin{verbatim}
 Schema-542
   SLOTS: (sem-slot-51 sem-slot-50)
@@ -486,7 +487,7 @@ agent and John the recipient. Still other languages, like Japanese, use a strate
 the noun, as in the Japanese sentence \smplenquote{Tanaka-san wa Tokyo de o-to-san ni atta} 
 meaning Tanaka met his father in Tokyo. Tanaka-san is the name of a person, oto-san means \smplenquote{father} and atta 
 means \smplenquote{met}. The markers are \smplenquote{wa} for the topic, \smplenquote{de} for location and \smplenquote{ni} for another sense of location which can 
-also function as possessive. The case grammar experiments focused on modeling the latter strategy. 
+also function as possessive. The case grammar experiments focused on modelling the latter strategy. 
 
 It used the comparative method again to compare three progressively more complex strategies: 
 \begin{enumerate}
@@ -565,7 +566,7 @@ of the case experiment.
 Middle: Example of a puppet scene, where Jill gives a block to Jack. It shows the source image (left) and a (partial) 
 result of image processing (right). Bottom: Another example of a puppet scene where Jill pushes the block.}
 \end{figure}
-\clearpage
+
 \subsubsection{Scaling up the vision system}
 The vision system of the Talking Heads only dealt with static scenes. This had to be scaled up to
 deal with dynamical scenes and event recognition. It was the focal work of 
@@ -584,7 +585,7 @@ interest in the environment. This results in deictic pointers or \dblenquote{anc
 between internal symbols and external objects. Tracking not only takes place for a single object, but for 
 an open-ended set of objects at different hierarchical levels, as long as they are part of the same spatio-temporal context. 
 
-The detection and tracking of units at different hierarchical levels starts in a bottom-up manner from the images captured by the camera, and goes through various processing steps: figure/ground separation based on color perception, creation of a cellular occupancy grid, spatial region growing to identify spatial regions, and construction of spatio-temporal continuities based on 
+The detection and tracking of units at different hierarchical levels starts in a bottom-up manner from the images captured by the camera, and goes through various processing steps: figure/ground separation based on colour perception, creation of a cellular occupancy grid, spatial region growing to identify spatial regions, and construction of spatio-temporal continuities based on 
 color histograms of the objects (\figref{fig:PERACT-images}). 
 
 \subsubsection{Event identification} 
@@ -724,7 +725,7 @@ found, the other pole is merged with the target, which means that all variables 
 element which is not yet in the target is added. The underlying computational model of \textsc{cogar}  
 is therefore similar to a rule-based inference system, with an inference engine that cycles through the rules until 
 no more rules can be applied. The variables are logic variables and hence the matching and merging is similar 
-to the process of unification as used in PROLOG or other logic programming languages. 
+to the process of unification as used in \textsc{prolog} or other logic programming languages. 
 
 Here is an example of a lexical rule that defines the meaning of the word for an event \smplenquote{move-away-from}. The referent is 
 the object that is referred to by the word, in this case it is the event itself. 

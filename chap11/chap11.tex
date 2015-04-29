@@ -62,7 +62,7 @@ including action description, spatial expressions, and quantifiers, and conseque
 the complexity of the grammar increased. This section discusses one of the first experiments, namely 
 for the emergence of a vocabulary of proper names, i.e. names for individuals.
 
-In January 2007, Luc Steels, Martin Loetzsch, and Michael Spranger traveled to the Sony Computer Science Laboratory 
+In January 2007, Luc Steels, Martin Loetzsch, and Michael Spranger travelled to the Sony Computer Science Laboratory 
 in Tokyo to do the first experiments with the \textsc{qrio} robots.  
 We decided to redo the Talking Heads experiment, but focusing on proper names for individual objects, rather than the emergence 
 of generic terms such as colours, shapes or positions.\enlargethispage{1\baselineskip}\footnote{The first paper on the Proper Naming Game is: \cite{Steels:2007}
@@ -123,9 +123,9 @@ direction of movement, etc., but these will always be very noisy (see \figref{fi
 
 \begin{figure}[htbp]
   \centerline{\includegraphics[width=.85\textwidth]{chap10/figs/png-perception.pdf}}
-\caption{\label{fig:png-perception}A robot is looking at consecutive scenes (from top to bottom) and tracking the objects in the scene. One object (labeled $O_{716}$)
+\caption{\label{fig:png-perception}A robot is looking at consecutive scenes (from top to bottom) and tracking the objects in the scene. One object (labelled $O_{716}$)
 is moved by a human experimenter.  We see from left to right: the original source image, results of region detection and 
-colour segmentation, the (average) value for one dimension of one object ($O_{716}$), the segmented and labeled objects, 
+colour segmentation, the (average) value for one dimension of one object ($O_{716}$), the segmented and labelled objects, 
 and the world model, including the position of the other robot (indicated by a pointing arrow). }
 \end{figure}
 \clearpage
@@ -219,7 +219,7 @@ prototypical views maintained by $a$, $I_a$ the set of individuals
 (see \figref{fig:prototypes-identifiers-words}
 ). Each link in the network is weighted (with a real number between 0.0 and 1.0). The
 weight of the link between a sensory experience and a prototypical
-view is based on nearest neighbor computation. The other weights are
+view is based on nearest neighbour computation. The other weights are
 stored in memory and reflect the confidence of the agent in the use of
 that link based on past experience. 
 
@@ -402,7 +402,7 @@ the upper torso is captured in terms of a feature vector with seven data points,
 although it could also be represented using the spike diagram used in the Proper Naming Game (\figref{vision}, right). 
 These feature vectors are then classified using the same prototype-based approach as in the Proper Naming Game. A prototype of a posture 
 consists of typical points for the seven moments, as well as a minimum and maximum deviation from 
-each point. The best matching prototype is found by nearest neighbor computation. New prototypes are created 
+each point. The best matching prototype is found by nearest neighbour computation. New prototypes are created 
 when there is no prototype that matches distinctively with the sensory experience of a body posture and matching prototypes are
 slightly adjusted to integrate new instances, so that the prototype progressively and adaptively reflects the body postures observed
 in the world. 
@@ -604,10 +604,10 @@ A more recent description of a new implementation is reported as: \cite{Spranger
 IRL stands for Incremental Recruitment Language, for reasons that will become clear soon. \is{IRL}
 IRL uses a constraint language approach. Constraint programming languages were pioneered in the  \is{Constraint Programming}
 seventies by Borning, Steele, and others. It is a very active field with its own conferences, 
-organisations and journals (see http://www.informatik.uni- trier.de/ ley/db/journals/constraints/) 
+organisations and journals (see \url{http://www.informatik.uni-trier.de/ley/db/journals/constraints/}) 
 with wide applications in user interfaces, scheduling problems, design, games, etc. 
 
-The basic idea of a constraint language is that only dataflow is expressed explicitly, not control flow. 
+The basic idea of a constraint language is that only data flow is expressed explicitly, not control flow. 
 There is a set of slots (variables) and a constraint attempts to reduce the set of possible 
 fillers (bindings) for a slot. Constraints are combined in 
 a constraint network, based on sharing slots. A solution is found when every slot in the network has unique bindings. 
@@ -627,7 +627,7 @@ the remaining arguments the slots:
 \begin{verbatim}
  (<constraint> <arg1> ... <arg-n>)
 \end{verbatim}
-The first argument is called the target of the constraint because it is the most logical 'outcome' 
+The first argument is called the target of the constraint because it is the most logical ``outcome" 
 of applying a constraint, but as shown in the example above, data may flow in all directions. The numerical 
 example given earlier translates into the following IRL program. 
 \begin{verbatim}
@@ -720,7 +720,7 @@ pattern recognition (including neural networks) and AI (including machine learni
 For example, an operation could implement a radial-basis-function network for doing categorisation and 
 use the network to identify an object in a set. It could not only use the network but also adapt 
 the weights in the network. Another operation could implement categorisation based 
-on discrimination trees (as discussed in Chapter 4) and would not only do it, but also expand the discrimination trees 
+on discrimination trees (as discussed in \chapref{chap:4}) and would not only do it, but also expand the discrimination trees 
 when necessary. Other operations could implement set-theoretic operations, 
 for the semantics of connectives like {\itshape and}, {\itshape or}, and {\itshape not}, by carrying out
 {\itshape union}, {\itshape intersection} and {\itshape complement} operations over sets. There is no 
@@ -950,7 +950,7 @@ Interestingly, the best results in terms of communicative success
 are obtained when the agents are allowed to evolve their own colour language, 
 partly because there was no limit on the number of prototypes they could introduce. This was better 
 than using the set of basic colour prototypes for English, simply because English would turn to more complex expressions
-(such as \smplenquote{bluish green}) when the basic colour catgories are not effective. Moreover, 
+(such as \smplenquote{bluish green}) when the basic colour categories are not effective. Moreover, 
 agents still achieve better results compared to the English colour system when they do not need to stick 
 dogmatically to it. Indeed this shows why alignment, which is widely observed
 in human dialogues,\footnote{See: \cite{Garrod:1987} and \cite{Galantucci:2005}.}
