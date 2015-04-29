@@ -4,12 +4,12 @@
 
 The semiotic square captures the four entities in 
 a linguistic interaction: 
-the {\itshape referent}, which is the object in the physical world that the 
-speaker wants to communicate, the {\itshape segmented image}, which is 
-the internal perception of the referent, the {\itshape meaning}, which is a 
+the {\scshape referent}, which is the object in the physical world that the 
+speaker wants to communicate, the {\scshape segmented image}, which is 
+the internal perception of the referent, the {\scshape meaning}, which is a 
 category or combination of categories that picks out the 
 referent in the present context, and 
-the {\itshape utterance}, which is the word form 
+the {\scshape utterance}, which is the word form 
 or set of word forms transmitted by the speaker. In the previous 
 chapters we looked at two sides of the semiotic
 square. The relation between the real world and the
@@ -48,7 +48,7 @@ language games, where agents cannot inspect each others'
 brain states nor transmit meanings directly, 
 there is no feedback about the 
 meaning of a word, only about the referent. For example, 
-when a speaker says \smplenquote{wabo} and the hearer has correctly pointed 
+when a speaker says \textit{wabo} and the hearer has correctly pointed 
 to the referent that the speaker intended, neither the 
 speaker nor the hearer can know whether they were 
 using the same meaning. They can only know that they 
@@ -64,7 +64,7 @@ I will call this the gavagai-problem, because Quine
 used this word to illustrate exactly this difficulty.\footnote{See \cite[29--30]{Quine:1960}.}
 Quine evoked the problem of an anthropologist
 trying to figure out what a native speaking an unknown
-language might mean when he utters \smplenquote{gavagai} while pointing
+language might mean when he utters \textit{gavagai} while pointing
 to a white rabbit scurrying by. 
 
 In this chapter, I will bypass the gavagai-problem by assuming
@@ -144,11 +144,11 @@ a new one.
 \subsection{Representing lexical associations}
 
 What cognitive architecture do agents need to engage in naming 
-games? Clearly they need some sort of {\itshape associative memory} to\is{lexical memory}
+games? Clearly they need some sort of {\scshape associative memory} to\is{lexical memory}
 store their individual lexicons.
 Let us assume that agents 
 can construct and recognise arbitrary consonant-vowel combinations, 
-like \smplenquote{coba} or \smplenquote{wabidu}, for forming words, and that they 
+like \textit{coba} or \textit{wabidu}, for forming words, and that they 
 have a repertoire of possible meanings in the form of 
 categories, for example [\textsc{left}], [\textsc{dark}], [\textsc{large}], etc. 
 The contents of the associative memory of a single agent can
@@ -166,7 +166,7 @@ be displayed in a table as follows:
 \lspbottomrule
 \end{tabular}
 \end{center}
-\caption{\label{tab:t-mem}Associative memory of a single agent.}
+\caption{\label{tab:t-mem}Associative memory of a single agent}
 \end{table}
 As an agent is acquiring his lexicon, there are going to 
 be stages when he is not yet sure about the meaning of 
@@ -188,7 +188,7 @@ To estimate this success,
 each agent should monitor for each form-meaning association
 how successful it has been, which could be implemented 
 by associating with every form-meaning pair 
-a {\itshape score}.\is{score} The score of a form-meaning pair
+a {\scshape score}.\is{score} The score of a form-meaning pair
 is specific to an agent and based only on his own 
 local interactions with other agents, in line with the 
 principle that no single agent has a complete overview of 
@@ -199,17 +199,17 @@ association is illustrated in \tabref{tab:mem2}.
 \begin{table}
 \begin{center}
 \begin{tabular}{c c c c  c  c  c } \lsptoprule 
-& coba & zapo & bila & pama & wabidu & limiri \\ 
+& \textit{coba} & \textit{zapo} & \textit{bila} & \textit{pama} & \textit{wabidu} & \textit{limiri} \\ 
 \midrule {}		
 {}[\textsc{dark}] & 0.3 & 0.2 & 0.1 & 0.8 & - & - \\ 
 {}[\textsc{large}] & - & - & - & 0.5 & 0.3 & 0.6 \\ 
 \lspbottomrule
 \end{tabular}
-\caption{\label{tab:mem2}Example lexicon with multiple associations.}
+\caption{\label{tab:mem2}Example lexicon with multiple associations}
 \end{center}
 \end{table}
 From this table we see that the agent prefers to use the 
-word \smplenquote{pama} for [\textsc{dark}] and \smplenquote{limiri} for [\textsc{large}]. 
+word \textit{pama} for [\textsc{dark}] and \textit{limiri} for [\textsc{large}]. 
 
 \subsection{Updating the score}
 
@@ -254,7 +254,7 @@ use both the score table above (in reality they of
 course always have different score tables). 
 The speaker collects all possible
 forms for a given meaning [\textsc{dark}], chooses the one with the
-highest score (\smplenquote{pama}), and transmits that form. 
+highest score (\textit{pama}), and transmits that form. 
 The hearer collects all possible meanings for 
 the transmitted form ([\textsc{dark}], [\textsc{large}]) and again chooses the one with
 the highest score. If the hearer's meaning is equal to that
@@ -303,14 +303,14 @@ consonants) and add that to his
 lexicon. Agents are assumed to have a 
 shared repertoire of syllables which they can all 
 produce and recognise. This happens with a certain 
-probability, the {\itshape word creation rate} $w_{c}$. 
+probability, the {\scshape word creation rate} $w_{c}$. 
 This rate reflects how \dblenquote{free} the agent feels to 
 extend the lexicon. 
 \item 
 When an agent hears a word he has 
 never heard before, he may add this new word to his 
 repertoire. Again this happens with a certain
-probability, the {\itshape word absorption rate} $w_{a}$. 
+probability, the {\scshape word absorption rate} $w_{a}$. 
 This rate reflects the critical attitude with which an 
 agent accepts the linguistic authority of other agents. 
 \end{itemize}
@@ -346,7 +346,7 @@ most games fail if the word creation rate has been set to a low rate.
 In the next game shown below, the speaker is 
 {\bfshape a4}, the hearer {\bfshape a5} and the topic
 {}[\textsc{small}]. Now the speaker is successful in creating a word, namely 
-\smplenquote{di}. The hearer receives the word, does not know it,
+\textit{di}. The hearer receives the word, does not know it,
 but stores it in association with [\textsc{small}]. The game still fails. 
 \begin{verbatim}
 Game 29
@@ -359,13 +359,13 @@ Game 29
    a5 stores di as [SMALL]
 \end{verbatim}
 In game 32, something similar happens. This time {\bfshape a5} creates
-a new word \smplenquote{pida} for [\textsc{large}]. {\bfshape a3} does not know 
+a new word \textit{pida} for [\textsc{large}]. {\bfshape a3} does not know 
 the word but stores it. 
 \begin{verbatim}
 Game 32
    a5 is the speaker. a3 is the hearer. 
    a5 categorises the topic as [LARGE]
-   a5 creates a new word: \smplenquote{pida}
+   a5 creates a new word: pida
    a5 says: pida
    a3 does not know pida
    a5 points to the topic
@@ -373,7 +373,7 @@ Game 32
    a3 stores pida as [LARGE]
 \end{verbatim}
 A first success occurs in game 43, when {\bfshape a5} uses again 
-\smplenquote{pida} for [\textsc{large}]. {\bfshape a3} hears \smplenquote{pida}, has associated it 
+\textit{pida} for [\textsc{large}]. {\bfshape a3} hears \textit{pida}, has associated it 
 in his lexicon with [\textsc{large}], and so the game succeeds. 
 \begin{verbatim}
 Game 43
@@ -414,10 +414,10 @@ agent, {\bfshape a5}, after 100 games is shown in \ref{tab:t-mem3}.
 \caption{\label{tab:t-mem3}Associative memory of a single agent after 100 games.}
 \end{center}
 \end{table}
-Both the words \smplenquote{di} and \smplenquote{pida} are present but with 
+Both the words \textit{di} and \textit{pida} are present but with 
 weak scores. There are two synonyms for 
-{}[\textsc{large}]: \smplenquote{pida} and \smplenquote{fobu}, but \smplenquote{pida} is 
-preferred. There is a word \smplenquote{gi} who is available 
+{}[\textsc{large}]: \textit{pida} and \textit{fobu}, but \textit{pida} is 
+preferred. There is a word \textit{gi} who is available 
 for [\textsc{light}] but does not have a positive score,
 because successive trials failed to yield a successful game. 
 
@@ -428,7 +428,7 @@ had different encounters and hence different language
 experiences. A picture of the lexicon of the group from the 
 viewpoint of an outside observer can be obtained by
 inspecting the internal states of each agent to 
-construct the {\itshape group lexicon}. It groups the 
+construct the {\scshape group lexicon}. It groups the 
 dominating meaning-form associations for all possible
 meanings and the frequency of each association. 
 It gives a picture of \dblenquote{the} lexicon 
@@ -451,8 +451,8 @@ is shown in \tabref{tab:t-mem4}.
 \end{table}
 This reflects a situation where 40 \%
 of the agents prefers to name [\textsc{large}] with
-\smplenquote{pida}. 60 \% of the agents
-use \smplenquote{gi} for [\textsc{light}], and 40 \% \smplenquote{di} for [\textsc{small}]. 
+\textit{pida}. 60 \% of the agents
+use \textit{gi} for [\textsc{light}], and 40 \% \textit{di} for [\textsc{small}]. 
 The other meanings ([\textsc{dark}] and [\textsc{red}]) do not have names yet. 
 
 Note that the group lexicon is not known by the agents
@@ -461,7 +461,7 @@ total system. The only information which is locally stored in each
 agent is his own lexicon, which might be quite different from that 
 of the group lexicon. For example, the lexicon of {\bfshape a5} shown earlier
 is different from the group lexicon.
-{\bfshape a5}'s score for \smplenquote{gi} is 0.0
+{\bfshape a5}'s score for \textit{gi} is 0.0
 even though the word is already preferred by 60 \% of 
 the agents according to the group lexicon. 
 The group lexicon is a macroscopic structure that we
@@ -469,7 +469,7 @@ as observers construct from inspecting the internal
 states of the agents. 
 
 Let us now continue the simulation. Here are two additional
-games showing how \smplenquote{ga} propagates from {\bfshape a4} to {\bfshape a2} in 
+games showing how \textit{ga} propagates from {\bfshape a4} to {\bfshape a2} in 
 game 101 and from {\bfshape a2} to {\bfshape a1} in game 104. 
 \begin{verbatim}
 Game 104
@@ -526,8 +526,8 @@ function has not been explored yet in our experiments.
 I use various measures both for actual lexicon use and for 
 the coherence and evolution of the lexicons of
 the individuals to see better what is happening. 
-The first and easiest measure is the {\itshape average game success}, 
-also called the {\itshape communicative success}, \is{communicative success}
+The first and easiest measure is the {\scshape average game success}, 
+also called the {\scshape communicative success}, \is{communicative success}
 of a population of agents ${\cal A}$ in a set of $n$ language games. 
 When this measure is graphed continuously for consecutive sets of 
 games, the progress in the population
@@ -582,7 +582,7 @@ of biological models with similar properties, see \cite{May:1976}.}
 \subsection{Measuring lexical coherence} 
 
 To monitor to what extent the agents share the same
-lexicon, I propose a second measure, the {\itshape lexical
+lexicon, I propose a second measure, the {\scshape lexical
 coherence}. The lexical coherence is 
 defined as the average of the frequencies of
 all the form-meaning pairs in the group lexicon.
@@ -635,9 +635,9 @@ must associate the form used by the speaker
 with the same meaning. But it is not required that the
 hearer himself prefers to use the same form for the same meaning, 
 synonyms may occur.  
-A speaker of British English typically uses the word \smplenquote{pavement}, 
-whereas an American prefers \smplenquote{sidewalk}, even though he
-understands \smplenquote{pavement}. Thus there can 
+A speaker of British English typically uses the word \textit{pavement}, 
+whereas an American prefers \textit{sidewalk}, even though he
+understands \textit{pavement}. Thus there can 
 be several forms active in the same population, even though 
 the outcome of a game is always successful. We will see 
 later that synonyms do get damped, as is the case in 
@@ -1027,7 +1027,7 @@ and the more it will be used. This effect is still enforced
 by lateral inhibition. The scores of competing associations 
 decrease, making it less likely that they will win in the future. 
 This positive feedback therefore introduces an\is{autocatalysis} 
-{\itshape autocatalytic} (self-enforcing) effect until the population
+{\scshape autocatalytic} (self-enforcing) effect until the population
 locks into an equilibrium state.\footnote{
 Such positive feedback loops and the stability criteria
 associated with them have been widely studied in non-linear
@@ -1036,11 +1036,11 @@ processes. See \cite{Babloyantz:1986}.}
 
 To follow better how a consensus gradually emerges, I will visualise
 the competition between different words for the same meaning
-in a {\itshape meaning-form (MF) competition diagram}, 
+in a {\scshape meaning-form (MF) competition diagram}, 
 such as the one in \figref{competition}, which monitors 
 the frequencies of the different forms in use for one meaning.
 The diagram shows clearly the struggle between different forms until
-one form (\smplenquote{pe}) emerges as the winner. When we later study 
+one form (\textit{pe}) emerges as the winner. When we later study 
 grounded lexicon formation processes, we will see that the 
 competition becomes much more complex and the whole system 
 is in constant evolution. A form-meaning pair which is 
@@ -1056,7 +1056,7 @@ resurgence of existing words.
 a population of 20 agents. The meaning-form competition 
 diagram shows the frequency of all competing forms for a 
 single meaning. We see a winner-take-all situation
-with one word (\smplenquote{pe}) dominating.}
+with one word (\textit{pe}) dominating.}
 \end{figure}
 
 \subsection{Collective behaviour and self-organisation}
@@ -1264,7 +1264,7 @@ with humans at a particular site, which is a kind of language
 contact between human and artificial populations, may 
 impact the evolving lexicons and ontologies. 
 
-\subsection{Spatially Distributed Naming Games}
+\subsection{Spatially distributed naming games}
 
 Language game models provide us with new fantastic tools to study\is{Spatially Distributed Naming Games}
 language transmission and language contact: 
@@ -1315,7 +1315,7 @@ communication reaches total success.
 However inspection of the agent lexicons reveals that
 agents will develop a stable
 language within their cluster, but also a
-second language, an {\itshape interlingua}, which is weaker but
+second language, an {\scshape interlingua}, which is weaker but
 shared among the different clusters. This interlingua will
 become stronger as more agents interact between clusters.
 Thus we observe language diversity due to
@@ -1385,17 +1385,17 @@ rightmost cluster in \figref{figure-agent-distribution}:
 {}[M18]: ni[0.94] kutume[0.80] moko[0.80] mekami[0.00]
 {}[M19]: ninu[0.81] mugu[0.00] pi[0.00]
 \end{verbatim}
-Some words (for example \smplenquote{tine} for [M5] or \smplenquote{go} for [M2]) are
+Some words (for example \textit{tine} for [M5] or \textit{go} for [M2]) are
 shared. But generally 
 there are at least two words. One word is used preferentially inside the cluster,
 the other is known but preferentially used by members of another cluster. Thus
-the word \smplenquote{mugu} for [M19] is preferred for the first object in the first
+the word \textit{mugu} for [M19] is preferred for the first object in the first
 cluster and known but not preferentially used by the agent in the second cluster.
-Conversely, \smplenquote{ninu} is preferred for the same meaning by the agent in the second
-cluster, although he also knows \smplenquote{mugu}.
-\smplenquote{mepabo} for [M7] belongs to the interlingua. Both agents
-know and use it but they have a strong alternative \smplenquote{jabeto} for 
-the first and \smplenquote{junipe} for the second agent. 
+Conversely, \textit{ninu} is preferred for the same meaning by the agent in the second
+cluster, although he also knows \textit{mugu}.
+\textit{mepabo} for [M7] belongs to the interlingua. Both agents
+know and use it but they have a strong alternative \textit{jabeto} for 
+the first and \textit{junipe} for the second agent. 
 
 \subsection{Language contact}
 
