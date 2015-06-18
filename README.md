@@ -1,4 +1,4 @@
-# New directions in corpus-based translation studies
+# The Talking Heads experiment: Origins of words and meanings
 
 ## Publication Info
 
